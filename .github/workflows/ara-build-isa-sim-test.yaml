@@ -28,8 +28,3 @@ jobs:
 
       - name: Build Spike (riscv-isa-sim)
         run: make riscv-isa-sim
-
-env:
-  # Increase runner machine's shell output buffer size 
-  # This might be needed for very verbose outputs
-  SHELLOPTS: '-l 2048'
