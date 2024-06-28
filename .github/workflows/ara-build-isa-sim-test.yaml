@@ -30,4 +30,5 @@ jobs:
 
       - name: Build Spike (riscv-isa-sim)
         run: |
+          cat ara/Makefile
           make -f ara/Makefile riscv-isa-sim
