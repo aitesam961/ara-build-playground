@@ -19,8 +19,9 @@ jobs:
         run: git clone https://github.com/pulp-platform/ara.git
 
       - name: Navigate to ara directory
-        run: cd ara
-             ls -l
+        run: |
+          cd ara
+          ls -l
 
       - name: Update and sync submodules
         run: |
