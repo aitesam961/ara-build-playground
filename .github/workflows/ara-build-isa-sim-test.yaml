@@ -29,4 +29,4 @@ jobs:
           git submodule sync --recursive
 
       - name: Build Spike (riscv-isa-sim)
-        run: make riscv-isa-sim
+        run: make toolchain-llvm
