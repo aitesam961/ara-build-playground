@@ -20,6 +20,7 @@ jobs:
 
       - name: Navigate to ara directory
         run: cd ara
+             ls -l
 
       - name: Update and sync submodules
         run: |
