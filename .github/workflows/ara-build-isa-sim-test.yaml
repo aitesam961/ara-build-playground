@@ -1,0 +1,36 @@
+name: Build ara on Ubuntu 22.04
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev device-tree-compiler libboost-regex-dev libboost-system-dev
+
+      - name: Clone ara repository
+        run: git clone https://github.com/pulp-platform/ara.git
+
+      - name: Navigate to ara directory
+        run: cd ara
+
+      - name: Update and sync submodules
+        run: |
+          git submodule update --init --recursive
+          git submodule sync --recursive
+
+      - name: Build Spike (riscv-isa-sim)
+        run: make riscv-isa-sim
+
+env:
+  # Increase runner machine's shell output buffer size 
+  # This might be needed for very verbose outputs
+  SHELLOPTS: '-l 2048'
