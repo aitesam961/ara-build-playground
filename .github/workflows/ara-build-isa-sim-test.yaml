@@ -1,11 +1,11 @@
-name: Build ara on Ubuntu 22.04
+name: Build ara on Ubuntu 20.04
 
 on:
   push:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,6 +27,11 @@ jobs:
         run: |
           git submodule update --init --recursive
           git submodule sync --recursive
+
+      - name: Build Spike (riscv-isa-sim)
+        run: |
+          make riscv-isa-sim
+
 
       - name: Build Spike (riscv-isa-sim)
         run: |
