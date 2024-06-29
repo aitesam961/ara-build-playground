@@ -34,12 +34,6 @@ jobs:
           ls -la
           make checkout
           make apply-patches
-      
-      - name: Make LLVM Toolchain
-        run: |
-          cd ara
-          ls -la
-          make toolchain-llvm
 
       - name: Build Spike (riscv-isa-sim)
         run: |
