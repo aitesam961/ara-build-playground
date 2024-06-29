@@ -28,13 +28,15 @@ jobs:
           git submodule update --init --recursive
           git submodule sync --recursive
 
+      - name: Install HW deps
+        run: |
+          cd ara/hardware
+          ls -la
+          make checkout
+          
       - name: Build Spike (riscv-isa-sim)
         run: |
           make riscv-isa-sim
 
 
-      - name: Build Spike (riscv-isa-sim)
-        run: |
-          cd ara/hardware
-          ls -la
-          make checkout
+      
