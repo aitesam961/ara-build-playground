@@ -33,9 +33,11 @@ jobs:
           cd ara/hardware
           ls -la
           make checkout
-          
+
       - name: Build Spike (riscv-isa-sim)
         run: |
+          cd ara
+          ls -la
           make riscv-isa-sim
 
 
