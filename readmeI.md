@@ -17,7 +17,7 @@ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip li
 
 ## 2- Building ara for RTL simulations using Questa
 
-### Download sources
+### 2.1 Download sources
 ```
 # Clone the repository with latest release
 git clone https://github.com/pulp-platform/ara.git
@@ -33,7 +33,9 @@ make checkout
 ```
 - if `make checkout` doesnt work, use `make update` and then try `make checkout`
 
-### Build LLVM-Toolchain
+**Note:** llvm-toolchain may not be neccessary as far as only RTL sims are concerned but the later steps does not succeed unless the previous steps are successfully finished. So its required.
+
+### 2.2 Build LLVM-Toolchain
 
 ```
 cd ara
@@ -41,6 +43,22 @@ make toolchan-llvm
 ```
 **Note:** `make toolchain-llvm` by default configues `make -j(nproc) to -j32 which may destabilize the environment when running in virual machines. Signs may include VM crashing, freezing or restarting itself. 
 
-To Fix this, modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
+To **FIX** this, modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
 
 `ara/Makefile line: 143, 158`
+
+**Note:** The top level test bench requires riscv-tools custom built for ara to generate the binaries that are fed into tb. (At least thats what I understand. Please correct me if I'm wrong).
+
+### 2.3 Build riscv-isa-sim 
+
+riscv-isa-sim is involved in building the riscv-gnu-toolchain customized for pulp-ara. Proceed as follows:
+
+```
+cd ara
+make riscv-isa-sim
+```
+Occassionaly, you may get "error: nothing to build...". That appears sometimes when Makefile terminates without completion and as a prevention measure, the scripts somehow mark that task as done to avoid redoing.
+
+To **FIX** this, slightly edit the Makefile (add another line/comment etc) and retry. If still persists, rerun `git submodule update --init --recursive`
+
+
