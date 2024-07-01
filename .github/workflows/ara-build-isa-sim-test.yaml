@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -23,15 +23,13 @@ jobs:
           cd ara
           ls -l
 
-      - name: Update and sync submodules
-        run: |
-          git submodule update --init --recursive
-          git submodule sync --recursive
-
       - name: Install HW deps
         run: |
           cd ara/hardware
           ls -la
           make checkout
+      - name: Make riscv toolchain
+        run: |
+          make riscv-isa-sim
 
       
