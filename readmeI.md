@@ -57,7 +57,7 @@ riscv-isa-sim is involved in building the riscv-gnu-toolchain customized for pul
 cd ara
 make riscv-isa-sim
 ```
-Occassionaly, you may get "error: nothing to build...". That appears sometimes when Makefile terminates without completion and as a prevention measure, the scripts somehow mark that task as done to avoid redoing.
+Occassionaly, you may get `make: *** No rule to make target`. That appears sometimes when Makefile terminates without completion and as a prevention measure, the scripts somehow mark that task as done to avoid redoing.
 
 To **FIX** this, slightly edit the Makefile (add another line/comment etc) and retry. If still persists, rerun `git submodule update --init --recursive`
 
