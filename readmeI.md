@@ -1,9 +1,9 @@
-# Building pulpplatform-ara with provided Makefile
+# Building pulp-platform/ara with provided Makefile
 
 ### Environment details
 ```
 Ubuntu 22.04 LTS for AMD64 platform
-Linux Kernel Version: 6.8 (GWE)
+Linux Kernel Version: 6.8 (HWE)
 Required library dependencies installed as listed in Section 1.1
 ```
 **Please Note:** Ubuntu 22LTS is the only known env to have the maximum success and several issues arise with newer 24.04LTS (bender not available, some deps lib versions are different)
@@ -31,7 +31,7 @@ git submodule sync --recursive
 cd hardware 
 make checkout
 ```
-- if make checkout doesnt work, use make update and then make checkout
+- if `make checkout` doesnt work, use `make update` and then try `make checkout`
 
 ### Build LLVM-Toolchain
 
@@ -43,4 +43,4 @@ make toolchan-llvm
 
 To Fix this, modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
 
-ara/Makefile line: 143, 158
+`ara/Makefile line: 143, 158`
