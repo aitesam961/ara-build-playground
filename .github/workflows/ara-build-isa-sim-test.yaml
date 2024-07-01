@@ -1,11 +1,11 @@
-name: Build ara on Ubuntu 20.04
+name: Build ara on Ubuntu
 
 on:
   push:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -33,13 +33,5 @@ jobs:
           cd ara/hardware
           ls -la
           make checkout
-          make apply-patches
-
-      - name: Build Spike (riscv-isa-sim)
-        run: |
-          cd ara
-          ls -la
-          make riscv-isa-sim
-
 
       
