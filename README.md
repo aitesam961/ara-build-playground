@@ -21,4 +21,3 @@ Install Questasim using the standard installation procedure and add to path. The
 
 ### Compile & simulate with Questasim (using Makefile automated process)
 
-
