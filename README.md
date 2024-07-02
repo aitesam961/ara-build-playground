@@ -14,10 +14,5 @@ The build and simulation scripts are provided but there are several issues, some
 
 https://github.com/aitesam961/ara-build-playground/blob/main/readmeI.md
 
-### Install/setup  Questasim
-Install Questasim using the standard installation procedure and add to path. The versions supported by Pulp-ara are `2019.3` & `2021.2`. Later is being used in this case.
 
-**Check My Guide for installing Questasim**: https://gist.github.com/aitesam961/608ec27862e942e5ae1360fd0ba2b4d2
-
-### Compile & simulate with Questasim (using Makefile automated process)
 
