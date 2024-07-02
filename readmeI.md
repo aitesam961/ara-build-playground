@@ -114,10 +114,16 @@ See `config.log' for more details
 make: *** [Makefile:168: /home/ara/install/verilator] Error 77
 ```
 
-This is caused by the Compiler Flags. The quick workaround I could find is: modify the ara/Makefile at line #
+This is caused by the Compiler Flags. The quick workaround I could find is: modify the ara/Makefile at line # 169
 ```
+# Replace
+CC=$(CLANG_CC) CXX=$(CLANG_CXX) CXXFLAGS=$(CLANG_CXXFLAGS) LDFLAGS=$(CLANG_LDFLAGS)
 
+# With
+CC="" 
 ```
+This allows verilator to be built with default compiler (g++ through Cmake) instead of CLANG for LLVM
+
 ## 3 Simulations
 ### Compile & simulate with Questasim (using Makefile automated process)
 
