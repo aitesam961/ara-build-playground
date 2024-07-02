@@ -122,7 +122,17 @@ CC=$(CLANG_CC) CXX=$(CLANG_CXX) CXXFLAGS=$(CLANG_CXXFLAGS) LDFLAGS=$(CLANG_LDFLA
 # With
 CC="" 
 ```
-This allows verilator to be built with default compiler (g++ through Cmake) instead of CLANG for LLVM
+This allows verilator to be built with default compiler (g++ through C++ compiler) instead of CLANG for LLVM.
+
+While sometime it works, sometimes you might be greeted by the following errors after build
+```
+make[3]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator/src/obj_opt'
+make[2]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator/src'
+make[1]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator'
+make: *** [Makefile:168: /home/asus/pulp-ara/ara/install/verilator] Error 2
+```
+
+I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it.
 
 ## 3 Simulations
 ### Compile & simulate with Questasim (using Makefile automated process)
