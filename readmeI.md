@@ -89,9 +89,14 @@ Now, even when Questasim installed and added to path, visible to the Makefile, s
 Makefile:83: "Specified QuestaSim version (questa-2021.2) not found in PATH /opt/questasim/linux_x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 ```
 
-This refers to 
+This refers to the following lines in ara/hardware/Makefile
 
-https://github.com/pulp-platform/ara/blob/2364635c379397a3bfbb2c9cd66720b86be41e29/hardware/Makefile#L81-L85
-
+```
+ifeq (, $(shell which $(questa_cmd)))
+  # Spaces are needed for indentation here!
+  $(warning "Specified QuestaSim version ($(questa_cmd)) not found in PATH $(PATH)")
+  questa_cmd =
+endif
+```
 ### Compile & simulate with Questasim (using Makefile automated process)
 
