@@ -61,4 +61,4 @@ Occassionaly, you may get `make: *** No rule to make target`. That appears somet
 
 To **FIX** this, slightly edit the Makefile (add another line/comment etc) and retry. If still persists, rerun `git submodule update --init --recursive`
 
-
+### 2.4 Manually Install RISCV-GNU toolchain
