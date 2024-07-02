@@ -78,5 +78,20 @@ make -j8
 This script should build the riscv-gcc toolchain. If fails, please fetch a pre-built toolchain from my previous attempt (https://github.com/aitesam961/soft-sky-riscv-gnu-prebuilt) and add to path using the instructions available. Ensure the riscv-toolchain path aligns with ara required binary path.
 
 
+### Install/setup  Questasim
+Install Questasim using the standard installation procedure and add to path. The versions supported by Pulp-ara are `2019.3` & `2021.2`. Later is being used in this case.
 
+**Check My Guide for installing Questasim**: https://gist.github.com/aitesam961/608ec27862e942e5ae1360fd0ba2b4d2
+
+Now, even when Questasim installed and added to path, visible to the Makefile, still you may encounter this error.
+
+```
+Makefile:83: "Specified QuestaSim version (questa-2021.2) not found in PATH /opt/questasim/linux_x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+```
+
+This refers to 
+
+https://github.com/pulp-platform/ara/blob/main/hardware/Makefile#L83
+
+### Compile & simulate with Questasim (using Makefile automated process)
 
