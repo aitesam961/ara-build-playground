@@ -91,7 +91,7 @@ Makefile:83: "Specified QuestaSim version (questa-2021.2) not found in PATH /opt
 
 This refers to 
 
-https://github.com/pulp-platform/ara/blob/main/hardware/Makefile#L83
+> https://github.com/pulp-platform/ara/blob/main/hardware/Makefile#L83
 
 ### Compile & simulate with Questasim (using Makefile automated process)
 
