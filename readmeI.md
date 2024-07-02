@@ -62,3 +62,21 @@ Occassionaly, you may get `make: *** No rule to make target`. That appears somet
 To **FIX** this, slightly edit the Makefile (add another line/comment etc) and retry. If still persists, rerun `git submodule update --init --recursive`
 
 ### 2.4 Manually Install RISCV-GNU toolchain
+Now, makefile scripts for some reason does not reliably build the riscv-gnu toolchain. Perhaps the assumption that most users already have it. 
+
+To build the toolchain compatible with makefile steps, execute the following command in project `ara` home directory.
+
+```
+cd /install/riscv-gcc
+# Build riscv-binutils
+cd toolchain/riscv-gnu-toolchain
+rm -rf build && mkdir -p build && cd build
+CC=$(CC) CXX=$(CXX) ../configure --prefix="$GCC_INSTALL_DIR" --with-arch=rv64gcv --with-cmodel=medlow --enable-multilib
+make -j8
+```
+
+This script should build the riscv-gcc toolchain. If fails, please fetch a pre-built toolchain from my previous attempt (https://github.com/aitesam961/soft-sky-riscv-gnu-prebuilt) and add to path using the instructions available. Ensure the riscv-toolchain path aligns with ara required binary path.
+
+
+
+
