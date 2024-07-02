@@ -78,7 +78,7 @@ make -j8
 This script should build the riscv-gcc toolchain. If fails, please fetch a pre-built toolchain from my previous attempt (https://github.com/aitesam961/soft-sky-riscv-gnu-prebuilt) and add to path using the instructions available. Ensure the riscv-toolchain path aligns with ara required binary path.
 
 
-### Install/setup  Questasim
+### 2.5 Install/setup  Questasim
 Install Questasim using the standard installation procedure and add to path. The versions supported by Pulp-ara are `2019.3` & `2021.2`. Later is being used in this case.
 
 **Check My Guide for installing Questasim**: https://gist.github.com/aitesam961/608ec27862e942e5ae1360fd0ba2b4d2
@@ -98,5 +98,26 @@ ifeq (, $(shell which $(questa_cmd)))
   questa_cmd =
 endif
 ```
+
+Even if you have Questasim successfully installed and in Path, still this warning would appear. Even the Makefile is able to launch questa during simulation attempt but still not able to find.
+So, no work around, let's live with it.
+
+
+### 2.6 Install Verilator
+Although we plan no to use verilator but below is the process to work around the issues and intsall the required version for ara.
+
+`make verilator` likely returns error
+```
+configure: error: in `/home/asus/pulp-ara/ara/toolchain/verilator':
+configure: error: C compiler cannot create executables
+See `config.log' for more details
+make: *** [Makefile:168: /home/ara/install/verilator] Error 77
+```
+
+This is caused by the Compiler Flags. The quick workaround I could find is: modify the ara/Makefile at line #
+```
+
+```
+## 3 Simulations
 ### Compile & simulate with Questasim (using Makefile automated process)
 
