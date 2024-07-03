@@ -229,6 +229,10 @@ are supposed to simulate RTL using Questasim.
 
 The first error that likely appears is
 ```
-error: include"svdpi.h"
+tb/dpi/elfloader.cc:4:10: fatal error: svdpi.h: No such file or directory
+    4 | #include <svdpi.h>
+      |          ^~~~~~~~~
+compilation terminated.
+make: *** [Makefile:257: build/work-dpi/elfloader.o] Error 1
 
-file "svdpi.h" not found.
+```
