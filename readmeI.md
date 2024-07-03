@@ -227,7 +227,8 @@ app=fft make sim
 ```
 are supposed to simulate RTL using Questasim.
 
+The first error that likely appears is
+```
+error: include"svdpi.h"
 
-
-### Compile & simulate with Questasim (using Makefile automated process)
-
+file "svdpi.h" not found.
