@@ -217,6 +217,15 @@ make riscv-tests
 I cannot verify the results of this step. There is some compilation but without any solid results.
 
 
+### 3.4 Simulate with Questasim
+
+The provided set of scripts:
+```
+cd hardware
+make compile
+app=fft make sim
+```
+are supposed to simulate RTL using Questasim.
 
 
 
