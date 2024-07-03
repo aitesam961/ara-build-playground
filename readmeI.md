@@ -140,6 +140,8 @@ Before compiling the examples, following python libs should be installed
 ```
 pip3 install numpy
 ```
+
+### 3.1 Compile binaries using riscv-gnu-toolchain
 To compile a simple hello_world binary, the following script is used:
 ```
 cd /ara/apps
@@ -163,6 +165,7 @@ make bin/fft
 make bin/fft.spike
 make spike-run-fft
 ```
+### 3.2 Simulate on Spike riscv-isa Simulator
 
 Simulations with spike should yield
 ```
@@ -201,6 +204,18 @@ FFT binary certainly includes vector instructions. This can be verified by explo
 800005e0: 57 18 18 93  	vfmul.vv	v16, v17, v16
 800005e4: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
 ```
+Later we will use this binary to simulate RTL using testbench.
+
+### 3.3 Run riscv-tests 
+
+The developers of project provide unit-tests that run on CVA6+ARA binaries. I cannot understand how they work. Likely they are not a testament as RTL simulations. To compile and run:
+
+```
+cd ara/apps
+make riscv-tests
+```
+I cannot verify the results of this step. There is some compilation but without any solid results.
+
 
 
 
