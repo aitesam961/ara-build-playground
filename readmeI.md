@@ -124,7 +124,7 @@ CC=""
 ```
 This allows verilator to be built with default compiler (g++ through C++ compiler) instead of CLANG for LLVM.
 
-While sometime it works, sometimes you might be greeted by the following errors after build
+While sometime it works, sometimes you might be greeted by the following errors after build is complete: 
 ```
 make[3]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator/src/obj_opt'
 make[2]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator/src'
@@ -132,8 +132,78 @@ make[1]: Leaving directory '/home/asus/pulp-ara/ara/toolchain/verilator'
 make: *** [Makefile:168: /home/asus/pulp-ara/ara/install/verilator] Error 2
 ```
 
-I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it.
+I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it for now.
 
-## 3 Simulations
+## 3 Tests and Simulations
+
+Before compiling the examples, following python libs should be installed
+```
+pip3 install numpy
+```
+To compile a simple hello_world binary, the following script is used:
+```
+cd /ara/apps
+make bin/hello_world
+
+# To further simulate it with spike simulator
+make bin/hello_world.spike
+make spike-run-hello_world
+```
+The results should be:
+```
+Ariane says hello
+```
+
+But this example does not include any vector instructions so a proper vector test example should be:
+```
+cd /ara/apps
+make bin/fft
+
+# To further simulate it with spike simulator
+make bin/fft.spike
+make spike-run-fft
+```
+
+Simulations with spike should yield
+```
+Performance: %f. Max perf: %f. Actual performance is %f% of max.
+
+Comparison of the first 5 output numbers:
+
+Out_DIF[0] == %f + (%f)j
+Out_DIF[1] == %f + (%f)j
+Out_DIF[2] == %f + (%f)j
+Out_DIF[3] == %f + (%f)j
+Out_DIF[4] == %f + (%f)j
+
+Out_vec_DIF[0] == %f + (%f)j
+Out_vec_DIF[1] == %f + (%f)j
+Out_vec_DIF[2] == %f + (%f)j
+Out_vec_DIF[3] == %f + (%f)j
+Out_vec_DIF[4] == %f + (%f)j
+
+Test result: PASS. The output is correct.
+```
+
+FFT binary certainly includes vector instructions. This can be verified by exploring the dump of fft binary. Later when simulating RTL, this is useful to know that which vector instructions are being executed. Analyzing the fft.dump, we can see following vector instructions in use starting at around pc: 80000568
+```
+800005b4: 57 f0 08 0d  	vsetvli	zero, a7, e32, m1, ta, ma
+800005b8: d7 c4 b8 3c  	vslidedown.vx	v9, v11, a7, v0.t
+800005bc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
+800005c0: 57 16 c7 0a  	vfsub.vv	v12, v12, v14
+800005c4: 57 97 17 93  	vfmul.vv	v14, v17, v15
+800005c8: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
+800005cc: 57 17 06 bf  	vfnmsac.vv	v14, v12, v16
+800005d0: 57 f0 08 01  	vsetvli	zero, a7, e32, m1, tu, mu
+800005d4: 57 35 d0 9e  	vmv1r.v	v10, v13
+800005d8: 57 c5 d8 3c  	vslidedown.vx	v10, v13, a7, v0.t
+800005dc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
+800005e0: 57 18 18 93  	vfmul.vv	v16, v17, v16
+800005e4: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
+```
+
+
+
+
 ### Compile & simulate with Questasim (using Makefile automated process)
 
