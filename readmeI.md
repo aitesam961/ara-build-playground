@@ -236,3 +236,10 @@ compilation terminated.
 make: *** [Makefile:257: build/work-dpi/elfloader.o] Error 1
 
 ```
+
+Following the information about this error, turns out this relates to Questasim.
+
+Tried manually placing the ["svdpi.h"](https://github.com/grg/verilator/blob/master/include/vltstd/svdpi.h) under /tb/dpi but with no luck. Seems Questasim has its own svdpi lib whose source directory is unknown.
+
+In the next step, tried manually compiling the top level testbench and source module but that appears quite challenging to understand
+
