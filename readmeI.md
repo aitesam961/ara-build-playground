@@ -237,11 +237,11 @@ make: *** [Makefile:257: build/work-dpi/elfloader.o] Error 1
 
 ```
 
-Following the information about this error on the internet, turns out this relates to Questasim.
+The information about this error on the internet points to this issue with Questasim. I tried the following but without success.
 
 - Tried manually placing the ["svdpi.h"](https://github.com/grg/verilator/blob/master/include/vltstd/svdpi.h) under /tb/dpi but with no luck. Seems Questasim has its own svdpi lib whose source directory is unknown.
 
-- I tried adding checking flags in the Makefile: compile scripts, make the debug more verbose but without success.
+- Tried adding checking flags in the Makefile: compile scripts, make the debug more verbose but without success.
 
 - Tried Questasim 2021.2, 2021.1, 2020.4, 10.7x
 - The error status differs in some variants (10.7x) but the key issue with svdpi.h persists.
