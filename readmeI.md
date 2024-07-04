@@ -1,4 +1,4 @@
-# Building pulp-platform/ara with provided Makefile
+# Building pulp-platform/ara with Makefile workflow
 
 ### Environment details
 ```
