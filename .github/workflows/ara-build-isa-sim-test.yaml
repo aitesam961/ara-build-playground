@@ -28,8 +28,5 @@ jobs:
           cd ara/hardware
           ls -la
           make checkout
-      - name: Make riscv toolchain
-        run: |
-          make riscv-isa-sim
 
       
