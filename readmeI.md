@@ -33,6 +33,28 @@ make checkout
 ```
 - if `make checkout` doesnt work, use `make update` and then try `make checkout`
 
+The results should look like this:
+```
+/home/runner/work/ara-build-playground/ara-build-playground/ara/hardware/../hardware/bender checkout
+    Checkout common_verification (https://github.com/pulp-platform/common_verification.git)
+     Cloning common_verification (https://github.com/pulp-platform/common_verification.git)
+    Checkout tech_cells_generic (https://github.com/pulp-platform/tech_cells_generic.git)
+     Cloning tech_cells_generic (https://github.com/pulp-platform/tech_cells_generic.git)
+    Checkout common_cells (https://github.com/pulp-platform/common_cells.git)
+     Cloning common_cells (https://github.com/pulp-platform/common_cells.git)
+    Checkout fpu_div_sqrt_mvp (https://github.com/pulp-platform/fpu_div_sqrt_mvp.git)
+     Cloning fpu_div_sqrt_mvp (https://github.com/pulp-platform/fpu_div_sqrt_mvp.git)
+    Checkout axi (https://github.com/pulp-platform/axi.git)
+     Cloning axi (https://github.com/pulp-platform/axi.git)
+    Checkout fpnew (https://github.com/pulp-platform/cvfpu.git)
+     Cloning fpnew (https://github.com/pulp-platform/cvfpu.git)
+    Checkout apb (https://github.com/pulp-platform/apb.git)
+     Cloning apb (https://github.com/pulp-platform/apb.git)
+    Checkout cva6 (https://github.com/mp-17/cva6.git)
+     Cloning cva6 (https://github.com/mp-17/cva6.git)
+```
+
+
 **Note:** llvm-toolchain may not be neccessary as far as only RTL sims are concerned but the later steps does not succeed unless the previous steps are successfully finished. So its required.
 
 ### 2.2 Build LLVM-Toolchain
