@@ -14,7 +14,7 @@ The build and simulation scripts are provided but there are several issues, some
 
 Please check the [Detailed Makefile Build Logs](https://github.com/aitesam961/ara-build-playground/blob/main/readmeI.md) for an in depth log of the process, issues and their fixes.
 
-Additional Link To ReadmeII.md
+Additional Link To ReadmeI.md
 https://github.com/aitesam961/ara-build-playground/blob/main/readmeI.md
 
 
