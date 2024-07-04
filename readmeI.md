@@ -57,6 +57,8 @@ The results should look like this:
 
 **Note:** llvm-toolchain may not be neccessary as far as only RTL sims are concerned but the later steps does not succeed unless the previous steps are successfully finished. So its required.
 
+The results above can be verified from the [Actions run](https://github.com/aitesam961/ara-build-playground/actions/runs/9795191450/job/27046776347) in this repository
+
 ### 2.2 Build LLVM-Toolchain
 
 ```
