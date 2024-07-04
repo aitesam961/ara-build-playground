@@ -31,7 +31,7 @@ git submodule sync --recursive
 cd hardware 
 make checkout
 ```
-- if `make checkout` doesnt work, use `make update` and then try `make checkout`
+- if `make checkout` doesn't work, use `make update` and then try `make checkout`
 
 The results should look like this:
 ```
@@ -55,7 +55,7 @@ The results should look like this:
 ```
 
 
-**Note:** llvm-toolchain may not be neccessary as far as only RTL sims are concerned but the later steps does not succeed unless the previous steps are successfully finished. So its required.
+**Note:** llvm-toolchain may not be necessary as far as only RTL sims are concerned but the later steps does not succeed unless the previous steps are successfully finished. So its required.
 
 The results upto this stage can be verified from the [Actions run](https://github.com/aitesam961/ara-build-playground/actions/runs/9795191450/job/27046776347) in this repository
 
@@ -65,7 +65,7 @@ The results upto this stage can be verified from the [Actions run](https://githu
 cd ara
 make toolchan-llvm
 ```
-**Note:** `make toolchain-llvm` by default configues `make -j(nproc) to -j32 which may destabilize the environment when running in virual machines. Signs may include VM crashing, freezing or restarting itself. 
+**Note:** `make toolchain-llvm` by default configures `make -j(nproc) to -j32 which may destabilize the environment when running in virtual machines. Signs may include VM crashing, freezing or restarting itself. 
 
 To **FIX** this, modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
 
