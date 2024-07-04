@@ -237,9 +237,19 @@ make: *** [Makefile:257: build/work-dpi/elfloader.o] Error 1
 
 ```
 
-Following the information about this error, turns out this relates to Questasim.
+Following the information about this error on the internet, turns out this relates to Questasim.
 
-Tried manually placing the ["svdpi.h"](https://github.com/grg/verilator/blob/master/include/vltstd/svdpi.h) under /tb/dpi but with no luck. Seems Questasim has its own svdpi lib whose source directory is unknown.
+- Tried manually placing the ["svdpi.h"](https://github.com/grg/verilator/blob/master/include/vltstd/svdpi.h) under /tb/dpi but with no luck. Seems Questasim has its own svdpi lib whose source directory is unknown.
 
-In the next step, tried manually compiling the top level testbench and source module but that appears quite challenging to understand
+- I tried adding checking flags in the Makefile: compile scripts, make the debug more verbose but without success.
+
+- Tried Questasim 2021.2, 2021.1, 2020.4, 10.7x
+- The error status differs in some variants (10.7x) but the key issue with svdpi.h persists.
+
+- Tried recompiling all the sources with a fresh clone but the issue persists.
+- Tried building on a completely new OS install with fresh installation of deps libraries and the issue persists.
+- Tried an older release of ara (V2.2) and the issue persists.
+
+
+Cannot find a solution or a reasonable workaround. So moving to the second approach which is collecting the RTL at a stable release point and manually compiling and testing it. The existing testbench may need slight modifications in this case.
 
