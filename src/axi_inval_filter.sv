@@ -38,8 +38,8 @@ module axi_inval_filter #(
   import cf_math_pkg::idx_width;
 
   // Includes
-  `include "axi/typedef.svh"
-  `include "common_cells/registers.svh"
+  `include "typedef.svh"
+  `include "registers.svh"
 
   // AW FIFO
   logic     aw_fifo_full, aw_fifo_empty;

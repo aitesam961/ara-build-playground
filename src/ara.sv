@@ -299,70 +299,70 @@ module ara import ara_pkg::*; #(
   end: gen_lanes
 
 
-//  //////////////////////////////
-//  //  Vector Load/Store Unit  //
-//  //////////////////////////////
+  //////////////////////////////
+  //  Vector Load/Store Unit  //
+  //////////////////////////////
 
   // Interface with the Mask unit
   logic vldu_mask_ready;
   logic vstu_mask_ready;
 
-//  vlsu #(
-//    .NrLanes     (NrLanes     ),
-//    .AxiDataWidth(AxiDataWidth),
-//    .AxiAddrWidth(AxiAddrWidth),
-//    .axi_ar_t    (axi_ar_t    ),
-//    .axi_r_t     (axi_r_t     ),
-//    .axi_aw_t    (axi_aw_t    ),
-//    .axi_w_t     (axi_w_t     ),
-//    .axi_b_t     (axi_b_t     ),
-//    .axi_req_t   (axi_req_t   ),
-//    .axi_resp_t  (axi_resp_t  ),
-//    .vaddr_t     (vaddr_t     )
-//  ) i_vlsu (
-//    .clk_i                      (clk_i                                                 ),
-//    .rst_ni                     (rst_ni                                                ),
-//    // AXI memory interface
-//    .axi_req_o                  (axi_req_o                                             ),
-//    .axi_resp_i                 (axi_resp_i                                            ),
-//    // Interface with the dispatcher
-//    .core_st_pending_i          (core_st_pending                                       ),
-//    .load_complete_o            (load_complete                                         ),
-//    .store_complete_o           (store_complete                                        ),
-//    .store_pending_o            (store_pending                                         ),
-//    // Interface with the sequencer
-//    .pe_req_i                   (pe_req                                                ),
-//    .pe_req_valid_i             (pe_req_valid                                          ),
-//    .pe_vinsn_running_i         (pe_vinsn_running                                      ),
-//    .pe_req_ready_o             (pe_req_ready[NrLanes+OffsetStore : NrLanes+OffsetLoad]),
-//    .pe_resp_o                  (pe_resp[NrLanes+OffsetStore : NrLanes+OffsetLoad]     ),
-//    .addrgen_ack_o              (addrgen_ack                                           ),
-//    .addrgen_exception_o        (addrgen_exception                                     ),
-//    .addrgen_exception_vstart_o     (addrgen_exception_vstart                                  ),
-//    // Interface with the Mask unit
-//    .mask_i                     (mask                                                  ),
-//    .mask_valid_i               (mask_valid                                            ),
-//    .vldu_mask_ready_o          (vldu_mask_ready                                       ),
-//    .vstu_mask_ready_o          (vstu_mask_ready                                       ),
-//    // Interface with the lanes
-//    // Store unit
-//    .stu_operand_i              (stu_operand                                           ),
-//    .stu_operand_valid_i        (stu_operand_valid                                     ),
-//    .stu_operand_ready_o        (stu_operand_ready                                     ),
-//    // Address Generation
-//    .addrgen_operand_i          (sldu_addrgen_operand                                  ),
-//    .addrgen_operand_target_fu_i(sldu_addrgen_operand_target_fu                        ),
-//    .addrgen_operand_valid_i    (sldu_addrgen_operand_valid                            ),
-//    .addrgen_operand_ready_o    (addrgen_operand_ready                                 ),
-//    // Load unit
-//    .ldu_result_req_o           (ldu_result_req                                        ),
-//    .ldu_result_addr_o          (ldu_result_addr                                       ),
-//    .ldu_result_id_o            (ldu_result_id                                         ),
-//    .ldu_result_wdata_o         (ldu_result_wdata                                      ),
-//    .ldu_result_be_o            (ldu_result_be                                         ),
-//    .ldu_result_gnt_i           (ldu_result_gnt                                        ),
-//    .ldu_result_final_gnt_i     (ldu_result_final_gnt                                  )
-//  );
+  vlsu #(
+    .NrLanes     (NrLanes     ),
+    .AxiDataWidth(AxiDataWidth),
+    .AxiAddrWidth(AxiAddrWidth),
+    .axi_ar_t    (axi_ar_t    ),
+    .axi_r_t     (axi_r_t     ),
+    .axi_aw_t    (axi_aw_t    ),
+    .axi_w_t     (axi_w_t     ),
+    .axi_b_t     (axi_b_t     ),
+    .axi_req_t   (axi_req_t   ),
+    .axi_resp_t  (axi_resp_t  ),
+    .vaddr_t     (vaddr_t     )
+  ) i_vlsu (
+    .clk_i                      (clk_i                                                 ),
+    .rst_ni                     (rst_ni                                                ),
+    // AXI memory interface
+    .axi_req_o                  (axi_req_o                                             ),
+    .axi_resp_i                 (axi_resp_i                                            ),
+    // Interface with the dispatcher
+    .core_st_pending_i          (core_st_pending                                       ),
+    .load_complete_o            (load_complete                                         ),
+    .store_complete_o           (store_complete                                        ),
+    .store_pending_o            (store_pending                                         ),
+    // Interface with the sequencer
+    .pe_req_i                   (pe_req                                                ),
+    .pe_req_valid_i             (pe_req_valid                                          ),
+    .pe_vinsn_running_i         (pe_vinsn_running                                      ),
+    .pe_req_ready_o             (pe_req_ready[NrLanes+OffsetStore : NrLanes+OffsetLoad]),
+    .pe_resp_o                  (pe_resp[NrLanes+OffsetStore : NrLanes+OffsetLoad]     ),
+    .addrgen_ack_o              (addrgen_ack                                           ),
+    .addrgen_exception_o        (addrgen_exception                                     ),
+    .addrgen_exception_vstart_o     (addrgen_exception_vstart                                  ),
+    // Interface with the Mask unit
+    .mask_i                     (mask                                                  ),
+    .mask_valid_i               (mask_valid                                            ),
+    .vldu_mask_ready_o          (vldu_mask_ready                                       ),
+    .vstu_mask_ready_o          (vstu_mask_ready                                       ),
+    // Interface with the lanes
+    // Store unit
+    .stu_operand_i              (stu_operand                                           ),
+    .stu_operand_valid_i        (stu_operand_valid                                     ),
+    .stu_operand_ready_o        (stu_operand_ready                                     ),
+    // Address Generation
+    .addrgen_operand_i          (sldu_addrgen_operand                                  ),
+    .addrgen_operand_target_fu_i(sldu_addrgen_operand_target_fu                        ),
+    .addrgen_operand_valid_i    (sldu_addrgen_operand_valid                            ),
+    .addrgen_operand_ready_o    (addrgen_operand_ready                                 ),
+    // Load unit
+    .ldu_result_req_o           (ldu_result_req                                        ),
+    .ldu_result_addr_o          (ldu_result_addr                                       ),
+    .ldu_result_id_o            (ldu_result_id                                         ),
+    .ldu_result_wdata_o         (ldu_result_wdata                                      ),
+    .ldu_result_be_o            (ldu_result_be                                         ),
+    .ldu_result_gnt_i           (ldu_result_gnt                                        ),
+    .ldu_result_final_gnt_i     (ldu_result_final_gnt                                  )
+  );
 
   //////////////////
   //  Slide unit  //
