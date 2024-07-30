@@ -29,7 +29,7 @@ module vector_regfile import ara_pkg::*; #(
     output logic     [NrOperandQueues-1:0] operand_valid_o
   );
 
-`include "common_cells/registers.svh"
+`include "registers.svh"
 
   //////////////////
   //  Parameters  //

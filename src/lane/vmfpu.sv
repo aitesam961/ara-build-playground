@@ -64,7 +64,7 @@ module vmfpu import ara_pkg::*; import rvv_pkg::*; import fpnew_pkg::*;
   );
 
   // Power gating registers
-  `include "common_cells/registers.svh"
+  `include "registers.svh"
 
   ////////////////////////////////
   //  Vector instruction queue  //

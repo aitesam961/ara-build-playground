@@ -22,7 +22,7 @@ module p2_stride_gen import ara_pkg::*; import rvv_pkg::*; import cf_math_pkg::i
   output logic                                     valid_o
 );
 
-  `include "common_cells/registers.svh"
+  `include "registers.svh"
 
   logic   [idx_width(idx_width(8*NrLanes)):0] popc_d, popc_q;
   logic [idx_width(idx_width(8*NrLanes))-1:0] next_stride_first_d, next_stride_first_q;

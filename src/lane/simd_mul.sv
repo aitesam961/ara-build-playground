@@ -37,7 +37,7 @@ module simd_mul import ara_pkg::*; import rvv_pkg::*; #(
     output logic       valid_o
   );
 
-`include "common_cells/registers.svh"
+`include "registers.svh"
 
   ///////////////////
   //  Definitions  //
