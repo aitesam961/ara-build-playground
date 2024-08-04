@@ -158,6 +158,8 @@ make: *** [Makefile:168: /home/asus/pulp-ara/ara/install/verilator] Error 2
 
 I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it for now.
 
+The other way to do is, in the compiler flags, replace `CLANG_CC` with `clang` and `CLANG_CXX` with `clang++` and it should build verilator just fine.
+
 ## 3 Tests and Simulations
 
 Before compiling the examples, following python libs should be installed
