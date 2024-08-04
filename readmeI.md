@@ -179,6 +179,88 @@ make: *** [Makefile:232: simv] Error 127
 
 ```
 
+### FIX 
+
+A fresh clone and build from scratch, verilator installation with patched makefile magically fixes the issue and RTL simulation of `fmatmul` binary successfully returns the results.
+
+**Simulation Script**
+
+```
+# Compile fmatmul for Ara                                                                      
+make -C apps bin/fmatmul        
+# Verilate the design
+make -C hardware verilate trace=1 -B 
+# Run fmatmul on Ara through Verilator
+make -C hardware simv app=fmatmul trace=1 
+```
+
+**Results**
+```
+Set `ram TOP.ara_tb_verilator.dut.i_ara_soc.i_dram 10 0x80000000 0x100000 write with offset: 0x0 write with size: 0x81ff8
+Simulation of Ara
+=================
+
+Tracing can be toggled by sending SIGUSR1 to this process:
+$ kill -USR1 89e64
+Tracing enabled.
+Writing simulation traces to sim.fst
+
+Simulation running, end by pressing CTRL-c.
+
+=============
+  FMATMUL  =
+============
+
+
+
+------------------------------------------------------------
+Calculating a (4 x 4) x (4 x 4) matrix multiplication...
+-----------------------------------------------------------
+
+alculating fmatmul...
+The execution took 745 cycles.
+he performance is 0.171812 FLOP/cycle (2.147651% utilization).
+
+------------------------------------------------------------
+Calculating a (8 x 8) x (8 x 8) matrix multiplication...
+-----------------------------------------------------------
+
+Calculating fmatmul...
+The execution took 933 cycles.
+The performance is 1.097535 FLOP/cycle (13.719185% utilization).
+
+------------------------------------------------------------
+Calculating a (16 x 16) x (16 x 16) matrix multiplication...
+-----------------------------------------------------------
+
+Calculating fmatmul...
+The execution took 2629 cycles.
+The performance is 3.116014 FLOP/cycle (38.950172% utilization).
+
+------------------------------------------------------------
+Calculating a (32 x 32) x (32 x 32) matrix multiplication...
+-----------------------------------------------------------
+
+Calculating fmatmul...
+The execution took 11455 cycles.
+The performance is 5.721170 FLOP/cycle (71.514626% utilization).
+
+------------------------------------------------------------
+Calculating a (64 x 64) x (64 x 64) matrix multiplication...
+-----------------------------------------------------------
+
+Calculating fmatmul...
+The execution took 70176 cycles.
+The performance is 7.471044 FLOP/cycle (93.388054% utilization).
+
+
+```
+
+The .fst generated under /hardware can be opened in GTKWave manually (commandline doesnt work).
+
+The GTKwave previews waveforms of the system for fmatmul binary
+![alt text](image.png)
+
 ## 3 Tests and Simulations
 
 Before compiling the examples, following python libs should be installed
@@ -304,3 +386,6 @@ Cannot find a solution or a reasonable workaround. So moving to the second appro
 Although this issue is relevant to simulating with Questasim, it is fixed by successful installation of Verilator. My best assumption is that the script relies on Verilator somehow. Given the svdpi issue gone, the simulation compiles using Questa, the RTL is loaded in work lib but it returns error "Failed loading design"
 
 [ working on the fix]
+
+
+##
