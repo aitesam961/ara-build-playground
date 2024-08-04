@@ -160,6 +160,25 @@ I cannot find a potential fix or workaround for it. Anyways, we're not using Ver
 
 The other way to do is, in the compiler flags, replace `CLANG_CC` with `clang` and `CLANG_CXX` with `clang++` and it should build verilator just fine.
 
+
+Now that we have verilator, simulations doesn't work using the provided scripts though.
+Running the simulation using fmatmul binary loaded:
+
+```
+# Compile fmatmul for Ara                                                                      
+make -C apps bin/fmatmul        
+# Verilate the design
+make -C hardware verilate trace=1 
+# Run fmatmul on Ara through Verilator
+make -C hardware simv app=fmatmul trace=1 
+```
+Returns the following error.
+```
+bash: line 1: build/verilator/Vara_tb_verilator: No such file or directory
+make: *** [Makefile:232: simv] Error 127
+
+```
+
 ## 3 Tests and Simulations
 
 Before compiling the examples, following python libs should be installed
