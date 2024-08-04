@@ -298,3 +298,9 @@ The information about this error on the internet points to this issue with Quest
 
 Cannot find a solution or a reasonable workaround. So moving to the second approach which is collecting the RTL at a stable release point and manually compiling and testing it. The existing testbench may need slight modifications in this case.
 
+
+### svdpi issue fixed
+
+Although this issue is relevant to simulating with Questasim, it is fixed by successful installation of Verilator. My best assumption is that the script relies on Verilator somehow. Given the svdpi issue gone, the simulation compiles using Questa, the RTL is loaded in work lib but it returns error "Failed loading design"
+
+[ working on the fix]
