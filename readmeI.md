@@ -383,9 +383,4 @@ Cannot find a solution or a reasonable workaround. So moving to the second appro
 
 ### svdpi issue fixed
 
-Although this issue is relevant to simulating with Questasim, it is fixed by successful installation of Verilator. My best assumption is that the script relies on Verilator somehow. Given the svdpi issue gone, the simulation compiles using Questa, the RTL is loaded in work lib but it returns error "Failed loading design"
-
-[ working on the fix]
-
-
-##
+Although this issue is relevant to simulating with Questasim, it is fixed by successful installation of Verilator. My best assumption is that the script relies on Verilator somehow. Given the svdpi issue gone, the simulation compiles using Questa, the RTL is loaded in work lib but it returns error "Error loading design"
