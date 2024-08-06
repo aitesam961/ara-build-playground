@@ -159,7 +159,7 @@ make: *** [Makefile:168: /home/asus/pulp-ara/ara/install/verilator] Error 2
 I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it for now.
 
 The other way to do is, in the compiler flags, replace `CLANG_CC` with `clang` and `CLANG_CXX` with `clang++` and it should build verilator just fine.
-
+### 2.7 RTL Simulation using Verilator
 
 Now that we have verilator, simulations doesn't work using the provided scripts though.
 Running the simulation using fmatmul binary loaded:
@@ -260,6 +260,35 @@ The .fst generated under /hardware can be opened in GTKWave manually (commandlin
 
 The GTKwave previews waveforms of the system for fmatmul binary
 ![alt text](image.png)
+
+
+### 2.6.1 RISCV_TESTS using Verilator
+
+The riscv_tests binaries are compiled in ara/apps and are used to generate the `.trace` for unit tests.
+
+```
+cd hardware
+make -j18 verilate
+# Run the tests
+make -j20 riscv_tests_simv
+```
+
+The results
+```
+.
+.
+.
+.
+.
+build/verilator/Vara_tb_verilator  -l ram,/home/asus/pulp-ara/ara/apps/bin/rv64si-ara-ma_fetch,elf &> build/rv64si-ara-ma_fetch.trace
+build/verilator/Vara_tb_verilator  -l ram,/home/asus/pulp-ara/ara/apps/bin/rv64si-ara-scall,elf &> build/rv64si-ara-scall.trace
+build/verilator/Vara_tb_verilator  -l ram,/home/asus/pulp-ara/ara/apps/bin/rv64si-ara-wfi,elf &> build/rv64si-ara-wfi.trace
+build/verilator/Vara_tb_verilator  -l ram,/home/asus/pulp-ara/ara/apps/bin/rv64si-ara-sbreak,elf &> build/rv64si-ara-sbreak.trace
+
+```
+
+The trace files are generated successfully and need manual checking to verify functionality. This process however, generates no errors or issues.
+
 
 ## 3 Tests and Simulations
 
