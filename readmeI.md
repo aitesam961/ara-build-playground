@@ -1073,3 +1073,7 @@ Error loading design
 make: *** [Makefile:170: simc] Error 12
 
 ```
+
+The missing library seems available in `gcc/11/lib/..` but likely this issue originates from the Questasim's additional installation of older `gcc 7.4`. I tried manually placing the library under respective directory but no fix.
+
+[to try: create symlink, manually install in that dir etc, try different subversions etc]
