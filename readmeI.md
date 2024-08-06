@@ -384,3 +384,80 @@ Cannot find a solution or a reasonable workaround. So moving to the second appro
 ### svdpi issue fixed
 
 Although this issue is relevant to simulating with Questasim, it is fixed by successful installation of Verilator. My best assumption is that the script relies on Verilator somehow. Given the svdpi issue gone, the simulation compiles using Questa, the RTL is loaded in work lib but it returns error "Error loading design"
+
+
+
+### Run simulation
+
+Use the following script ro generate the binaries needed by test benches and load design into Questa
+
+```
+cd hardware
+make compile
+app=fft make sim
+```
+The TRL compiles but there are several errors (in RTL) that lead to simulation not initiating. The log is as follows
+
+```
+vsim work.ara_tb
+# vsim work.ara_tb 
+# Start time: 18:19:00 on Aug 06,2024
+# Loading /tmp/asus@b670_dpi_6319/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(303): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(362): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(381): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(432): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(450): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(398): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465): (vopt-7033) Variable 'operand_queue_cmd_valid_o[7]' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(465).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(469): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(492): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(493): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(494): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(495): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(496): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(537): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(539): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(541): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(543): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# ** Error (suppressible): /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(545): (vopt-7033) Variable 'operand_req' driven in a combinational block, may not be driven by any other process. See /home/asus/pulp-ara/ara/hardware/src/lane/operand_requester.sv(296).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=48, Warnings=0.
+# Error loading design
+# End time: 18:19:02 on Aug 06,2024, Elapsed time: 0:00:02
+# Errors: 48, Warnings: 0, Suppressed Warnings: 251
+
+```
+
+ara_tb which happens to be the top level test bench doesn't simulate successfully. I am still working on slightly modifying the RTL to fix these issues but  there are challenges given the complexity and large size of code that is affected as a result of any changes made specifically in any of the modules inside lane as pointed in the log `operand_requester.sv`. Interestingly, the relatable errors from different modules incl. above one were found while synthesis in vivado.
