@@ -489,4 +489,6 @@ vsim work.ara_tb
 
 ```
 
+![alt text](image-1.png)
+
 ara_tb which happens to be the top level test bench doesn't simulate successfully. I am still working on slightly modifying the RTL to fix these issues but  there are challenges given the complexity and large size of code that is affected as a result of any changes made specifically in any of the modules inside lane as pointed in the log `operand_requester.sv`. Interestingly, the relatable errors from different modules incl. above one were found while synthesis in vivado.
