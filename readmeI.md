@@ -159,7 +159,92 @@ make: *** [Makefile:168: /home/asus/pulp-ara/ara/install/verilator] Error 2
 I cannot find a potential fix or workaround for it. Anyways, we're not using Verilator so Let's skip it for now.
 
 The other way to do is, in the compiler flags, replace `CLANG_CC` with `clang` and `CLANG_CXX` with `clang++` and it should build verilator just fine.
-### 2.7 RTL Simulation using Verilator
+
+
+## 3 Tests and Simulations
+
+Before compiling the examples, following python libs should be installed
+```
+pip3 install numpy
+```
+
+### 3.1 Compile binaries using riscv-gnu-toolchain
+To compile a simple hello_world binary, the following script is used:
+```
+cd /ara/apps
+make bin/hello_world
+
+# To further simulate it with spike simulator
+make bin/hello_world.spike
+make spike-run-hello_world
+```
+The results should be:
+```
+Ariane says hello
+```
+
+But this example does not include any vector instructions so a proper vector test example should be:
+```
+cd /ara/apps
+make bin/fft
+
+# To further simulate it with spike simulator
+make bin/fft.spike
+make spike-run-fft
+```
+### 3.2 Simulate on Spike riscv-isa Simulator
+
+Simulations with spike should yield
+```
+Performance: %f. Max perf: %f. Actual performance is %f% of max.
+
+Comparison of the first 5 output numbers:
+
+Out_DIF[0] == %f + (%f)j
+Out_DIF[1] == %f + (%f)j
+Out_DIF[2] == %f + (%f)j
+Out_DIF[3] == %f + (%f)j
+Out_DIF[4] == %f + (%f)j
+
+Out_vec_DIF[0] == %f + (%f)j
+Out_vec_DIF[1] == %f + (%f)j
+Out_vec_DIF[2] == %f + (%f)j
+Out_vec_DIF[3] == %f + (%f)j
+Out_vec_DIF[4] == %f + (%f)j
+
+Test result: PASS. The output is correct.
+```
+
+FFT binary certainly includes vector instructions. This can be verified by exploring the dump of fft binary. Later when simulating RTL, this is useful to know that which vector instructions are being executed. Analyzing the fft.dump, we can see following vector instructions in use starting at around pc: 80000568
+```
+800005b4: 57 f0 08 0d  	vsetvli	zero, a7, e32, m1, ta, ma
+800005b8: d7 c4 b8 3c  	vslidedown.vx	v9, v11, a7, v0.t
+800005bc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
+800005c0: 57 16 c7 0a  	vfsub.vv	v12, v12, v14
+800005c4: 57 97 17 93  	vfmul.vv	v14, v17, v15
+800005c8: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
+800005cc: 57 17 06 bf  	vfnmsac.vv	v14, v12, v16
+800005d0: 57 f0 08 01  	vsetvli	zero, a7, e32, m1, tu, mu
+800005d4: 57 35 d0 9e  	vmv1r.v	v10, v13
+800005d8: 57 c5 d8 3c  	vslidedown.vx	v10, v13, a7, v0.t
+800005dc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
+800005e0: 57 18 18 93  	vfmul.vv	v16, v17, v16
+800005e4: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
+```
+Later we will use this binary to simulate RTL using testbench.
+
+### 3.3 Run riscv-tests 
+
+The developers of project provide unit-tests that run on CVA6+ARA binaries. I cannot understand how they work. Likely they are not a testament as RTL simulations. To compile and run:
+
+```
+cd ara/apps
+make riscv-tests
+```
+I cannot verify the results of this step. There is some compilation but without any solid results.
+
+
+### 3.4 RTL Simulation using Verilator
 
 Now that we have verilator, simulations doesn't work using the provided scripts though.
 Running the simulation using fmatmul binary loaded:
@@ -262,7 +347,7 @@ The GTKwave previews waveforms of the system for fmatmul binary
 ![alt text](image.png)
 
 
-### 2.6.1 RISCV_TESTS using Verilator
+### 3.4.1 RISCV_TESTS using Verilator
 
 The riscv_tests binaries are compiled in ara/apps and are used to generate the `.trace` for unit tests.
 
@@ -290,90 +375,7 @@ build/verilator/Vara_tb_verilator  -l ram,/home/asus/pulp-ara/ara/apps/bin/rv64s
 The trace files are generated successfully and need manual checking to verify functionality. This process however, generates no errors or issues.
 
 
-## 3 Tests and Simulations
-
-Before compiling the examples, following python libs should be installed
-```
-pip3 install numpy
-```
-
-### 3.1 Compile binaries using riscv-gnu-toolchain
-To compile a simple hello_world binary, the following script is used:
-```
-cd /ara/apps
-make bin/hello_world
-
-# To further simulate it with spike simulator
-make bin/hello_world.spike
-make spike-run-hello_world
-```
-The results should be:
-```
-Ariane says hello
-```
-
-But this example does not include any vector instructions so a proper vector test example should be:
-```
-cd /ara/apps
-make bin/fft
-
-# To further simulate it with spike simulator
-make bin/fft.spike
-make spike-run-fft
-```
-### 3.2 Simulate on Spike riscv-isa Simulator
-
-Simulations with spike should yield
-```
-Performance: %f. Max perf: %f. Actual performance is %f% of max.
-
-Comparison of the first 5 output numbers:
-
-Out_DIF[0] == %f + (%f)j
-Out_DIF[1] == %f + (%f)j
-Out_DIF[2] == %f + (%f)j
-Out_DIF[3] == %f + (%f)j
-Out_DIF[4] == %f + (%f)j
-
-Out_vec_DIF[0] == %f + (%f)j
-Out_vec_DIF[1] == %f + (%f)j
-Out_vec_DIF[2] == %f + (%f)j
-Out_vec_DIF[3] == %f + (%f)j
-Out_vec_DIF[4] == %f + (%f)j
-
-Test result: PASS. The output is correct.
-```
-
-FFT binary certainly includes vector instructions. This can be verified by exploring the dump of fft binary. Later when simulating RTL, this is useful to know that which vector instructions are being executed. Analyzing the fft.dump, we can see following vector instructions in use starting at around pc: 80000568
-```
-800005b4: 57 f0 08 0d  	vsetvli	zero, a7, e32, m1, ta, ma
-800005b8: d7 c4 b8 3c  	vslidedown.vx	v9, v11, a7, v0.t
-800005bc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
-800005c0: 57 16 c7 0a  	vfsub.vv	v12, v12, v14
-800005c4: 57 97 17 93  	vfmul.vv	v14, v17, v15
-800005c8: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
-800005cc: 57 17 06 bf  	vfnmsac.vv	v14, v12, v16
-800005d0: 57 f0 08 01  	vsetvli	zero, a7, e32, m1, tu, mu
-800005d4: 57 35 d0 9e  	vmv1r.v	v10, v13
-800005d8: 57 c5 d8 3c  	vslidedown.vx	v10, v13, a7, v0.t
-800005dc: 57 f0 03 0d  	vsetvli	zero, t2, e32, m1, ta, ma
-800005e0: 57 18 18 93  	vfmul.vv	v16, v17, v16
-800005e4: 57 70 00 09  	vsetvli	zero, zero, e32, m1, tu, ma
-```
-Later we will use this binary to simulate RTL using testbench.
-
-### 3.3 Run riscv-tests 
-
-The developers of project provide unit-tests that run on CVA6+ARA binaries. I cannot understand how they work. Likely they are not a testament as RTL simulations. To compile and run:
-
-```
-cd ara/apps
-make riscv-tests
-```
-I cannot verify the results of this step. There is some compilation but without any solid results.
-
-
-### 3.4 Simulate with Questasim
+### 3.5 Simulate with Questasim
 
 The provided set of scripts:
 ```
@@ -526,519 +528,12 @@ Reading pref.tcl
 # //
 # Loading sv_std.std
 # Loading work.ara_tb_sv_unit(fast)
-# Loading work.ara_tb(fast)
-# Loading work.axi_pkg(fast)
-# Loading work.ara_testharness(fast)
-# Loading work.apb_pkg(fast)
-# Loading work.cf_math_pkg(fast)
-# Loading work.config_pkg(fast)
-# Loading work.cva6_config_pkg(fast)
-# Loading work.riscv(fast)
-# Loading work.rvv_pkg(fast)
-# Loading work.fpnew_pkg(fast)
-# Loading work.ariane_pkg(fast)
-# Loading work.acc_pkg(fast)
-# Loading work.ara_pkg(fast)
-# Loading work.ara_soc(fast)
-# Loading work.axi_xbar(fast)
-# Loading work.addr_decode(fast)
-# Loading work.addr_decode_dync(fast)
-# Loading work.axi_demux(fast)
-# Loading work.spill_register(fast)
-# Loading work.spill_register_flushable(fast)
-# Loading work.spill_register(fast__1)
-# Loading work.spill_register_flushable(fast__1)
-# Loading work.spill_register(fast__2)
-# Loading work.spill_register_flushable(fast__2)
-# Loading work.spill_register(fast__3)
-# Loading work.spill_register_flushable(fast__3)
-# Loading work.spill_register(fast__4)
-# Loading work.spill_register_flushable(fast__4)
-# Loading work.spill_register(fast__5)
-# Loading work.spill_register_flushable(fast__5)
-# Loading work.axi_demux_simple(fast)
-# Loading work.axi_demux_id_counters(fast)
-# Loading work.delta_counter(fast)
-# Loading work.counter(fast)
-# Loading work.rr_arb_tree(fast)
-# Loading work.lzc(fast)
-# Loading work.axi_err_slv(fast)
-# Loading work.axi_atop_filter(fast)
-# Loading work.stream_register(fast)
-# Loading work.fifo_v3(fast)
-# Loading work.fifo_v3(fast__1)
-# Loading work.fifo_v3(fast__2)
-# Loading work.counter(fast__1)
-# Loading work.delta_counter(fast__1)
-# Loading work.axi_multicut(fast)
-# Loading work.axi_mux(fast)
-# Loading work.spill_register(fast__6)
-# Loading work.spill_register_flushable(fast__6)
-# Loading work.spill_register(fast__7)
-# Loading work.spill_register_flushable(fast__7)
-# Loading work.spill_register(fast__8)
-# Loading work.spill_register_flushable(fast__8)
-# Loading work.spill_register(fast__9)
-# Loading work.spill_register_flushable(fast__9)
-# Loading work.spill_register(fast__10)
-# Loading work.spill_register_flushable(fast__10)
-# Loading work.axi_atop_filter(fast__1)
-# Loading work.stream_register(fast__1)
-# Loading work.axi_to_mem(fast)
-# Loading work.axi_to_detailed_mem(fast)
-# Loading work.stream_mux(fast)
-# Loading work.stream_fork(fast)
-# Loading work.stream_fifo(fast)
-# Loading work.fifo_v3(fast__3)
-# Loading work.stream_fifo(fast__1)
-# Loading work.fifo_v3(fast__4)
-# Loading work.stream_to_mem(fast)
-# Loading work.stream_fifo(fast__2)
-# Loading work.fifo_v3(fast__5)
-# Loading work.mem_to_banks_detailed(fast)
-# Loading work.stream_fifo(fast__3)
-# Loading work.fifo_v3(fast__6)
-# Loading work.stream_fifo(fast__4)
-# Loading work.fifo_v3(fast__7)
-# Loading work.stream_join(fast)
-# Loading work.stream_join_dynamic(fast)
-# Loading work.stream_fork_dynamic(fast)
-# Loading work.stream_fork(fast__1)
-# Loading work.tc_sram(fast)
-# Loading work.axi_lite_to_apb(fast)
-# Loading work.rr_arb_tree(fast__1)
-# Loading work.lzc(fast__1)
-# Loading work.fall_through_register(fast)
-# Loading work.fifo_v3(fast__8)
-# Loading work.fall_through_register(fast__1)
-# Loading work.fifo_v3(fast__9)
-# Loading work.fall_through_register(fast__2)
-# Loading work.fifo_v3(fast__10)
-# Loading work.addr_decode(fast__1)
-# Loading work.addr_decode_dync(fast__1)
-# Loading work.axi_to_axi_lite(fast)
-# Loading work.axi_atop_filter(fast__2)
-# Loading work.stream_register(fast__2)
-# Loading work.axi_burst_splitter(fast)
-# Loading work.axi_demux(fast__1)
-# Loading work.spill_register(fast__11)
-# Loading work.spill_register_flushable(fast__11)
-# Loading work.spill_register(fast__12)
-# Loading work.spill_register_flushable(fast__12)
-# Loading work.spill_register(fast__13)
-# Loading work.spill_register_flushable(fast__13)
-# Loading work.spill_register(fast__14)
-# Loading work.spill_register_flushable(fast__14)
-# Loading work.spill_register(fast__15)
-# Loading work.spill_register_flushable(fast__15)
-# Loading work.spill_register(fast__16)
-# Loading work.spill_register_flushable(fast__16)
-# Loading work.axi_demux_simple(fast__1)
-# Loading work.axi_demux_id_counters(fast__1)
-# Loading work.delta_counter(fast__2)
-# Loading work.counter(fast__2)
-# Loading work.rr_arb_tree(fast__2)
-# Loading work.axi_err_slv(fast__1)
-# Loading work.fifo_v3(fast__11)
-# Loading work.fifo_v3(fast__12)
-# Loading work.axi_burst_splitter_ax_chan(fast)
-# Loading work.axi_burst_splitter_counters(fast)
-# Loading work.counter(fast__3)
-# Loading work.delta_counter(fast__3)
-# Loading work.lzc(fast__2)
-# Loading work.id_queue(fast)
-# Loading work.onehot_to_bin(fast)
-# Loading work.axi_burst_splitter_ax_chan(fast__1)
-# Loading work.axi_to_axi_lite_id_reflect(fast)
-# Loading work.axi_dw_converter(fast)
-# Loading work.axi_dw_downsizer(fast)
-# Loading work.rr_arb_tree(fast__3)
-# Loading work.rr_arb_tree(fast__4)
-# Loading work.rr_arb_tree(fast__5)
-# Loading work.axi_err_slv(fast__2)
-# Loading work.fifo_v3(fast__13)
-# Loading work.axi_demux(fast__2)
-# Loading work.spill_register(fast__17)
-# Loading work.spill_register_flushable(fast__17)
-# Loading work.spill_register(fast__18)
-# Loading work.spill_register_flushable(fast__18)
-# Loading work.spill_register(fast__19)
-# Loading work.spill_register_flushable(fast__19)
-# Loading work.spill_register(fast__20)
-# Loading work.spill_register_flushable(fast__20)
-# Loading work.spill_register(fast__21)
-# Loading work.spill_register_flushable(fast__21)
-# Loading work.fifo_v3(fast__14)
-# Loading work.axi_to_axi_lite(fast__1)
-# Loading work.axi_atop_filter(fast__3)
-# Loading work.stream_register(fast__3)
-# Loading work.axi_burst_splitter(fast__1)
-# Loading work.axi_demux(fast__3)
-# Loading work.spill_register(fast__22)
-# Loading work.spill_register_flushable(fast__22)
-# Loading work.spill_register(fast__23)
-# Loading work.spill_register_flushable(fast__23)
-# Loading work.spill_register(fast__24)
-# Loading work.spill_register_flushable(fast__24)
-# Loading work.spill_register(fast__25)
-# Loading work.spill_register_flushable(fast__25)
-# Loading work.spill_register(fast__26)
-# Loading work.spill_register_flushable(fast__26)
-# Loading work.axi_demux_simple(fast__2)
-# Loading work.axi_err_slv(fast__3)
-# Loading work.fifo_v3(fast__15)
-# Loading work.axi_burst_splitter_ax_chan(fast__2)
-# Loading work.axi_burst_splitter_ax_chan(fast__3)
-# Loading work.axi_to_axi_lite_id_reflect(fast__1)
-# Loading work.fifo_v3(fast__16)
-# Loading work.ctrl_registers(fast)
-# Loading work.axi_lite_regs(fast)
-# Loading work.addr_decode(fast__2)
-# Loading work.addr_decode_dync(fast__2)
-# Loading work.spill_register(fast__27)
-# Loading work.spill_register_flushable(fast__27)
-# Loading work.spill_register(fast__28)
-# Loading work.spill_register_flushable(fast__28)
-# Loading work.axi_dw_converter(fast__1)
-# Loading work.axi_dw_downsizer(fast__1)
-# Loading work.rr_arb_tree(fast__6)
-# Loading work.rr_arb_tree(fast__7)
-# Loading work.axi_err_slv(fast__4)
-# Loading work.fifo_v3(fast__17)
-# Loading work.axi_demux(fast__4)
-# Loading work.spill_register(fast__29)
-# Loading work.spill_register_flushable(fast__29)
-# Loading work.spill_register(fast__30)
-# Loading work.spill_register_flushable(fast__30)
-# Loading work.spill_register(fast__31)
-# Loading work.spill_register_flushable(fast__31)
-# Loading work.spill_register(fast__32)
-# Loading work.spill_register_flushable(fast__32)
-# Loading work.axi_demux_simple(fast__3)
-# Loading work.onehot_to_bin(fast__1)
-# Loading work.id_queue(fast__1)
-# Loading work.fifo_v3(fast__18)
-# Loading work.ara_system(fast)
-# Loading work.cvxif_pkg(fast)
-# Loading work.cva6(fast)
-# Loading work.cva6_rvfi_probes(fast)
-# Loading work.frontend(fast)
-# Loading work.instr_realign(fast)
-# Loading work.ras(fast)
-# Loading work.btb(fast)
-# Loading work.unread(fast)
-# Loading work.bht(fast)
-# Loading work.instr_scan(fast)
-# Loading work.instr_queue(fast)
-# Loading work.popcount(fast)
-# Loading work.fifo_v3(fast__19)
-# Loading work.fifo_v3(fast__20)
-# Loading work.id_stage(fast)
-# Loading work.compressed_decoder(fast)
-# Loading work.decoder(fast)
-# Loading work.cva6_accel_first_pass_decoder(fast)
-# Loading work.issue_stage(fast)
-# Loading work.scoreboard(fast)
-# Loading work.rr_arb_tree(fast__8)
-# Loading work.rr_arb_tree(fast__9)
-# Loading work.issue_read_operands(fast)
-# Loading work.ariane_regfile(fast)
-# Loading work.ariane_regfile(fast__1)
-# Loading work.ex_stage(fast)
-# Loading work.alu(fast)
-# Loading work.branch_unit(fast)
-# Loading work.csr_buffer(fast)
-# Loading work.mult(fast)
-# Loading work.multiplier(fast)
-# Loading work.serdiv(fast)
-# Loading work.lzc(fast__3)
-# Loading work.fpu_wrap(fast)
-# Loading work.fpnew_top(fast)
-# Loading work.fpnew_opgroup_block(fast)
-# Loading work.fpnew_opgroup_fmt_slice(fast)
-# Loading work.fpnew_fma(fast)
-# Loading work.fpnew_classifier(fast)
-# Loading work.lzc(fast__4)
-# Loading work.fpnew_rounding(fast)
-# Loading work.fpnew_opgroup_fmt_slice(fast__1)
-# Loading work.fpnew_fma(fast__1)
-# Loading work.fpnew_classifier(fast__1)
-# Loading work.lzc(fast__5)
-# Loading work.fpnew_rounding(fast__1)
-# Loading work.fpnew_opgroup_fmt_slice(fast__2)
-# Loading work.fpnew_fma(fast__2)
-# Loading work.fpnew_classifier(fast__2)
-# Loading work.lzc(fast__6)
-# Loading work.fpnew_rounding(fast__2)
-# Loading work.fpnew_opgroup_fmt_slice(fast__3)
-# Loading work.fpnew_fma(fast__3)
-# Loading work.fpnew_classifier(fast__3)
-# Loading work.lzc(fast__7)
-# Loading work.fpnew_rounding(fast__3)
-# Loading work.rr_arb_tree(fast__10)
-# Loading work.lzc(fast__8)
-# Loading work.fpnew_opgroup_block(fast__1)
-# Loading work.fpnew_opgroup_multifmt_slice(fast)
-# Loading work.fpnew_divsqrt_multi(fast)
-# Loading work.defs_div_sqrt_mvp(fast)
-# Loading work.div_sqrt_top_mvp_sv_unit(fast)
-# Loading work.div_sqrt_top_mvp(fast)
-# Loading work.preprocess_mvp_sv_unit(fast)
-# Loading work.preprocess_mvp(fast)
-# Loading work.lzc(fast__9)
-# Loading work.nrbd_nrsc_mvp_sv_unit(fast)
-# Loading work.nrbd_nrsc_mvp(fast)
-# Loading work.control_mvp_sv_unit(fast)
-# Loading work.control_mvp(fast)
-# Loading work.iteration_div_sqrt_mvp(fast)
-# Loading work.norm_div_sqrt_mvp_sv_unit(fast)
-# Loading work.norm_div_sqrt_mvp(fast)
-# Loading work.rr_arb_tree(fast__11)
-# Loading work.fpnew_opgroup_block(fast__2)
-# Loading work.fpnew_opgroup_fmt_slice(fast__4)
-# Loading work.fpnew_noncomp(fast)
-# Loading work.fpnew_classifier(fast__4)
-# Loading work.fpnew_opgroup_fmt_slice(fast__5)
-# Loading work.fpnew_noncomp(fast__1)
-# Loading work.fpnew_classifier(fast__5)
-# Loading work.fpnew_opgroup_fmt_slice(fast__6)
-# Loading work.fpnew_noncomp(fast__2)
-# Loading work.fpnew_classifier(fast__6)
-# Loading work.fpnew_opgroup_fmt_slice(fast__7)
-# Loading work.fpnew_noncomp(fast__3)
-# Loading work.fpnew_classifier(fast__7)
-# Loading work.rr_arb_tree(fast__12)
-# Loading work.fpnew_opgroup_block(fast__3)
-# Loading work.fpnew_opgroup_multifmt_slice(fast__1)
-# Loading work.fpnew_cast_multi(fast)
-# Loading work.fpnew_classifier(fast__8)
-# Loading work.fpnew_classifier(fast__9)
-# Loading work.fpnew_classifier(fast__10)
-# Loading work.fpnew_classifier(fast__11)
-# Loading work.fpnew_rounding(fast__4)
-# Loading work.rr_arb_tree(fast__13)
-# Loading work.fpnew_opgroup_block(fast__4)
-# Loading work.rr_arb_tree(fast__14)
-# Loading work.rr_arb_tree(fast__15)
-# Loading work.lzc(fast__10)
-# Loading work.load_store_unit(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.ptw(fast)
-# Loading work.pmp(fast)
-# Loading work.store_unit(fast)
-# Loading work.amo_buffer(fast)
-# Loading work.fifo_v3(fast__21)
-# Loading work.store_buffer(fast)
-# Loading work.load_unit(fast)
-# Loading work.shift_reg(fast)
-# Loading work.shift_reg_gated(fast)
-# Loading work.shift_reg(fast__1)
-# Loading work.shift_reg_gated(fast__1)
-# Loading work.lsu_bypass(fast)
-# Loading work.commit_stage(fast)
-# Loading work.csr_regfile(fast)
-# Loading work.perf_counters(fast)
-# Loading work.controller(fast)
-# Loading work.counter(fast__4)
-# Loading work.delta_counter(fast__4)
-# Loading work.counter(fast__5)
-# Loading work.delta_counter(fast__5)
-# Loading work.wt_cache_pkg(fast)
-# Loading work.wt_cache_subsystem(fast)
-# Loading work.cva6_icache(fast)
-# Loading work.lfsr(fast)
-# Loading work.sram(fast)
-# Loading work.tc_sram(fast__1)
-# Loading work.sram(fast__1)
-# Loading work.tc_sram(fast__2)
-# Loading work.wt_dcache(fast)
-# Loading work.wt_dcache_missunit(fast)
-# Loading work.exp_backoff(fast)
-# Loading work.wt_dcache_ctrl(fast)
-# Loading work.wt_dcache_wbuffer(fast)
-# Loading work.lzc(fast__11)
-# Loading work.fifo_v3(fast__22)
-# Loading work.rr_arb_tree(fast__16)
-# Loading work.rr_arb_tree(fast__17)
-# Loading work.rr_arb_tree(fast__18)
-# Loading work.wt_dcache_mem(fast)
-# Loading work.rr_arb_tree(fast__19)
-# Loading work.sram(fast__2)
-# Loading work.tc_sram(fast__3)
-# Loading work.sram(fast__3)
-# Loading work.tc_sram(fast__4)
-# Loading work.wt_axi_adapter(fast)
-# Loading work.rr_arb_tree(fast__20)
-# Loading work.fifo_v3(fast__23)
-# Loading work.fifo_v3(fast__24)
-# Loading work.fifo_v3(fast__25)
-# Loading work.axi_shim(fast)
-# Loading work.acc_dispatcher(fast)
-# Loading work.fifo_v3(fast__26)
-# Loading work.fall_through_register(fast__3)
-# Loading work.fifo_v3(fast__27)
-# Loading work.counter(fast__6)
-# Loading work.delta_counter(fast__6)
-# Loading work.instr_tracer_if(fast__1)
-# Loading work.instr_tracer_pkg(fast)
-# Loading work.instr_tracer_sv_unit(fast)
-# Loading work.instr_tracer(fast)
-# Loading work.axi_dw_converter(fast__2)
-# Loading work.axi_dw_upsizer(fast)
-# Loading work.rr_arb_tree(fast__21)
-# Loading work.rr_arb_tree(fast__22)
-# Loading work.rr_arb_tree(fast__23)
-# Loading work.axi_err_slv(fast__5)
-# Loading work.axi_atop_filter(fast__4)
-# Loading work.stream_register(fast__4)
-# Loading work.fifo_v3(fast__28)
-# Loading work.fifo_v3(fast__29)
-# Loading work.fifo_v3(fast__30)
-# Loading work.axi_demux(fast__5)
-# Loading work.spill_register(fast__33)
-# Loading work.spill_register_flushable(fast__33)
-# Loading work.spill_register(fast__34)
-# Loading work.spill_register_flushable(fast__34)
-# Loading work.spill_register(fast__35)
-# Loading work.spill_register_flushable(fast__35)
-# Loading work.spill_register(fast__36)
-# Loading work.spill_register_flushable(fast__36)
-# Loading work.spill_register(fast__37)
-# Loading work.spill_register_flushable(fast__37)
-# Loading work.axi_demux_simple(fast__4)
-# Loading work.axi_demux_id_counters(fast__2)
-# Loading work.axi_inval_filter(fast)
-# Loading work.fifo_v3(fast__31)
-# Loading work.ara(fast)
-# Loading work.ara_dispatcher(fast)
-# Loading work.popcount(fast__1)
-# Loading work.ara_sequencer(fast)
-# Loading work.lane(fast)
-# Loading work.spill_register(fast__38)
-# Loading work.spill_register_flushable(fast__38)
-# Loading work.lane_sequencer(fast)
-# Loading work.fall_through_register(fast__4)
-# Loading work.fifo_v3(fast__32)
-# Loading work.operand_requester(fast)
-# Loading work.stream_register(fast__5)
-# Loading work.rr_arb_tree(fast__24)
-# Loading work.lzc(fast__12)
-# Loading work.rr_arb_tree(fast__25)
-# Loading work.vector_regfile(fast)
-# Loading work.tc_clk_gating(fast)
-# Loading work.tc_sram(fast__5)
-# Loading work.stream_xbar(fast)
-# Loading work.stream_demux(fast)
-# Loading work.rr_arb_tree(fast__26)
-# Loading work.spill_register(fast__39)
-# Loading work.spill_register_flushable(fast__39)
-# Loading work.operand_queues_stage(fast)
-# Loading work.operand_queue(fast)
-# Loading work.fifo_v3(fast__33)
-# Loading work.fifo_v3(fast__34)
-# Loading work.operand_queue(fast__1)
-# Loading work.operand_queue(fast__2)
-# Loading work.operand_queue(fast__3)
-# Loading work.operand_queue(fast__4)
-# Loading work.fifo_v3(fast__35)
-# Loading work.fifo_v3(fast__36)
-# Loading work.operand_queue(fast__5)
-# Loading work.operand_queue(fast__6)
-# Loading work.fifo_v3(fast__37)
-# Loading work.fifo_v3(fast__38)
-# Loading work.operand_queue(fast__7)
-# Loading work.vector_fus_stage(fast)
-# Loading work.valu(fast)
-# Loading work.fixed_p_rounding(fast)
-# Loading work.stream_register(fast__6)
-# Loading work.spill_register(fast__40)
-# Loading work.spill_register_flushable(fast__40)
-# Loading work.simd_alu(fast)
-# Loading work.vmfpu(fast)
-# Loading work.power_gating_generic(fast)
-# Loading work.power_gating_generic(fast__1)
-# Loading work.power_gating_generic(fast__2)
-# Loading work.simd_mul(fast)
-# Loading work.simd_mul(fast__1)
-# Loading work.simd_mul(fast__2)
-# Loading work.simd_mul(fast__3)
-# Loading work.simd_div(fast)
-# Loading work.serdiv(fast__1)
-# Loading work.lzc(fast__14)
-# Loading work.lzc(fast__15)
-# Loading work.lzc(fast__16)
-# Loading work.fpnew_top(fast__1)
-# Loading work.fpnew_opgroup_block(fast__5)
-# Loading work.fpnew_opgroup_fmt_slice(fast__8)
-# Loading work.fpnew_fma(fast__4)
-# Loading work.fpnew_opgroup_fmt_slice(fast__9)
-# Loading work.fpnew_fma(fast__5)
-# Loading work.fpnew_opgroup_fmt_slice(fast__10)
-# Loading work.fpnew_fma(fast__6)
-# Loading work.rr_arb_tree(fast__27)
-# Loading work.fpnew_opgroup_block(fast__6)
-# Loading work.fpnew_opgroup_multifmt_slice(fast__2)
-# Loading work.fpnew_divsqrt_multi(fast__1)
-# Loading work.fpnew_divsqrt_multi(fast__2)
-# Loading work.fpnew_divsqrt_multi(fast__3)
-# Loading work.rr_arb_tree(fast__28)
-# Loading work.fpnew_opgroup_block(fast__7)
-# Loading work.fpnew_opgroup_fmt_slice(fast__11)
-# Loading work.fpnew_noncomp(fast__4)
-# Loading work.fpnew_opgroup_fmt_slice(fast__12)
-# Loading work.fpnew_noncomp(fast__5)
-# Loading work.fpnew_opgroup_fmt_slice(fast__13)
-# Loading work.fpnew_noncomp(fast__6)
-# Loading work.rr_arb_tree(fast__29)
-# Loading work.fpnew_opgroup_block(fast__8)
-# Loading work.fpnew_opgroup_multifmt_slice(fast__3)
-# Loading work.fpnew_cast_multi(fast__1)
-# Loading work.fpnew_cast_multi(fast__2)
-# Loading work.lzc(fast__13)
-# Loading work.fpnew_rounding(fast__5)
-# Loading work.rr_arb_tree(fast__30)
-# Loading work.fpnew_opgroup_block(fast__9)
-# Loading work.rr_arb_tree(fast__31)
-# Loading work.rr_arb_tree(fast__32)
-# Loading work.vlsu(fast)
-# Loading work.axi_cut(fast)
-# Loading work.spill_register(fast__41)
-# Loading work.spill_register_flushable(fast__41)
-# Loading work.spill_register(fast__42)
-# Loading work.spill_register_flushable(fast__42)
-# Loading work.spill_register(fast__43)
-# Loading work.spill_register_flushable(fast__43)
-# Loading work.spill_register(fast__44)
-# Loading work.spill_register_flushable(fast__44)
-# Loading work.spill_register(fast__45)
-# Loading work.spill_register_flushable(fast__45)
-# Loading work.addrgen(fast)
-# Loading work.fifo_v3(fast__39)
-# Loading work.spill_register(fast__46)
-# Loading work.spill_register_flushable(fast__46)
-# Loading work.vldu(fast)
-# Loading work.vstu(fast)
-# Loading work.fall_through_register(fast__5)
-# Loading work.fifo_v3(fast__40)
-# Loading work.sldu(fast)
-# Loading work.stream_register(fast__7)
-# Loading work.p2_stride_gen(fast)
-# Loading work.popcount(fast__2)
-# Loading work.sldu_op_dp(fast)
-# Loading work.masku(fast)
-# Loading work.popcount(fast__3)
-# Loading work.lzc(fast__17)
-# Loading work.axi_mux(fast__1)
-# Loading work.axi_id_prepend(fast)
-# Loading work.rr_arb_tree(fast__33)
-# Loading work.fifo_v3(fast__41)
-# Loading work.spill_register(fast__47)
-# Loading work.spill_register_flushable(fast__47)
-# Loading work.spill_register(fast__48)
-# Loading work.spill_register_flushable(fast__48)
-# Loading work.rr_arb_tree(fast__34)
-# Loading work.spill_register(fast__49)
+.
+.
+.
+.
+.
+.
 # Loading work.spill_register_flushable(fast__49)
 # Loading work.spill_register(fast__50)
 # Loading work.spill_register_flushable(fast__50)
@@ -1074,4 +569,134 @@ make: *** [Makefile:170: simc] Error 12
 
 ```
 
-The missing library seems available in `gcc/11/lib/..` but likely this issue originates from the Questasim's additional installation of older `gcc 7.4`. I tried manually placing the library under respective directory but no fix.
+To check if the respective lib exits:
+```
+asus@b670:/opt/questasim/questasim/gcc-7.4.0-linux_x86_64/lib64$ strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep  GLIBCXX_3.4.29
+GLIBCXX_3.4.29
+```
+
+The library seems available but likely this issue originates from the Questasim's additional installation of older `gcc 7.4`. I tried manually placing the library under respective directory but no fix.
+
+### FIX - libstdc++.so.6: version `GLIBCXX_3.4.29' not found
+
+The way it worked was by removing existing installation of questasim and reinstallaing a fresh version **without Questa's native GCC** forcing it to use GCC from the system `$PATH` and it worked just FINE. The RTL compiles and simulates perfectly producing the waveform as well as asserted checks.
+
+### Simulation using Questasim
+Below is the simulation results using Questasim simulating an `fft` binary.
+
+```
+# do ../scripts/run.tcl
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/genblk4/i_cache_subsystem/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/issue_stage_i/i_re_name/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/genblk4/i_cache_subsystem/i_wt_dcache/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 57
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/genblk4/i_cache_subsystem/i_wt_dcache/i_wt_dcache_missunit/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 58
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/genblk4/i_cache_subsystem/i_wt_dcache/gen_rd_ports[0]/i_wt_dcache_ctrl/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 60
+# ** UI-Msg: (vish-4014) No objects found matching '/ara_tb/dut/i_ara_soc/i_system/i_ariane/genblk4/i_cache_subsystem/i_wt_dcache/gen_rd_ports[1]/i_wt_dcache_ctrl/*'.
+# Executing ONERROR command at macro ./../scripts/wave_core.tcl line 61
+# Dump results on ../gold_results.txt
+# Loading ELF file /home/asus/pulp-ara/ara/apps/bin/fft
+# Loading section 0000000080000000 of length 0000000000001c54
+# Loading section 0000000080001c60 of length 0000000000001838
+# Loading section 00000000800034a0 of length 0000000000000600
+# Loading section 0000000080003aa0 of length 0000000000001568
+# [TRACER] Output filename is: trace_hart_0.log
+# 
+# =========
+#   FFT  =
+# ========
+# 
+# 
+# 
+# ------------------------------------------------------------
+# -----------------------------------------------------------
+# 
+# Radix 2 DIF FFT on 64 points
+# Initializing Twiddle Factors
+# nitializing Swap Table
+# nitializing Inputs for DIT
+# Initializing Inputs for DIF
+# The DIF execution took 7547 cycles.
+# he DIT execution took 7998 cycles.
+# ** Warning: vstart was never tested for op inside {[VMANDNOT:VMXNOR]}
+#    Time: 34832500 ps  Scope: ara_tb.dut.i_ara_soc.i_system.i_ara.gen_lanes[3].i_lane.i_vfus.i_valu.p_valu File: /home/asus/pulp-ara/ara/hardware/src/lane/valu.sv Line: 533
+# ** Warning: vstart was never tested for op inside {[VMANDNOT:VMXNOR]}
+#    Time: 34832500 ps  Scope: ara_tb.dut.i_ara_soc.i_system.i_ara.gen_lanes[2].i_lane.i_vfus.i_valu.p_valu File: /home/asus/pulp-ara/ara/hardware/src/lane/valu.sv Line: 533
+# ** Warning: vstart was never tested for op inside {[VMANDNOT:VMXNOR]}
+#    Time: 34832500 ps  Scope: ara_tb.dut.i_ara_soc.i_system.i_ara..
+.
+.
+.
+# Performance: 1.274054. Max perf: 10.000000. Actual performance is 12.740544% of max.
+# 
+# omparison of the first 5 output numbers:
+# 
+# ut_DIF[0] == 30.206055 + (34.094303)j
+# ut_DIF[1] == -2.483711 + (-5.640638)j
+# ut_DIF[2] == 1.870575 + (3.398413)j
+# ut_DIF[3] == 0.131499 + (-3.006923)j
+# ut_DIF[4] == 1.647149 + (0.752621)j
+# 
+# ut_vec_DIF[0] == 30.206055 + (34.094303)j
+# ut_vec_DIF[1] == -2.483711 + (-5.640638)j
+# ut_vec_DIF[2] == 1.870575 + (3.398413)j
+# ut_vec_DIF[3] == 0.131499 + (-3.006923)j
+# ut_vec_DIF[4] == 1.647149 + (0.752621)j
+# 
+# est result: PASS. The output is correct.
+# 
+# [hw-cycles]:           0
+# [cva6-d$-stalls]:           0
+# [cva6-i$-stalls]:           0
+# [cva6-sb-full]:           0
+# ** Info: Core Test *** SUCCESS *** (tohost = 0)
+#    Time: 68956500 ps  Scope: ara_tb File: /home/asus/pulp-ara/ara/hardware/tb/ara_tb.sv Line: 213
+```
+
+Below is the simulation results using Questasim simulating an `conv3d` binary.
+
+```
+# Loading ELF file /home/asus/pulp-ara/ara/apps/bin/fmatmul
+# Loading section 0000000080000000 of length 0000000000001a8c
+# Loading section 0000000080001a90 of length 0000000000080020
+# Loading section 0000000080081ab0 of length 0000000000000508
+# Loading section 0000000080081fc0 of length 0000000000000038
+# [TRACER] Output filename is: trace_hart_0.log
+# 
+# =============
+#   FMATMUL  =
+# ============
+# 
+# 
+# 
+# ------------------------------------------------------------
+# Calculating a (4 x 4) x (4 x 4) matrix multiplication...
+# -----------------------------------------------------------
+# 
+# alculating fmatmul...
+# The execution took 745 cycles.
+# he performance is 0.171812 FLOP/cycle (2.147651% utilization).
+# 
+# ------------------------------------------------------------
+# Calculating a (8 x 8) x (8 x 8) matrix multiplication...
+# -----------------------------------------------------------
+# 
+# Calculating fmatmul...
+# The execution took 933 cycles.
+# The performance is 1.097535 FLOP/cycle (13.719185% utilization).
+# 
+# ------------------------------------------------------------
+# Calculating a (16 x 16) x (16 x 16) matrix multiplication...
+# -----------------------------------------------------------
+# 
+# Calculating fmatmul...
+# The execution took 2629 cycles.
+# The performance is 3.116014 FLOP/cycle (38.950172% utilization).
+
+```
+
+![alt text](image-2.png)
