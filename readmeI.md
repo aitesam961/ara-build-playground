@@ -107,7 +107,7 @@ Install Questasim using the standard installation procedure and add to path. The
 
 **Check My Guide for installing Questasim**: https://gist.github.com/aitesam961/608ec27862e942e5ae1360fd0ba2b4d2
 
-Now, even when Questasim installed and added to path, visible to the Makefile, still you may encounter this error.
+Now, even when the Questasim is installed and added to path, visible to the Makefile, still you may encounter this error.
 
 ```
 Makefile:83: "Specified QuestaSim version (questa-2021.2) not found in PATH /opt/questasim/linux_x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
@@ -128,7 +128,7 @@ So, no work around, let's live with it.
 
 
 ### 2.6 Install Verilator
-Although we plan no to use verilator but below is the process to work around the issues and intsall the required version for ara.
+Although we plan not to use verilator but below is the process to work around the issues and intsall the required version for ara.
 
 `make verilator` likely returns error
 ```
