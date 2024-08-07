@@ -9,7 +9,7 @@ Required library dependencies installed as listed in Section 1.1
 **Please Note:** Ubuntu 22LTS is the only known env to have the maximum success and several issues arise with newer 24.04LTS (bender not available, some deps lib versions are different)
 ## 1 - Prerequisites
 
-The software packages used by `ara` including LLVM-toolchain, RISCV tools require following packages to be installed.
+The software packages used by `ara` including LLVM-toolchain, RISCV tools require the following packages to be installed.
 
 ```
 sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev device-tree-compiler libboost-regex-dev libboost-system-dev
@@ -67,7 +67,7 @@ make toolchan-llvm
 ```
 **Note:** `make toolchain-llvm` by default configures `make -j(nproc) to -j32 which may destabilize the environment when running in virtual machines. Signs may include VM crashing, freezing or restarting itself. 
 
-To **FIX** this, modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
+To **FIX** modify the `ara/Makefile` by replacing -j32 with (number-of-cpu-threads-on-your-vm)-2 to avoid overutilization of context switching.
 
 `ara/Makefile line: 143, 158`
 
@@ -427,7 +427,7 @@ cd hardware
 make compile
 app=fft make sim
 ```
-The TRL compiles but there are several errors (in RTL) that lead to simulation not initiating. The log is as follows
+The RTL compiles but there are several errors (in RTL) that lead to simulation not initiating. The log is as follows
 
 ```
 vsim work.ara_tb
@@ -657,7 +657,7 @@ Below is the simulation results using Questasim simulating an `fft` binary.
 #    Time: 68956500 ps  Scope: ara_tb File: /home/asus/pulp-ara/ara/hardware/tb/ara_tb.sv Line: 213
 ```
 
-Below is the simulation results using Questasim simulating an `conv3d` binary.
+Below is the simulation results using Questasim simulating an `fmatmul` binary.
 
 ```
 # Loading ELF file /home/asus/pulp-ara/ara/apps/bin/fmatmul
