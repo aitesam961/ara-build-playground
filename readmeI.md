@@ -337,8 +337,6 @@ Calculating a (64 x 64) x (64 x 64) matrix multiplication...
 Calculating fmatmul...
 The execution took 70176 cycles.
 The performance is 7.471044 FLOP/cycle (93.388054% utilization).
-
-
 ```
 
 The .fst generated under /hardware can be opened in GTKWave manually (commandline doesnt work).
