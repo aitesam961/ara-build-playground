@@ -39,7 +39,7 @@
 // as the accumulator and the result), then the input format is selected at run-time by the signal
 // src_fmt_i.
 
-`include "common_cells/registers.svh"
+`include "registers.svh"
 
 module fpnew_sdotp_multi #(
   // One-hot config string: | FP32 | FP64 | FP16 | FP8 | FP16ALT | FP8ALT |
