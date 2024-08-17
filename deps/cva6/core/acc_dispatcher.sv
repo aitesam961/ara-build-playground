@@ -67,8 +67,8 @@ module acc_dispatcher
     output logic inval_valid_o,
     output logic [63:0] inval_addr_o,
     // Accelerator interface
-    output acc_req_t acc_req_o,
-    input acc_resp_t acc_resp_i
+    output acc_pkg::accelerator_req_t acc_req_o,
+    input acc_pkg::accelerator_resp_t acc_resp_i
 );
 
   `include "registers.svh"
