@@ -60,19 +60,19 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../deps/apb/include/apb/typedef.svh">
+        <FileInfo RelPath="deps/apb/include/apb/typedef.svh">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="IsGlobalInclude" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/include/axi/typedef.svh">
         <FileInfo>
           <Attr Name="IsGlobalInclude" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/include/axi/typedef.svh"/>
           <Attr Name="ImportTime" Val="1719927216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../deps/apb/include/apb/typedef.svh">
-        <FileInfo RelPath="deps/apb/include/apb/typedef.svh">
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="IsGlobalInclude" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
