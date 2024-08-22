@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Aug 17 19:26:40 2024">
+<application name="pa" timeStamp="Wed Aug 21 21:36:57 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a480cdda7b91493ba4e936d73ecca848" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -26,6 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
 <property name="SetGlobalInclude" value="2" type="JavaHandler"/>
 <property name="ToolsSettings" value="1" type="JavaHandler"/>
+<property name="ui.views.c.aQ" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="3" type="GuiHandlerData"/>
@@ -37,9 +38,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BoardChooser_BOARD_TABLE" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_COPY_MESSAGE" value="2" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="4" type="GuiHandlerData"/>
-<property name="CmdMsgDialog_OK" value="42" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="43" type="GuiHandlerData"/>
 <property name="ExportSchematicDialog_SPECIFY_FILE" value="3" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="642" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="644" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="3" type="GuiHandlerData"/>
 <property name="FileSetView_COLLAPSE_ALL" value="2" type="GuiHandlerData"/>
 <property name="FileSetView_EXPAND_ALL" value="12" type="GuiHandlerData"/>
@@ -66,8 +67,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NetlistSchMenuAndMouse_EXPAND_COLLAPSE" value="6" type="GuiHandlerData"/>
 <property name="NetlistSchMenuAndMouse_VIEW" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="102" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="7" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="10" type="GuiHandlerData"/>
 <property name="PACommandNames_EXPORT_SCHEMATIC" value="3" type="GuiHandlerData"/>
+<property name="PACommandNames_IMPORT_ALL_SRCS" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SET_GLOBAL_INCLUDE" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="1" type="GuiHandlerData"/>
 <property name="PAViews_CODE" value="66" type="GuiHandlerData"/>
@@ -89,17 +91,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="131" type="GuiHandlerData"/>
 <property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="4" type="GuiHandlerData"/>
 <property name="SrcFilePropPanels_GLOBAL_INCLUDE" value="4" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="7" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="7" type="GuiHandlerData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="9" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="8" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="4" type="GuiHandlerData"/>
 <property name="TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE" value="17" type="GuiHandlerData"/>
 <property name="TclConsoleView_COPY" value="2" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="4" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="21" type="GuiMode"/>
+<property name="GuiMode" value="30" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="20" type="TclMode"/>
+<property name="TclMode" value="27" type="TclMode"/>
 </item>
 </section>
 </application>
