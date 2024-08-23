@@ -29,7 +29,7 @@ module ctrl_registers #(
     output logic           [DataWidth-1:0] hw_cnt_en_o
   );
 
-  `include "common_cells/registers.svh"
+  `include "registers.svh"
 
   ///////////////////
   //  Definitions  //
