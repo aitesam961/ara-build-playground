@@ -150,6 +150,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/config_pkg.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/config_pkg.sv"/>
@@ -681,10 +690,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6_accel_first_pass_decoder_stub.sv">
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/cva6_accel_first_pass_decoder.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6_accel_first_pass_decoder_stub.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/cva6_accel_first_pass_decoder.sv"/>
+          <Attr Name="ImportTime" Val="1719904319"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1896,9 +1905,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/common_cells/src/deprecated/sram.sv">
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/sram.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/common_cells/src/deprecated/sram.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/sram.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -2076,6 +2085,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/tlb.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/tlb.sv"/>
@@ -2224,6 +2242,26 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_soc.sv"/>
           <Attr Name="ImportTime" Val="1723957561"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/instr_tracer_if.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/instr_tracer_if.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/instr_tracer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/instr_tracer.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
