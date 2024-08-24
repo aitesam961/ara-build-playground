@@ -105,6 +105,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/deps/common_cells/src/cf_math_pkg.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cf_math_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/include/ara_pkg.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../include/ara_pkg.sv"/>
@@ -136,6 +145,15 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_sequencer.sv"/>
           <Attr Name="ImportTime" Val="1722345063"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/deps/axi/src/axi_cut.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_cut.sv"/>
+          <Attr Name="ImportTime" Val="1722349638"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -577,6 +595,24 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_xbar.sv"/>
           <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/deps/tech_cells_generic/src/fpga/tc_clk_xilinx.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/fpga/tc_clk_xilinx.sv"/>
+          <Attr Name="ImportTime" Val="1719927201"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/deps/tech_cells_generic/src/fpga/tc_sram_xilinx.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/fpga/tc_sram_xilinx.sv"/>
+          <Attr Name="ImportTime" Val="1719927201"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
