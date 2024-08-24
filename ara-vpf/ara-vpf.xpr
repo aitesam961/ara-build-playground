@@ -132,33 +132,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/config_pkg.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/config_pkg.sv"/>
@@ -222,33 +195,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/acc_dispatcher.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/acc_dispatcher.sv"/>
-          <Attr Name="ImportTime" Val="1723902517"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/addr_decode.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/addr_decode_dync.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode_dync.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/include/rvv_pkg.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../include/rvv_pkg.sv"/>
@@ -285,42 +231,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/alu.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/alu.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/amo_buffer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/amo_buffer.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/apb/src/apb_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/apb/src/apb_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927199"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/ara.sv"/>
-          <Attr Name="ImportTime" Val="1722694975"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara_dispatcher.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_dispatcher.sv"/>
@@ -339,271 +249,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara_system.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_system.sv"/>
-          <Attr Name="ImportTime" Val="1722350760"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ariane_regfile_ff.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ariane_regfile_ff.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ariane_regfile_fpga.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ariane_regfile_fpga.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/axi_adapter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/axi_adapter.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_atop_filter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_atop_filter.sv"/>
-          <Attr Name="ImportTime" Val="1722353424"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_burst_splitter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_burst_splitter.sv"/>
-          <Attr Name="ImportTime" Val="1723957129"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_cut.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_cut.sv"/>
           <Attr Name="ImportTime" Val="1722349638"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_demux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_demux.sv"/>
-          <Attr Name="ImportTime" Val="1722353489"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_demux_simple.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_demux_simple.sv"/>
-          <Attr Name="ImportTime" Val="1722353042"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_converter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_converter.sv"/>
-          <Attr Name="ImportTime" Val="1722350943"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_downsizer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_downsizer.sv"/>
-          <Attr Name="ImportTime" Val="1719927216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_upsizer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_upsizer.sv"/>
-          <Attr Name="ImportTime" Val="1719927216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_err_slv.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_err_slv.sv"/>
-          <Attr Name="ImportTime" Val="1719927216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_id_prepend.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_id_prepend.sv"/>
-          <Attr Name="ImportTime" Val="1719927216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/axi_inval_filter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/axi_inval_filter.sv"/>
-          <Attr Name="ImportTime" Val="1722350978"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_lite_to_apb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_lite_to_apb.sv"/>
-          <Attr Name="ImportTime" Val="1723957178"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_multicut.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_multicut.sv"/>
-          <Attr Name="ImportTime" Val="1723957222"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_mux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_mux.sv"/>
-          <Attr Name="ImportTime" Val="1722351085"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/axi_shim.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/axi_shim.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_axi_lite.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_axi_lite.sv"/>
-          <Attr Name="ImportTime" Val="1723957261"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_detailed_mem.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_detailed_mem.sv"/>
-          <Attr Name="ImportTime" Val="1723957313"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_mem.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_mem.sv"/>
-          <Attr Name="ImportTime" Val="1723957347"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_xbar.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_xbar.sv"/>
-          <Attr Name="ImportTime" Val="1723957385"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/bht.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/bht.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/branch_unit.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/branch_unit.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/btb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/btb.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/std_cache_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/std_cache_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cache_ctrl.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cache_ctrl.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/commit_stage.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/commit_stage.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/compressed_decoder.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/compressed_decoder.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -627,15 +276,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/controller.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/controller.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/counter.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/counter.sv"/>
@@ -645,234 +285,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/csr_buffer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/csr_buffer.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/csr_regfile.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/csr_regfile.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/ctrl_registers.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/ctrl_registers.sv"/>
-          <Attr Name="ImportTime" Val="1719904319"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/cvxif_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/cvxif_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/cva6_accel_first_pass_decoder.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/cva6_accel_first_pass_decoder.sv"/>
-          <Attr Name="ImportTime" Val="1719904319"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6_clic_controller.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6_clic_controller.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/generic/hpdcache_params_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/generic/hpdcache_params_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_if_adapter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_if_adapter.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/wt_cache_pkg.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/wt_cache_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_subsystem_axi_arbiter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_subsystem_axi_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_icache.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_icache.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_mmu_sv32.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_mmu_sv32.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_mmu_sv39x4.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_mmu_sv39x4.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_ptw_sv32.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_ptw_sv32.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_ptw_sv39x4.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_ptw_sv39x4.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6_rvfi_probes.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6_rvfi_probes.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_tlb_sv32.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_tlb_sv32.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_tlb_sv39x4.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_tlb_sv39x4.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cvxif_fu.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cvxif_fu.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/decoder.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/decoder.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -892,24 +307,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ex_stage.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ex_stage.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/exp_backoff.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/exp_backoff.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1068,456 +465,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/fpu_wrap.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/fpu_wrap.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/frontend.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/frontend.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv"/>
-          <Attr Name="ImportTime" Val="1719927355"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/id_queue.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/id_queue.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/id_stage.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/id_stage.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/instr_queue.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/instr_queue.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/instr_realign.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/instr_realign.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/instr_scan.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/instr_scan.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/issue_read_operands.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/issue_read_operands.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/issue_stage.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/issue_stage.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv"/>
@@ -1545,54 +492,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/lfsr.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/lfsr_8bit.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr_8bit.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/openhwgroup/cvfpu/src/lfsr_sr.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/openhwgroup/cvfpu/src/lfsr_sr.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/load_store_unit.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/load_store_unit.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/load_unit.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/load_unit.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/lsu_bypass.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/lsu_bypass.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -1617,51 +519,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/mem_to_banks_detailed.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/mem_to_banks_detailed.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/miss_handler.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/miss_handler.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/mmu.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/mmu.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mult.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mult.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/multiplier.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/multiplier.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv"/>
@@ -1675,15 +532,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/onehot_to_bin.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/onehot_to_bin.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1725,33 +573,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/perf_counters.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/perf_counters.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/pmp/src/pmp.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/pmp/src/pmp.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/pmp/src/pmp_entry.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/pmp/src/pmp_entry.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/popcount.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/popcount.sv"/>
@@ -1779,24 +600,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/ptw.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/ptw.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/ras.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/ras.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/rr_arb_tree.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/rr_arb_tree.sv"/>
@@ -1806,37 +609,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/scoreboard.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/scoreboard.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/serdiv.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/serdiv.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/shift_reg.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/shift_reg.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/shift_reg_gated.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/shift_reg_gated.sv"/>
-          <Attr Name="ImportTime" Val="1722353568"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1905,126 +681,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/sram.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/sram.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/std_cache_subsystem.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/std_cache_subsystem.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/std_nbdcache.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/std_nbdcache.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/store_buffer.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/store_buffer.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/store_unit.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/store_unit.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_arbiter.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_arbiter_flushable.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_arbiter_flushable.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_demux.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_demux.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fifo.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fifo.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fork.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fork.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fork_dynamic.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fork_dynamic.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_join.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_join.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_join_dynamic.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_join_dynamic.sv"/>
-          <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_mux.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_mux.sv"/>
           <Attr Name="ImportTime" Val="1719927203"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -2040,28 +699,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_to_mem.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_to_mem.sv"/>
-          <Attr Name="ImportTime" Val="1723957415"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_xbar.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_xbar.sv"/>
           <Attr Name="ImportTime" Val="1719927203"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/tag_cmp.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/tag_cmp.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -2080,33 +721,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/rtl/tc_sram.sv"/>
           <Attr Name="ImportTime" Val="1719927381"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/tlb.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/tlb.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/common_cells/src/unread.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/common_cells/src/unread.sv"/>
-          <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -2175,8 +789,1548 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/ara.sv"/>
+          <Attr Name="ImportTime" Val="1722694975"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/acc_dispatcher.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/acc_dispatcher.sv"/>
+          <Attr Name="ImportTime" Val="1723902517"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/addr_decode.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/addr_decode_dync.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode_dync.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/alu.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/alu.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/amo_buffer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/amo_buffer.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/apb/src/apb_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/apb/src/apb_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927199"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara_system.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_system.sv"/>
+          <Attr Name="ImportTime" Val="1722350760"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ariane_regfile_ff.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ariane_regfile_ff.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ariane_regfile_fpga.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ariane_regfile_fpga.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/axi_adapter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/axi_adapter.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_atop_filter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_atop_filter.sv"/>
+          <Attr Name="ImportTime" Val="1722353424"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_burst_splitter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_burst_splitter.sv"/>
+          <Attr Name="ImportTime" Val="1723957129"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_demux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_demux.sv"/>
+          <Attr Name="ImportTime" Val="1722353489"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_demux_simple.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_demux_simple.sv"/>
+          <Attr Name="ImportTime" Val="1722353042"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_converter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_converter.sv"/>
+          <Attr Name="ImportTime" Val="1722350943"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_downsizer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_downsizer.sv"/>
+          <Attr Name="ImportTime" Val="1719927216"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_dw_upsizer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_dw_upsizer.sv"/>
+          <Attr Name="ImportTime" Val="1719927216"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_err_slv.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_err_slv.sv"/>
+          <Attr Name="ImportTime" Val="1719927216"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_id_prepend.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_id_prepend.sv"/>
+          <Attr Name="ImportTime" Val="1719927216"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/axi_inval_filter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/axi_inval_filter.sv"/>
+          <Attr Name="ImportTime" Val="1722350978"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_lite_to_apb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_lite_to_apb.sv"/>
+          <Attr Name="ImportTime" Val="1723957178"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_multicut.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_multicut.sv"/>
+          <Attr Name="ImportTime" Val="1723957222"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_mux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_mux.sv"/>
+          <Attr Name="ImportTime" Val="1722351085"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/axi_shim.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/axi_shim.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_axi_lite.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_axi_lite.sv"/>
+          <Attr Name="ImportTime" Val="1723957261"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_detailed_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_detailed_mem.sv"/>
+          <Attr Name="ImportTime" Val="1723957313"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_to_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_to_mem.sv"/>
+          <Attr Name="ImportTime" Val="1723957347"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/axi/src/axi_xbar.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/axi/src/axi_xbar.sv"/>
+          <Attr Name="ImportTime" Val="1723957385"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/bht.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/bht.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/branch_unit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/branch_unit.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/btb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/btb.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/std_cache_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/std_cache_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cache_ctrl.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cache_ctrl.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/commit_stage.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/commit_stage.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/compressed_decoder.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/compressed_decoder.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/controller.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/controller.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/csr_buffer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/csr_buffer.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/csr_regfile.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/csr_regfile.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/ctrl_registers.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/ctrl_registers.sv"/>
+          <Attr Name="ImportTime" Val="1719904319"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/include/cvxif_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/cvxif_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/cva6_accel_first_pass_decoder.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/cva6_accel_first_pass_decoder.sv"/>
+          <Attr Name="ImportTime" Val="1719904319"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6_clic_controller.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6_clic_controller.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/generic/hpdcache_params_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/generic/hpdcache_params_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_if_adapter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_if_adapter.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_subsystem_axi_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_hpdcache_subsystem_axi_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_icache.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_icache.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_mmu_sv32.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_mmu_sv32.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_mmu_sv39x4.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_mmu_sv39x4.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_ptw_sv32.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_ptw_sv32.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_ptw_sv39x4.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_ptw_sv39x4.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cva6_rvfi_probes.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cva6_rvfi_probes.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv32/cva6_tlb_sv32.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv32/cva6_tlb_sv32.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39x4/cva6_tlb_sv39x4.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39x4/cva6_tlb_sv39x4.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cvxif_fu.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cvxif_fu.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/decoder.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/decoder.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/ex_stage.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/ex_stage.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/exp_backoff.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/exp_backoff.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/fpu_wrap.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/fpu_wrap.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/frontend.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/frontend.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1719927355"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/id_queue.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/id_queue.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/id_stage.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/id_stage.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/instr_queue.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/instr_queue.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/instr_realign.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/instr_realign.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/instr_scan.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/instr_scan.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/issue_read_operands.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/issue_read_operands.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/issue_stage.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/issue_stage.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/lfsr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/lfsr_8bit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr_8bit.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/load_store_unit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/load_store_unit.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/load_unit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/load_unit.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/lsu_bypass.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/lsu_bypass.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/mem_to_banks_detailed.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/mem_to_banks_detailed.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/miss_handler.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/miss_handler.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/mmu.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/mmu.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mult.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mult.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/multiplier.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/multiplier.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/onehot_to_bin.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/onehot_to_bin.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/perf_counters.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/perf_counters.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/pmp/src/pmp.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/pmp/src/pmp.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/pmp/src/pmp_entry.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/pmp/src/pmp_entry.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/ptw.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/ptw.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/frontend/ras.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/frontend/ras.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/scoreboard.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/scoreboard.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/shift_reg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/shift_reg.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/shift_reg_gated.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/shift_reg_gated.sv"/>
+          <Attr Name="ImportTime" Val="1722353568"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/sram.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/sram.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/std_cache_subsystem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/std_cache_subsystem.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/std_nbdcache.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/std_nbdcache.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/store_buffer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/store_buffer.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/store_unit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/store_unit.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_arbiter_flushable.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_arbiter_flushable.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fifo.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fifo.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fork.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fork.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_fork_dynamic.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_fork_dynamic.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_join.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_join.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_join_dynamic.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_join_dynamic.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_mux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_mux.sv"/>
+          <Attr Name="ImportTime" Val="1719927203"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/common_cells/src/stream_to_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_to_mem.sv"/>
+          <Attr Name="ImportTime" Val="1723957415"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/tag_cmp.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/tag_cmp.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/common/local/util/tc_sram_fpga_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/mmu_sv39/tlb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/mmu_sv39/tlb.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/vendor/pulp-platform/common_cells/src/unread.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/common_cells/src/unread.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_axi_adapter.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_axi_adapter.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2186,6 +2340,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_cache_subsystem.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_cache_subsystem.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2195,6 +2350,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_dcache.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_dcache.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2204,6 +2360,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_dcache_ctrl.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_dcache_ctrl.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2213,6 +2370,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_dcache_mem.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_dcache_mem.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2222,6 +2380,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_dcache_missunit.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_dcache_missunit.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2231,6 +2390,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/deps/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv"/>
           <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2240,6 +2400,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/ara-build-playground/src/ara_soc.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/ara_soc.sv"/>
           <Attr Name="ImportTime" Val="1723957561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2269,7 +2430,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="ara_soc"/>
+        <Option Name="TopModule" Val="ara"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
