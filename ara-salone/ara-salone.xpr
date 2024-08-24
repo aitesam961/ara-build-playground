@@ -87,8 +87,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../deps/cva6/core/include/riscv_pkg.sv">
+      <File Path="$PSRCDIR/sources_1/imports/include/riscv_pkg.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/core/include/riscv_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1719927273"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
