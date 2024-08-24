@@ -15,7 +15,7 @@
 // Author: Luca Bertaccini <lbertaccini@iis.ee.ethz.ch>
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "registers.svh"
 
 module fpnew_sdotp_multi_wrapper #(
   parameter int unsigned             LaneWidth   = 64,
