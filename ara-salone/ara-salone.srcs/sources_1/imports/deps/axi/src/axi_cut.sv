@@ -17,7 +17,8 @@
 /// An AXI4 cut.
 ///
 /// Breaks all combinatorial paths between its input and output.
-module axi_cut #(
+
+module axi_cut  #(
   // bypass enable
   parameter bit  Bypass     = 1'b0,
   // AXI channel structs
@@ -26,7 +27,7 @@ module axi_cut #(
   parameter type   b_chan_t = logic,
   parameter type  ar_chan_t = logic,
   parameter type   r_chan_t = logic,
-  // AXI request & response structs
+//   AXI request & response structs
   parameter type  axi_req_t = logic,
   parameter type axi_resp_t = logic
 ) (
