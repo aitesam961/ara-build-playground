@@ -6,7 +6,7 @@
 // Description:
 // Ara's top-level, interfacing with Ariane.
 
-module ara import ara_pkg::*; #(
+module ara import ara_pkg::*; import axi_pkg::*; #(
     // RVV Parameters
     parameter  int           unsigned NrLanes      = 2,                          // Number of parallel vector lanes.
     // Support for floating-point data types

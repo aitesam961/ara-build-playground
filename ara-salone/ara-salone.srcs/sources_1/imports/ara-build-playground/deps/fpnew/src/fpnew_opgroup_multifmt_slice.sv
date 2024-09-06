@@ -66,9 +66,7 @@ module fpnew_opgroup_multifmt_slice #(
 
   if ((OpGroup == fpnew_pkg::DIVSQRT) && !PulpDivsqrt &&
       !((FpFmtConfig[0] == 1) && (FpFmtConfig[1:NUM_FORMATS-1] == '0))) begin
-    $fatal(1, "T-Head-based DivSqrt unit supported only in FP32-only configurations. \
-Set PulpDivsqrt to 1 not to use the PULP DivSqrt unit \
-or set Features.FpFmtMask to support only FP32");
+    $fatal(1, "T-Head-based DivSqrt unit supported only in FP32-only configurations. \Set PulpDivsqrt to 1 not to use the PULP DivSqrt unit \or set Features.FpFmtMask to support only FP32");
   end
 
   if ((OpGroup == fpnew_pkg::DOTP) &&
