@@ -41,6 +41,7 @@ module axi_cut  #(
   input  axi_resp_t mst_resp_i
 );
 
+
   // a spill register for each channel
   spill_register #(
     .T       ( aw_chan_t ),
