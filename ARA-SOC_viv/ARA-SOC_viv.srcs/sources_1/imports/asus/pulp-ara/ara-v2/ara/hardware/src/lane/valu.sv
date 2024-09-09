@@ -662,7 +662,7 @@ module valu import ara_pkg::*; import rvv_pkg::*; import cf_math_pkg::idx_width;
             if (!(vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].op inside {[VMANDNOT:VMXNOR]}))
               issue_cnt_d = vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl;
             else begin
-              $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
+//              $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
               issue_cnt_d = (vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl / 8) >>
                 vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vtype.vsew;
               issue_cnt_d += |vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl[2:0];
@@ -699,7 +699,7 @@ module valu import ara_pkg::*; import rvv_pkg::*; import cf_math_pkg::idx_width;
                 if (!(vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].op inside {[VMANDNOT:VMXNOR]}))
                   issue_cnt_d = vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl;
                 else begin
-                  $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
+//                  $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
                   issue_cnt_d = (vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl / 8) >>
                     vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vtype.vsew;
                   issue_cnt_d += |vinsn_queue_q.vinsn[vinsn_queue_d.issue_pnt].vl[2:0];
@@ -778,7 +778,7 @@ module valu import ara_pkg::*; import rvv_pkg::*; import cf_math_pkg::idx_width;
         else begin
           // We are asking for bits, and we want at least one chunk of bits if
           // vl > 0. Therefore, commit_cnt = ceil((vl / 8) >> sew)
-          $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
+//          $warning("vstart was never tested for op inside {[VMANDNOT:VMXNOR]}");
           commit_cnt_d = (vinsn_queue_q.vinsn[vinsn_queue_d.commit_pnt].vl / 8) >>
             vinsn_queue_q.vinsn[vinsn_queue_d.commit_pnt].vtype.vsew;
           commit_cnt_d += |vinsn_queue_q.vinsn[vinsn_queue_d.commit_pnt].vl[2:0];

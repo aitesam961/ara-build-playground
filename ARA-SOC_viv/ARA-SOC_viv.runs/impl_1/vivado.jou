@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  9 13:11:48 2024
+# Process ID: 48063
+# Current directory: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/impl_1
+# Command line: vivado -log xilinx_ara_soc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xilinx_ara_soc.tcl -notrace
+# Log file: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/impl_1/xilinx_ara_soc.vdi
+# Journal file: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source xilinx_ara_soc.tcl -notrace
