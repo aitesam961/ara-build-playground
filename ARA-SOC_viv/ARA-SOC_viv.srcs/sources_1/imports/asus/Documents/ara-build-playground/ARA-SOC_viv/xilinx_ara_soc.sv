@@ -32,8 +32,8 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     localparam type                   axi_user_t   = logic [AxiUserWidth-1:0],
     localparam type                   axi_id_t     = logic [AxiIdWidth-1:0]
   ) (
-    input  wire         sys_clk_p,sys_clk_n,    // use for boards with differential LVDS clock
-//    input  logic        clk_i,
+//    input  wire         sys_clk_p,sys_clk_n,    // use for boards with differential LVDS clock
+    input  logic        clk_i,
     input  logic        rst_ni,
     output logic [63:0] exit_o,
     // Scan chain
@@ -59,13 +59,13 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   //    CLK Conversion       //
   /////////////////////////////
   
-  logic clk_i;
-  clk_buffer CBUF01(
-        .sys_clk_p(sys_clk_p),
-        .sys_clk_n(sys_clk_n),
+//  logic clk_i;
+//  clk_buffer CBUF01(
+//        .sys_clk_p(sys_clk_p),
+//        .sys_clk_n(sys_clk_n),
         
-        .clk_o(clk_i)
-  );
+//        .clk_o(clk_i)
+//  );
   
   //////////////////////
   //  Ara SoC         //

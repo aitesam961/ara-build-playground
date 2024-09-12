@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Sep 11 18:01:49 2024
-# Process ID: 306702
+# Start of session at: Thu Sep 12 08:54:04 2024
+# Process ID: 13258
 # Current directory: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1
 # Command line: vivado -log xilinx_ara_soc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_ara_soc.tcl
 # Log file: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/xilinx_ara_soc.vds
