@@ -1,0 +1,123 @@
+vlib work
+vlib riviera
+
+vlib riviera/xil_defaultlib
+vlib riviera/xpm
+
+vmap xil_defaultlib riviera/xil_defaultlib
+vmap xpm riviera/xpm
+
+vlog -work xil_defaultlib  -sv2k12 \
+"/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm -93 \
+"/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_mc.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/xlnx_mig_7_ddr3_mig_sim.v" \
+"../../../../../../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/rtl/xlnx_mig_7_ddr3.v" \
+
+vlog -work xil_defaultlib \
+"glbl.v"
+
