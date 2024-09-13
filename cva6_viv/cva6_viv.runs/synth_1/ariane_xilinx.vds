@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 12 16:06:20 2024
+# Process ID: 39518
+# Current directory: /home/asus/Documents/ara-build-playground/cva6_viv/cva6_viv.runs/synth_1
+# Command line: vivado -log ariane_xilinx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ariane_xilinx.tcl
+# Log file: /home/asus/Documents/ara-build-playground/cva6_viv/cva6_viv.runs/synth_1/ariane_xilinx.vds
+# Journal file: /home/asus/Documents/ara-build-playground/cva6_viv/cva6_viv.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ariane_xilinx.tcl -notrace
+Command: synth_design -top ariane_xilinx -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 39559 
+ERROR: [Synth 8-1766] cannot open include file register_interface/assign.svh [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:13]
+ERROR: [Synth 8-1766] cannot open include file register_interface/typedef.svh [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:14]
+WARNING: [Synth 8-2841] use of undefined macro REG_BUS_TYPEDEF_ALL [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:167]
+ERROR: [Synth 8-2715] syntax error near ( [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:167]
+WARNING: [Synth 8-2841] use of undefined macro REG_BUS_ASSIGN_TO_REQ [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:172]
+ERROR: [Synth 8-2715] syntax error near ( [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:172]
+ERROR: [Synth 8-988] reg_bus is already declared [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:172]
+WARNING: [Synth 8-2841] use of undefined macro REG_BUS_ASSIGN_FROM_RSP [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:173]
+INFO: [Synth 8-2350] module ariane_peripherals ignored due to previous errors [/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv:16]
+Failed to read verilog '/home/asus/Documents/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 3 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 16:06:27 2024...
