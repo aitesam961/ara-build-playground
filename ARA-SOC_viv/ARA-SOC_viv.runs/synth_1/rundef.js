@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log xilinx_ara_soc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_ara_soc.tcl" );
+         "-log ara_top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ara_top_wrapper.tcl" );
 
 
 

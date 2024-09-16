@@ -39,13 +39,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="2"/>
+    <Option Name="WTModelSimExportSim" Val="2"/>
+    <Option Name="WTQuestaExportSim" Val="2"/>
+    <Option Name="WTIesExportSim" Val="2"/>
+    <Option Name="WTVcsExportSim" Val="2"/>
+    <Option Name="WTRivieraExportSim" Val="2"/>
+    <Option Name="WTActivehdlExportSim" Val="2"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -2506,9 +2506,1154 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/ara_top_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_counter.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_counter.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_edge_detect.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_edge_detect.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_fifo.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_fifo.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_input_filter.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_input_filter.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_input_sync.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_input_sync.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_mv_filter.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_mv_filter.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_baudgen.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_baudgen.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_interrupt.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_interrupt.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_receiver.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_receiver.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_transmitter.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_transmitter.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/apb_uart.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/apb_uart.vhd"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx32.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx32.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/src/accel_dispatcher_ideal.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/src/accel_dispatcher_ideal.sv"/>
+          <Attr Name="ImportTime" Val="1722744715"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/addr_decode_napot.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode_napot.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/amo_alu.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/amo_alu.sv"/>
+          <Attr Name="ImportTime" Val="1722749468"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/apb_uart_wrap.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/apb_uart_wrap.sv"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_bus_compare.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_bus_compare.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_dst.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_dst.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_src.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_src.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_chan_compare.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_chan_compare.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_delayer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_delayer.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_dumper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_dumper.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_fifo.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_fifo.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_from_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_from_mem.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_remap.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_remap.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_serialize.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_serialize.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_isolate.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_isolate.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_iw_converter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_iw_converter.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_join.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_join.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lfsr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lfsr.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_demux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_demux.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_dw_converter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_dw_converter.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_from_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_from_mem.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_join.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_join.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_lfsr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_lfsr.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mailbox.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mailbox.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mux.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_to_axi.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_to_axi.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_xbar.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_xbar.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_modify_address.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_modify_address.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_join.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_join.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_split.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_split.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_serializer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_serializer.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_sim_mem.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_sim_mem.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_slave_compare.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_slave_compare.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_test.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_test.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_throttle.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_throttle.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_banked.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_banked.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_interleaved.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_interleaved.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_split.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_split.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_xp.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_xp.sv"/>
+          <Attr Name="ImportTime" Val="1722749428"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/binary_to_gray.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/binary_to_gray.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cc_onehot.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cc_onehot.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_2phase.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_2phase.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_4phase.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_4phase.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/cdc_fifo_gray.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/cdc_fifo_gray.sv"/>
+          <Attr Name="ImportTime" Val="1722749420"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_reset_ctrlr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_reset_ctrlr.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/src/clk_buffer.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clk_div.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clk_div.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/clk_int_div.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/clk_int_div.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/clk_int_div_static.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/clk_int_div_static.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clock_divider.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clock_divider.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clock_divider_counter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clock_divider_counter.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/cluster_clk_cells.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/cluster_clk_cells.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/cluster_pwr_cells.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/cluster_pwr_cells.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1722749469"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/cvxif_example_coprocessor.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/cvxif_example_coprocessor.sv"/>
+          <Attr Name="ImportTime" Val="1722749469"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1722749419"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_ack.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_ack.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_rx.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_rx.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_tx.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_tx.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/fifo_v1.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/fifo_v1.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/fifo_v2.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/fifo_v2.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/common/local/util/find_first_one.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/common/local/util/find_first_one.sv"/>
+          <Attr Name="ImportTime" Val="1722749468"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/generic_LFSR_8bit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/generic_LFSR_8bit.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/generic_fifo.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/generic_fifo.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/generic_memory.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/generic_memory.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/generic_rom.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/generic_rom.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/gray_to_binary.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/gray_to_binary.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv"/>
+          <Attr Name="ImportTime" Val="1722749532"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv"/>
+          <Attr Name="ImportTime" Val="1722749532"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv"/>
+          <Attr Name="ImportTime" Val="1722749532"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_to_l15.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_to_l15.sv"/>
+          <Attr Name="ImportTime" Val="1722749532"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv"/>
+          <Attr Name="ImportTime" Val="1722749532"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/instr_decoder.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/instr_decoder.sv"/>
+          <Attr Name="ImportTime" Val="1722749469"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/isochronous_4phase_handshake.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/isochronous_4phase_handshake.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/isochronous_spill_register.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/isochronous_spill_register.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/lfsr_16bit.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr_16bit.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/lossy_valid_to_stream.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lossy_valid_to_stream.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/multiaddr_decode.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/multiaddr_decode.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/mv_filter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/mv_filter.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pad_functional.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pad_functional.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/plru_tree.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/plru_tree.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/prioarbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/prioarbiter.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_buffer.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_buffer.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_clk_cells.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_clk_cells.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_clock_gating_async.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_clock_gating_async.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_pwr_cells.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_pwr_cells.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/pulp_sync.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/pulp_sync.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/pulp_sync_wedge.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/pulp_sync_wedge.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/read.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/read.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/reg_uart_wrap.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/reg_uart_wrap.sv"/>
+          <Attr Name="ImportTime" Val="1679936999"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/rrarbiter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/rrarbiter.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/rstgen.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/rstgen.sv"/>
+          <Attr Name="ImportTime" Val="1722749420"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/rstgen_bypass.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/rstgen_bypass.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/serial_deglitch.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/serial_deglitch.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/stream_delay.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/stream_delay.sv"/>
+          <Attr Name="ImportTime" Val="1722749420"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/stream_filter.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_filter.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/stream_throttle.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_throttle.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sub_per_hash.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sub_per_hash.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sync.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sync.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sync_wedge.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sync_wedge.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/tc_pwr.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/tc_pwr.sv"/>
+          <Attr Name="ImportTime" Val="1724504309"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -2580,180 +3725,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/generic_memory.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/generic_memory.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/generic_rom.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/generic_rom.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_buffer.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_buffer.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/cluster_pwr_cells.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/cluster_pwr_cells.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pad_functional.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pad_functional.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_pwr_cells.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_pwr_cells.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/tc_pwr.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/tc_pwr.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_clk_cells.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_clk_cells.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/pulp_clock_gating_async.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/pulp_clock_gating_async.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/tech_cells_generic/src/deprecated/cluster_clk_cells.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/tech_cells_generic/src/deprecated/cluster_clk_cells.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/ecc_pkg.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/ecc_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/binary_to_gray.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/binary_to_gray.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/isochronous_4phase_handshake.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/isochronous_4phase_handshake.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/rstgen_bypass.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/rstgen_bypass.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/plru_tree.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/plru_tree.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/isochronous_spill_register.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/isochronous_spill_register.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/mv_filter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/mv_filter.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/serial_deglitch.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/serial_deglitch.sv"/>
           <Attr Name="ImportTime" Val="1724504309"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -2770,126 +3745,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/gray_to_binary.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/gray_to_binary.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/lossy_valid_to_stream.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lossy_valid_to_stream.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/lfsr_16bit.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/lfsr_16bit.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cc_onehot.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cc_onehot.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/clk_int_div.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/clk_int_div.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_reset_ctrlr.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_reset_ctrlr.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_tx.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_tx.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/multiaddr_decode.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/multiaddr_decode.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/stream_throttle.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_throttle.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sync_wedge.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sync_wedge.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/clk_int_div_static.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/clk_int_div_static.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_2phase.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_2phase.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/stream_intf.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -2900,857 +3755,19 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/addr_decode_napot.sv">
+      <File Path="$PSRCDIR/sources_1/cva6_top_wrapper.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/addr_decode_napot.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/stream_filter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/stream_filter.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sync.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sync.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/read.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/read.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/cdc_4phase.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/cdc_4phase.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/sub_per_hash.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/sub_per_hash.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clock_divider_counter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clock_divider_counter.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/generic_fifo.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/generic_fifo.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clk_div.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clk_div.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/generic_LFSR_8bit.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/generic_LFSR_8bit.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/fifo_v1.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/fifo_v1.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/pulp_sync_wedge.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/pulp_sync_wedge.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/rrarbiter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/rrarbiter.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/clock_divider.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/clock_divider.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/fifo_v2.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/fifo_v2.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/pulp_sync.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/pulp_sync.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/deprecated/prioarbiter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/deprecated/prioarbiter.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_ack.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_ack.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Documents/ara-build-playground/deps/common_cells/src/edge_propagator_rx.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/common_cells/src/edge_propagator_rx.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/src/accel_dispatcher_ideal.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/src/accel_dispatcher_ideal.sv"/>
-          <Attr Name="ImportTime" Val="1722744715"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/amo_alu.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/amo_alu.sv"/>
-          <Attr Name="ImportTime" Val="1722749468"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/instr_decoder.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/instr_decoder.sv"/>
-          <Attr Name="ImportTime" Val="1722749469"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv"/>
-          <Attr Name="ImportTime" Val="1722749469"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/cvxif_example_coprocessor.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cvxif_example/cvxif_example_coprocessor.sv"/>
-          <Attr Name="ImportTime" Val="1722749469"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/common/local/util/find_first_one.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/common/local/util/find_first_one.sv"/>
-          <Attr Name="ImportTime" Val="1722749468"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_bus_compare.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_bus_compare.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_split.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_split.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mux.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mux.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_delayer.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_delayer.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_banked.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_banked.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_interleaved.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_interleaved.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_iw_converter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_iw_converter.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_demux.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_demux.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_sim_mem.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_sim_mem.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_xbar.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_xbar.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mailbox.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_mailbox.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_dw_converter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_dw_converter.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_remap.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_remap.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_from_mem.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_from_mem.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_serializer.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_serializer.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_to_axi.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_to_axi.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_join.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_rw_join.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_slave_compare.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_slave_compare.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_xp.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_xp.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_from_mem.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_from_mem.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_throttle.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_throttle.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_test.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_test.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_fifo.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_fifo.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_modify_address.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_modify_address.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_serialize.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_id_serialize.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_isolate.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_isolate.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_join.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_join.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_dumper.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_dumper.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_chan_compare.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_chan_compare.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_split.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_to_mem_split.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_lfsr.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_lfsr.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lfsr.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lfsr.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_dst.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_dst.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_join.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_lite_join.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_src.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/src/axi_cdc_src.sv"/>
-          <Attr Name="ImportTime" Val="1722749428"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv"/>
-          <Attr Name="ImportTime" Val="1722749419"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/cdc_fifo_gray.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/cdc_fifo_gray.sv"/>
-          <Attr Name="ImportTime" Val="1722749420"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/stream_delay.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/stream_delay.sv"/>
-          <Attr Name="ImportTime" Val="1722749420"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv"/>
-          <Attr Name="ImportTime" Val="1722749532"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv"/>
-          <Attr Name="ImportTime" Val="1722749532"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_to_l15.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_to_l15.sv"/>
-          <Attr Name="ImportTime" Val="1722749532"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv"/>
-          <Attr Name="ImportTime" Val="1722749532"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv"/>
-          <Attr Name="ImportTime" Val="1722749532"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/rstgen.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/src/rstgen.sv"/>
-          <Attr Name="ImportTime" Val="1722749420"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx32.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../deps/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx32.sv"/>
-          <Attr Name="ImportTime" Val="1724504309"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/reg_uart_wrap.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/reg_uart_wrap.sv"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_input_sync.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_input_sync.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_receiver.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_receiver.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_mv_filter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_mv_filter.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_interrupt.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_interrupt.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_transmitter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_transmitter.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/apb_uart_wrap.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/apb_uart_wrap.sv"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_input_filter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_input_filter.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_edge_detect.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_edge_detect.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_fifo.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_fifo.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/uart_baudgen.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/uart_baudgen.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/apb_uart.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/apb_uart.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_counter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/apb_uart-master/src/vhdl_orig/slib_counter.vhd"/>
-          <Attr Name="ImportTime" Val="1679936999"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="xilinx_ara_soc"/>
+        <Option Name="TopModule" Val="ara_top_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/ara_top_wrapper.v"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/include"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/apb/include"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/include"/>
@@ -3759,14 +3776,22 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../Downloads/ara.xdc">
+      <File Path="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc">
+      <File Path="$PPRDIR/../../ara/fpga/constraints/ara.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ara/fpga/constraints/xcu280.xdc">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -3792,6 +3817,23 @@
       <Filter Type="Utils"/>
       <Config>
         <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0">
+      <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="clk_wiz_0"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/include"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/apb/include"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/include"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/include"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -3829,7 +3871,35 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+    <Run Id="clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="clk_wiz_0" Part="xc7k325tffg900-2" ConstrsSet="clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_wiz_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream">
+          <Option Id="BinFile">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="clk_wiz_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="clk_wiz_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
@@ -3842,7 +3912,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
