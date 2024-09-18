@@ -3767,16 +3767,20 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../ara/fpga/constraints/ara.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/ara.xdc">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ara/fpga/constraints/ara.xdc"/>
+          <Attr Name="ImportTime" Val="1726228471"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ara/fpga/constraints/xcu280.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/xcu280.xdc">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ara/fpga/constraints/xcu280.xdc"/>
+          <Attr Name="ImportTime" Val="1726228346"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
