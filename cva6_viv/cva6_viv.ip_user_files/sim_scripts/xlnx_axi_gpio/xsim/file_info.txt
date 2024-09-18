@@ -1,2 +1,0 @@
-xlnx_axi_gpio.vhd,vhdl,xil_defaultlib,../../../../../../ariane.srcs/sources_1/ip/xlnx_axi_gpio/sim/xlnx_axi_gpio.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v
