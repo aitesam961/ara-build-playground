@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Sep 16 12:38:51 2024
-# Process ID: 306029
+# Start of session at: Mon Sep 16 14:45:52 2024
+# Process ID: 426379
 # Current directory: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1
 # Command line: vivado -log ara_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ara_top_wrapper.tcl
 # Log file: /home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/ara_top_wrapper.vds
