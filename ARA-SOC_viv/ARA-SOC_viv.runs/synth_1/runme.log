@@ -15,14 +15,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 306072 
+INFO: Helper process launched with PID 426440 
 WARNING: [Synth 8-2507] parameter declaration becomes local in miss_handler with formal parameter declaration list [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/cva6/core/cache_subsystem/miss_handler.sv:72]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1792.516 ; gain = 176.500 ; free physical = 23930 ; free virtual = 30007
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1792.457 ; gain = 176.500 ; free physical = 20384 ; free virtual = 26732
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ara_top_wrapper' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/ara_top_wrapper.v:2]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/.Xil/Vivado-306029-b670/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/.Xil/Vivado-306029-b670/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/.Xil/Vivado-426379-b670/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/.Xil/Vivado-426379-b670/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'xilinx_ara_soc' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/Documents/ara-build-playground/ARA-SOC_viv/xilinx_ara_soc.sv:15]
 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010 
 	Parameter FPUSupport bound to: 3'b111 
@@ -13078,7 +13078,7 @@ WARNING: [Synth 8-3331] design fpnew_opgroup_block__parameterized8 has unconnect
 WARNING: [Synth 8-3331] design fpnew_opgroup_block__parameterized8 has unconnected port operands_i[2][35]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2940.555 ; gain = 1324.539 ; free physical = 22821 ; free virtual = 28925
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2939.496 ; gain = 1323.539 ; free physical = 19274 ; free virtual = 25648
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -13091,10 +13091,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.461 ; gain = 1333.445 ; free physical = 23076 ; free virtual = 29180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2948.402 ; gain = 1332.445 ; free physical = 19515 ; free virtual = 25899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2949.461 ; gain = 1333.445 ; free physical = 23076 ; free virtual = 29180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2948.402 ; gain = 1332.445 ; free physical = 19515 ; free virtual = 25899
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -13108,17 +13108,15 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/ara_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3868.602 ; gain = 0.000 ; free physical = 21946 ; free virtual = 28050
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3868.543 ; gain = 0.000 ; free physical = 18413 ; free virtual = 24784
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3868.602 ; gain = 0.000 ; free physical = 21943 ; free virtual = 28047
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3868.543 ; gain = 0.000 ; free physical = 18413 ; free virtual = 24784
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 22808 ; free virtual = 28913
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 19328 ; free virtual = 25701
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
 INFO: [Synth 8-4471] merging register 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][OF]' into 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][DZ]' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/fpnew/src/fpnew_fma.sv:466]
 INFO: [Synth 8-4471] merging register 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][UF]' into 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][DZ]' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/fpnew/src/fpnew_fma.sv:466]
 INFO: [Synth 8-4471] merging register 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][NX]' into 'gen_inside_pipeline[0].mid_pipe_spec_stat_q_reg[1][DZ]' [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/fpnew/src/fpnew_fma.sv:466]
@@ -13745,7 +13743,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'CState_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'tx_State_reg' using encoding 'sequential' in module 'apb_uart'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 20140 ; free virtual = 26273
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16593 ; free virtual = 22998
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -25307,7 +25305,7 @@ WARNING: [Synth 8-6841] Block RAM (gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:27 ; elapsed = 00:03:31 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 19437 ; free virtual = 25858
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:26 ; elapsed = 00:03:31 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 18083 ; free virtual = 24757
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -25747,13 +25745,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'CW0/clk_out1' to pin 'CW0/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:33 ; elapsed = 00:03:38 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 19389 ; free virtual = 25970
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:33 ; elapsed = 00:03:37 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 18004 ; free virtual = 24838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:00 ; elapsed = 00:05:09 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 19140 ; free virtual = 25744
+Finished Timing Optimization : Time (s): cpu = 00:05:01 ; elapsed = 00:05:09 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 17709 ; free virtual = 24568
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -25924,7 +25922,7 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.srcs/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/src/lane/simd_mul.sv:87]
 INFO: [Common 17-14] Message 'Synth 8-5844' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:28 ; elapsed = 00:05:37 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17920 ; free virtual = 24518
+Finished Technology Mapping : Time (s): cpu = 00:05:29 ; elapsed = 00:05:37 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16476 ; free virtual = 23329
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -26062,7 +26060,7 @@ WARNING: [Synth 8-3295] tying undriven pin i_50143:I1 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin i_50144:I1 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin i_50145:I1 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:48 ; elapsed = 00:05:57 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17772 ; free virtual = 24575
+Finished IO Insertion : Time (s): cpu = 00:05:49 ; elapsed = 00:05:58 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16202 ; free virtual = 23284
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -26075,7 +26073,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:49 ; elapsed = 00:05:58 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17784 ; free virtual = 24587
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:50 ; elapsed = 00:05:59 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16220 ; free virtual = 23301
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -26087,25 +26085,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:15 ; elapsed = 00:06:24 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17766 ; free virtual = 24569
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:16 ; elapsed = 00:06:25 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16286 ; free virtual = 23351
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:16 ; elapsed = 00:06:25 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17788 ; free virtual = 24592
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:17 ; elapsed = 00:06:26 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16310 ; free virtual = 23375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:19 ; elapsed = 00:06:28 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17791 ; free virtual = 24594
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:19 ; elapsed = 00:06:29 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16320 ; free virtual = 23388
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:19 ; elapsed = 00:06:29 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17791 ; free virtual = 24594
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:20 ; elapsed = 00:06:30 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16320 ; free virtual = 23396
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -27130,17 +27128,17 @@ Report Instance Areas:
 |975   |            spill_register_flushable_i                                                                    |spill_register_flushable__parameterized6         |    225|
 +------+----------------------------------------------------------------------------------------------------------+-------------------------------------------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:19 ; elapsed = 00:06:29 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 17790 ; free virtual = 24594
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:20 ; elapsed = 00:06:30 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 16320 ; free virtual = 23396
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 699 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:57 ; elapsed = 00:06:16 . Memory (MB): peak = 3868.602 ; gain = 1333.445 ; free physical = 21870 ; free virtual = 28674
-Synthesis Optimization Complete : Time (s): cpu = 00:06:20 ; elapsed = 00:06:32 . Memory (MB): peak = 3868.602 ; gain = 2252.586 ; free physical = 21905 ; free virtual = 28676
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:58 ; elapsed = 00:06:16 . Memory (MB): peak = 3868.543 ; gain = 1332.445 ; free physical = 20413 ; free virtual = 27491
+Synthesis Optimization Complete : Time (s): cpu = 00:06:20 ; elapsed = 00:06:31 . Memory (MB): peak = 3868.543 ; gain = 2252.586 ; free physical = 20456 ; free virtual = 27503
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 13701 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3892.613 ; gain = 0.000 ; free physical = 21656 ; free virtual = 28428
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3892.555 ; gain = 0.000 ; free physical = 20291 ; free virtual = 27318
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 18 instances were transformed.
   LD => LDCE (inverted pins: G): 18 instances
@@ -27148,11 +27146,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1389 Infos, 617 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:38 ; elapsed = 00:06:49 . Memory (MB): peak = 3892.613 ; gain = 2526.570 ; free physical = 22094 ; free virtual = 28866
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3892.613 ; gain = 0.000 ; free physical = 22094 ; free virtual = 28866
+synth_design: Time (s): cpu = 00:06:39 ; elapsed = 00:06:49 . Memory (MB): peak = 3892.555 ; gain = 2524.547 ; free physical = 20717 ; free virtual = 27744
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3892.555 ; gain = 0.000 ; free physical = 20719 ; free virtual = 27746
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/asus/Documents/ara-build-playground/ARA-SOC_viv/ARA-SOC_viv.runs/synth_1/ara_top_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 3916.625 ; gain = 24.012 ; free physical = 22148 ; free virtual = 28960
+write_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 3916.566 ; gain = 24.012 ; free physical = 20582 ; free virtual = 27649
 INFO: [runtcl-4] Executing : report_utilization -file ara_top_wrapper_utilization_synth.rpt -pb ara_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 12:46:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 14:53:09 2024...
