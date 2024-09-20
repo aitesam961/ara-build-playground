@@ -11,7 +11,6 @@
 //          - cva6/ariane
 //      - peripherals:
 //          - uart (wip)
-//          - jtag (wip)
 module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     // Number of parallel vector lanes.
     parameter  int           unsigned NrLanes      = 2,

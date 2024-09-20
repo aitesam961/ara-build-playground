@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Sep 16 15:55:11 2024">
+<application name="pa" timeStamp="Wed Sep 18 17:46:20 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f2d6d65379dd43f78fea3f6f5d058f93" type="ProjectID"/>
 <property name="ProjectIteration" value="16" type="ProjectIteration"/>
@@ -20,7 +20,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddCfgMem" value="1" type="JavaHandler"/>
 <property name="AddSources" value="94" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="4" type="JavaHandler"/>
-<property name="CloseProject" value="9" type="JavaHandler"/>
+<property name="CloseProject" value="10" type="JavaHandler"/>
 <property name="CoreView" value="2" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="2" type="JavaHandler"/>
 <property name="CustomizeCore" value="2" type="JavaHandler"/>
@@ -57,12 +57,12 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Gui Handlers">
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="2" type="GuiHandlerData"/>
 <property name="AbstractFileView_CLOSE" value="1" type="GuiHandlerData"/>
-<property name="AbstractSearchablePanel_SHOW_SEARCH" value="19" type="GuiHandlerData"/>
+<property name="AbstractSearchablePanel_SHOW_SEARCH" value="20" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="3" type="GuiHandlerData"/>
 <property name="BaseDialog_APPLY" value="9" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="59" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="227" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="228" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="15" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="4" type="GuiHandlerData"/>
 <property name="BoardChooser_VENDOR" value="2" type="GuiHandlerData"/>
@@ -71,7 +71,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CfgMemPartChooser_TABLE" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_COPY_MESSAGE" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="2" type="GuiHandlerData"/>
-<property name="CmdMsgDialog_OK" value="32" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="33" type="GuiHandlerData"/>
 <property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="2" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="7" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_FILE_TABLE" value="2" type="GuiHandlerData"/>
@@ -83,7 +83,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeCoreDialog_IP_LOCATION" value="1" type="GuiHandlerData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="1" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="13" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="481" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="490" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
 <property name="FileSetView_COLLAPSE_ALL" value="13" type="GuiHandlerData"/>
 <property name="FileSetView_EXPAND_ALL" value="26" type="GuiHandlerData"/>
@@ -91,7 +91,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GettingStartedView_CLEAR_LIST" value="2" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiHandlerData"/>
-<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="40" type="GuiHandlerData"/>
+<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="41" type="GuiHandlerData"/>
 <property name="HPopupTitle_CLOSE" value="4" type="GuiHandlerData"/>
 <property name="HardwareTreePanel_HARDWARE_TREE_TABLE" value="11" type="GuiHandlerData"/>
 <property name="LogMonitor_COPY" value="1" type="GuiHandlerData"/>
@@ -165,11 +165,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_SET_FILE_TYPE" value="1" type="GuiHandlerData"/>
 <property name="SrcMenu_SET_LIBRARY" value="1" type="GuiHandlerData"/>
 <property name="StaleRunDialog_NO" value="1" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="45" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="47" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="2" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_ADD_MODULE" value="1" type="GuiHandlerData"/>
 <property name="SystemBuilderView_ADD_IP" value="2" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="18" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="19" type="GuiHandlerData"/>
 <property name="TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE" value="3" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="9" type="GuiHandlerData"/>
 <property name="VerilogOptionsChooserPanel_SPECIFY_COMPILATION_OPTIONS_FOR_VERILOG" value="4" type="GuiHandlerData"/>
@@ -179,9 +179,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPG_TabbedPane_TABBED_PANE" value="3" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="89" type="GuiMode"/>
+<property name="GuiMode" value="103" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="75" type="TclMode"/>
+<property name="TclMode" value="82" type="TclMode"/>
 </item>
 </section>
 </application>
