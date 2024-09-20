@@ -2506,13 +2506,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ara_top_wrapper.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -3765,9 +3758,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="ara_top_wrapper"/>
-        <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/ara_top_wrapper.v"/>
+        <Option Name="TopModule" Val="xilinx_ara_soc"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/common_cells/include"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/apb/include"/>
         <Option Name="VerilogDir" Val="$PPRDIR/../../../pulp-ara/ara-v2/ara/hardware/deps/axi/include"/>
@@ -3776,28 +3767,32 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/ara.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ara/fpga/constraints/ara.xdc"/>
+          <Attr Name="ImportTime" Val="1726228471"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ara/fpga/constraints/ara.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/xcu280.xdc">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ara/fpga/constraints/xcu280.xdc"/>
+          <Attr Name="ImportTime" Val="1726228346"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ara/fpga/constraints/xcu280.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/asus/Downloads/Genesys-2-Master.xdc">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc"/>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/asus/Downloads/Genesys-2-Master.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>

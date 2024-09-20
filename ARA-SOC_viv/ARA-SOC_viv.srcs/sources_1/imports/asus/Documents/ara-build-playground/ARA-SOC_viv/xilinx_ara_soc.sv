@@ -11,7 +11,6 @@
 //          - cva6/ariane
 //      - peripherals:
 //          - uart (wip)
-//          - jtag (wip)
 module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     // Number of parallel vector lanes.
     parameter  int           unsigned NrLanes      = 2,
@@ -32,8 +31,8 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     localparam type                   axi_user_t   = logic [AxiUserWidth-1:0],
     localparam type                   axi_id_t     = logic [AxiIdWidth-1:0]
   ) (
-//    input  wire         sys_clk_p,sys_clk_n,    // use for boards with differential LVDS clock
-    input  logic        clk_i,
+    input  wire         sys_clk_p,sys_clk_n,    // use for boards with differential LVDS clock
+//    input  logic        clk_i,
     input  logic        rst_ni,
     output logic [63:0] exit_o,
     // Scan chain
@@ -41,6 +40,22 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     input  logic       rx_i,
     output logic       tx_o
     );
+    
+   /********************
+   *  Clocking Wizard  *
+   ********************/
+    
+    wire clk_i;
+    clk_wiz_0 CW0
+   (
+    .clk_out1(clk_i),     // output clk_out1
+    .reset(rst_ni), // input reset
+    .locked(),       // output locked
+    .clk_in1_p(sys_clk_p),  
+    .clk_in1_n(sys_clk_n)
+    );   
+    
+    
   /*************
    *  Signals  *
    *************/
