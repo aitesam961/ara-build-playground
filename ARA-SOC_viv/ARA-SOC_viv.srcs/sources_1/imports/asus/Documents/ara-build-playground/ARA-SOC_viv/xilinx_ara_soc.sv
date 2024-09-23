@@ -14,7 +14,7 @@
 module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     // Number of parallel vector lanes.
     parameter  int           unsigned NrLanes      = 2,
-    // Support for floating-point data types
+    // Support for floating-point data type`    s
     parameter  fpu_support_e          FPUSupport   = FPUSupportHalfSingleDouble,
     // AXI Interface
     parameter  int           unsigned AxiDataWidth = 32*NrLanes,
