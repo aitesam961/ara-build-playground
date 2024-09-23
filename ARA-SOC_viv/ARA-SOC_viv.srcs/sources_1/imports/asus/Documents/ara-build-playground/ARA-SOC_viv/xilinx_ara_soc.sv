@@ -1,16 +1,4 @@
-// Copyright 2022 ETH Zurich and University of Bologna and Polytechnique Montreal.
-// Solderpad Hardware License, Version 0.51, see LICENSE for details.
-// SPDX-License-Identifier: SHL-0.51
-//
-// Author: MohammadHossein AskariHemmat <m.h.askari.hemmat@gmail.com>
-// Description:
-// Ara's FPGA based SoC, containing:
-//       - ara_soc:
-//          - ara
-//          - L2 Cache
-//          - cva6/ariane
-//      - peripherals:
-//          - uart (wip)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     // Number of parallel vector lanes.
     parameter  int           unsigned NrLanes      = 2,
@@ -34,7 +22,7 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     input  wire         sys_clk_p,sys_clk_n,    // use for boards with differential LVDS clock
 //    input  logic        clk_i,
     input  logic        rst_ni,
-    output logic [63:0] exit_o,
+//    output logic [63:0] exit_o,
     // Scan chain
     // UART
     input  logic       rx_i,
@@ -60,6 +48,7 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
    *  Signals  *
    *************/
   // UART
+
   logic        uart_penable;
   logic        uart_pwrite;
   logic [31:0] uart_paddr;
@@ -70,6 +59,8 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   logic        uart_pslverr;
   
   
+
+
   /////////////////////////////
   //    CLK Conversion       //
   /////////////////////////////
@@ -95,7 +86,7 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   ) i_ara_soc (
     .clk_i         (clk_i       ),
     .rst_ni        (rst_ni      ),
-    .exit_o        (exit_o      ),
+//    .exit_o        (exit_o      ),
     .scan_enable_i (1'b0        ),
     .scan_data_i   (1'b0        ),
     .scan_data_o   (/* Unused */),
@@ -112,6 +103,14 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   //////////////////////
   //  Peripherals     //
   //////////////////////
+  
+  //////////////////////
+  //  UART ILA        //
+  //////////////////////
+  
+  
+  
+  
   //////////////////////
   //       UART       //
   //////////////////////

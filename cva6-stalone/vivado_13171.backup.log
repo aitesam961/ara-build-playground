@@ -1,0 +1,747 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 23 10:01:39 2024
+# Process ID: 13171
+# Current directory: /home/asus/Documents/ara-build-playground/cva6-stalone
+# Command line: vivado
+# Log file: /home/asus/Documents/ara-build-playground/cva6-stalone/vivado.log
+# Journal file: /home/asus/Documents/ara-build-playground/cva6-stalone/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/asus/Documents/Vivado/Projects/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+close_project
+open_project /home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg900-2
+Top: ariane_xilinx
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:652]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:655]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:658]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:661]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:666]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/ara.sv:669]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/core/cva6.sv:669]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/core/cva6_accel_first_pass_decoder_stub.sv:29]
+WARNING: [Synth 8-1921] elaboration system task fatal violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv:71]
+WARNING: [Synth 8-1921] elaboration system task fatal violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv:79]
+WARNING: [Synth 8-2507] parameter declaration becomes local in miss_handler with formal parameter declaration list [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/core/cache_subsystem/miss_handler.sv:72]
+WARNING: [Synth 8-2507] parameter declaration becomes local in rgmii_lfsr with formal parameter declaration list [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_lfsr.sv:364]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/sldu/sldu_op_dp.sv:16814]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/vlsu/vlsu.sv:297]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/vlsu/vlsu.sv:300]
+WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [/home/asus/pulp-ara/ara/hardware/src/vlsu/vlsu.sv:303]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 6956.461 ; gain = 136.719 ; free physical = 23603 ; free virtual = 28341
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ariane_xilinx' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/ariane_xilinx.sv:14]
+	Parameter IsRVFI bound to: 1'b0 
+	Parameter CVA6Cfg[NrCommitPorts] bound to: 2 - type: integer 
+	Parameter CVA6Cfg[AxiAddrWidth] bound to: 64 - type: integer 
+	Parameter CVA6Cfg[AxiDataWidth] bound to: 64 - type: integer 
+	Parameter CVA6Cfg[AxiIdWidth] bound to: 4 - type: integer 
+	Parameter CVA6Cfg[AxiUserWidth] bound to: 64 - type: integer 
+	Parameter CVA6Cfg[NrLoadBufEntries] bound to: 2 - type: integer 
+	Parameter CVA6Cfg[FpuEn] bound to: 1'b1 
+	Parameter CVA6Cfg[XF16] bound to: 1'b0 
+	Parameter CVA6Cfg[XF16ALT] bound to: 1'b0 
+	Parameter CVA6Cfg[XF8] bound to: 1'b0 
+	Parameter CVA6Cfg[XF8ALT] bound to: 1'b0 
+	Parameter CVA6Cfg[RVA] bound to: 1'b1 
+	Parameter CVA6Cfg[RVB] bound to: 1'b1 
+	Parameter CVA6Cfg[RVV] bound to: 1'b0 
+	Parameter CVA6Cfg[RVC] bound to: 1'b1 
+	Parameter CVA6Cfg[RVH] bound to: 1'b0 
+	Parameter CVA6Cfg[RVZCB] bound to: 1'b1 
+	Parameter CVA6Cfg[XFVec] bound to: 1'b0 
+	Parameter CVA6Cfg[CvxifEn] bound to: 1'b1 
+	Parameter CVA6Cfg[ZiCondExtEn] bound to: 1'b0 
+	Parameter CVA6Cfg[RVSCLIC] bound to: 1'b0 
+	Parameter CVA6Cfg[RVF] bound to: 1'b0 
+	Parameter CVA6Cfg[RVD] bound to: 1'b0 
+	Parameter CVA6Cfg[FpPresent] bound to: 1'b0 
+	Parameter CVA6Cfg[NSX] bound to: 1'b0 
+	Parameter CVA6Cfg[FLen] bound to: 0 - type: integer 
+	Parameter CVA6Cfg[RVFVec] bound to: 1'b0 
+	Parameter CVA6Cfg[XF16Vec] bound to: 1'b0 
+	Parameter CVA6Cfg[XF16ALTVec] bound to: 1'b0 
+	Parameter CVA6Cfg[XF8Vec] bound to: 1'b0 
+	Parameter CVA6Cfg[NrRgprPorts] bound to: 0 - type: integer 
+	Parameter CVA6Cfg[NrWbPorts] bound to: 0 - type: integer 
+	Parameter CVA6Cfg[EnableAccelerator] bound to: 1'b0 
+	Parameter CVA6Cfg[RVS] bound to: 1'b1 
+	Parameter CVA6Cfg[RVU] bound to: 1'b1 
+	Parameter CVA6Cfg[HaltAddress] bound to: 64'b0000000000000000000000000000000000000000000000000000100000000000 
+	Parameter CVA6Cfg[ExceptionAddress] bound to: 64'b0000000000000000000000000000000000000000000000000000100000001000 
+	Parameter CVA6Cfg[RASDepth] bound to: 2 - type: integer 
+	Parameter CVA6Cfg[BTBEntries] bound to: 32 - type: integer 
+	Parameter CVA6Cfg[BHTEntries] bound to: 128 - type: integer 
+	Parameter CVA6Cfg[DmBaseAddress] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[TvalEn] bound to: 1'b1 
+	Parameter CVA6Cfg[NrPMPEntries] bound to: 8 - type: integer 
+	Parameter CVA6Cfg[PMPCfgRstVal][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPCfgRstVal][0] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPAddrRstVal][0] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[PMPEntryReadOnly] bound to: 16'b0000000000000000 
+	Parameter CVA6Cfg[NOCType] bound to: 0 - type: integer 
+	Parameter CVA6Cfg[CLICNumInterruptSrc] bound to: 256 - type: integer 
+	Parameter CVA6Cfg[NrNonIdempotentRules] bound to: 1 - type: integer 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentAddrBase][0] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[NonIdempotentLength][0] bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter CVA6Cfg[NrExecuteRegionRules] bound to: 3 - type: integer 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][2] bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][1] bound to: 64'b0000000000000000000000000000000000000000000000010000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionAddrBase][0] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][2] bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][1] bound to: 64'b0000000000000000000000000000000000000000000000010000000000000000 
+	Parameter CVA6Cfg[ExecuteRegionLength][0] bound to: 64'b0000000000000000000000000000000000000000000000000001000000000000 
+	Parameter CVA6Cfg[NrCachedRegionRules] bound to: 1 - type: integer 
+	Parameter CVA6Cfg[CachedRegionAddrBase][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionAddrBase][0] bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][15] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][14] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][13] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][12] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][11] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][10] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][9] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][8] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][7] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][6] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][5] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][4] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][3] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][2] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][1] bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CVA6Cfg[CachedRegionLength][0] bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+	Parameter CVA6Cfg[MaxOutstandingStores] bound to: 7 - type: integer 
+	Parameter CVA6Cfg[DebugEn] bound to: 1'b1 
+	Parameter CVA6Cfg[NonIdemPotenceEn] bound to: 1'b0 
+	Parameter CVA6Cfg[AxiBurstWriteEn] bound to: 1'b0 
+	Parameter NumWords bound to: 3145728 - type: integer 
+	Parameter NBSlave bound to: 2 - type: integer 
+	Parameter AxiAddrWidth bound to: 64 - type: integer 
+	Parameter AxiDataWidth bound to: 64 - type: integer 
+	Parameter AxiIdWidthMaster bound to: 4 - type: integer 
+	Parameter AxiIdWidthSlaves bound to: 5 - type: integer 
+	Parameter AxiUserWidth bound to: 64 - type: integer 
+	Parameter AXI_XBAR_CFG[NoSlvPorts] bound to: 2 - type: integer 
+	Parameter AXI_XBAR_CFG[NoMstPorts] bound to: 10 - type: integer 
+	Parameter AXI_XBAR_CFG[MaxMstTrans] bound to: 1 - type: integer 
+	Parameter AXI_XBAR_CFG[MaxSlvTrans] bound to: 1 - type: integer 
+	Parameter AXI_XBAR_CFG[FallThrough] bound to: 1'b0 
+	Parameter AXI_XBAR_CFG[LatencyMode] bound to: 10'b1111111111 
+	Parameter AXI_XBAR_CFG[AxiIdWidthSlvPorts] bound to: 4 - type: integer 
+	Parameter AXI_XBAR_CFG[AxiIdUsedSlvPorts] bound to: 4 - type: integer 
+	Parameter AXI_XBAR_CFG[UniqueIds] bound to: 1'b0 
+	Parameter AXI_XBAR_CFG[AxiAddrWidth] bound to: 64 - type: integer 
+	Parameter AXI_XBAR_CFG[AxiDataWidth] bound to: 64 - type: integer 
+	Parameter AXI_XBAR_CFG[NoAddrRules] bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 5 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'bootrom_64' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_64.sv:17]
+	Parameter RomSize bound to: 32'sb00000000000000000000001101111111 
+INFO: [Synth 8-6155] done synthesizing module 'bootrom_64' (1#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_64.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rstgen' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'rstgen_bypass' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv:15]
+	Parameter NumRegs bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'rstgen_bypass' (2#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'rstgen' (3#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'axi_xbar_intf' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv:242]
+	Parameter AXI_USER_WIDTH bound to: 64 - type: integer 
+	Parameter Cfg[NoSlvPorts] bound to: 2 - type: integer 
+	Parameter Cfg[NoMstPorts] bound to: 10 - type: integer 
+	Parameter Cfg[MaxMstTrans] bound to: 1 - type: integer 
+	Parameter Cfg[MaxSlvTrans] bound to: 1 - type: integer 
+	Parameter Cfg[FallThrough] bound to: 1'b0 
+	Parameter Cfg[LatencyMode] bound to: 10'b1111111111 
+	Parameter Cfg[AxiIdWidthSlvPorts] bound to: 4 - type: integer 
+	Parameter Cfg[AxiIdUsedSlvPorts] bound to: 4 - type: integer 
+	Parameter Cfg[UniqueIds] bound to: 1'b0 
+	Parameter Cfg[AxiAddrWidth] bound to: 64 - type: integer 
+	Parameter Cfg[AxiDataWidth] bound to: 64 - type: integer 
+	Parameter Cfg[NoAddrRules] bound to: 10 - type: integer 
+	Parameter AxiIdWidthMstPorts bound to: 32'b00000000000000000000000000000101 
+INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv:18]
+	Parameter Cfg[NoSlvPorts] bound to: 2 - type: integer 
+	Parameter Cfg[NoMstPorts] bound to: 10 - type: integer 
+	Parameter Cfg[MaxMstTrans] bound to: 1 - type: integer 
+	Parameter Cfg[MaxSlvTrans] bound to: 1 - type: integer 
+	Parameter Cfg[FallThrough] bound to: 1'b0 
+	Parameter Cfg[LatencyMode] bound to: 10'b1111111111 
+	Parameter Cfg[AxiIdWidthSlvPorts] bound to: 4 - type: integer 
+	Parameter Cfg[AxiIdUsedSlvPorts] bound to: 4 - type: integer 
+	Parameter Cfg[UniqueIds] bound to: 1'b0 
+	Parameter Cfg[AxiAddrWidth] bound to: 64 - type: integer 
+	Parameter Cfg[AxiDataWidth] bound to: 64 - type: integer 
+	Parameter Cfg[NoAddrRules] bound to: 10 - type: integer 
+	Parameter ATOPs bound to: 1'b1 
+	Parameter cfg_NoMstPorts bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_decode' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/addr_decode.sv:30]
+	Parameter NoIndices bound to: 10 - type: integer 
+	Parameter NoRules bound to: 10 - type: integer 
+	Parameter IdxWidth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (4#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/addr_decode.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'axi_demux' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:19]
+	Parameter AxiIdWidth bound to: 4 - type: integer 
+	Parameter NoMstPorts bound to: 32'b00000000000000000000000000001011 
+	Parameter MaxTrans bound to: 1 - type: integer 
+	Parameter AxiLookBits bound to: 4 - type: integer 
+	Parameter UniqueIds bound to: 1'b0 
+	Parameter FallThrough bound to: 1'b0 
+	Parameter SpillAw bound to: 1'b1 
+	Parameter SpillW bound to: 1'b1 
+	Parameter SpillB bound to: 1'b1 
+	Parameter SpillAr bound to: 1'b1 
+	Parameter SpillR bound to: 1'b1 
+	Parameter SelectWidth bound to: 32'b00000000000000000000000000000100 
+	Parameter IdCounterWidth bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:576]
+	Parameter AxiIdBits bound to: 4 - type: integer 
+	Parameter CounterWidth bound to: 32'b00000000000000000000000000000001 
+	Parameter NoCounters bound to: 32'b00000000000000000000000000010000 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (5#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:626]
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux_id_counters' (6#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:576]
+INFO: [Synth 8-6157] synthesizing module 'spill_register' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable' (7#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register' (8#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 1 - type: integer 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter FifoDepth bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element read_pointer_q_reg was removed.  [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (9#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized0' (9#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (9#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized1' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized1' (9#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (9#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000001011 
+	Parameter DataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter ExtPrio bound to: 1'b0 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+	Parameter FairArb bound to: 1'b1 
+	Parameter IdxWidth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6157] synthesizing module 'lzc' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:25]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001011 
+	Parameter MODE bound to: 1'b0 
+	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'lzc' (10#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized2' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized3' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized3' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000001011 
+	Parameter DataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter ExtPrio bound to: 1'b0 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+	Parameter FairArb bound to: 1'b1 
+	Parameter IdxWidth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (11#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+WARNING: [Synth 8-5858] RAM mst_reqs_o_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (12#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv:19]
+	Parameter AxiIdWidth bound to: 4 - type: integer 
+	Parameter Resp bound to: 2'b11 
+	Parameter RespWidth bound to: 64 - type: integer 
+	Parameter RespData bound to: 64'b1100101000010001101010110001111010111010110111001010101100011110 
+	Parameter ATOPs bound to: 1'b1 
+	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6157] synthesizing module 'axi_atop_filter' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv:37]
+	Parameter AxiIdWidth bound to: 4 - type: integer 
+	Parameter AxiMaxWriteTxns bound to: 32'b00000000000000000000000000000100 
+	Parameter COUNTER_WIDTH bound to: 32'b00000000000000000000000000000011 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv:118]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv:268]
+INFO: [Synth 8-6157] synthesizing module 'stream_register' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_register.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter ALM_EMPTY_TH bound to: 32'b00000000000000000000000000000001 
+	Parameter ALM_FULL_TH bound to: 32'b00000000000000000000000000000001 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter FifoDepth bound to: 32'b00000000000000000000000000000001 
+WARNING: [Synth 8-5858] RAM mem_q_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM mem_n_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element read_pointer_q_reg was removed.  [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized0' (12#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v2' (13#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'stream_register' (14#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_register.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'axi_atop_filter' (15#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized1' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b1 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000010 
+	Parameter FifoDepth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (15#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000010 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter FifoDepth bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (15#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000010 
+	Parameter FifoDepth bound to: 32'b00000000000000000000000000000100 
+WARNING: [Synth 8-5858] RAM mem_q_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM mem_n_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (15#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/counter.sv:14]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (15#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (16#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/counter.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (17#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'axi_mux' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_mux.sv:27]
+	Parameter SlvAxiIDWidth bound to: 4 - type: integer 
+	Parameter NoSlvPorts bound to: 2 - type: integer 
+	Parameter MaxWTrans bound to: 1 - type: integer 
+	Parameter FallThrough bound to: 1'b0 
+	Parameter SpillAw bound to: 1'b1 
+	Parameter SpillW bound to: 1'b1 
+	Parameter SpillB bound to: 1'b1 
+	Parameter SpillAr bound to: 1'b1 
+	Parameter SpillR bound to: 1'b1 
+	Parameter MstIdxBits bound to: 32'b00000000000000000000000000000001 
+	Parameter MstAxiIDWidth bound to: 32'b00000000000000000000000000000101 
+INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18]
+	Parameter NoBus bound to: 1 - type: integer 
+	Parameter AxiIdWidthSlvPort bound to: 4 - type: integer 
+	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000101 
+	Parameter PreIdWidth bound to: 32'b00000000000000000000000000000001 
+WARNING: [Synth 8-5858] RAM mst_aw_chans_o_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM mst_ar_chans_o_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 2 - type: integer 
+	Parameter DataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter ExtPrio bound to: 1'b0 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+	Parameter FairArb bound to: 1'b1 
+	Parameter IdxWidth bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:25]
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter MODE bound to: 1'b0 
+	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized4' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 1 - type: integer 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter FifoDepth bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element read_pointer_q_reg was removed.  [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized4' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized4' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized4' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized5' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized5' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 2 - type: integer 
+	Parameter DataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter ExtPrio bound to: 1'b0 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+	Parameter FairArb bound to: 1'b1 
+	Parameter IdxWidth bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized6' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized6' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized7' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized7' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized7' (18#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mux' (19#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_mux.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'axi_xbar' (20#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'axi_xbar_intf' (21#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv:242]
+INFO: [Synth 8-6157] synthesizing module 'dmi_jtag' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag.sv:19]
+	Parameter IdcodeValue bound to: 1 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag.sv:101]
+INFO: [Synth 8-6157] synthesizing module 'dmi_jtag_tap' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:19]
+	Parameter IrLength bound to: 32'b00000000000000000000000000000101 
+	Parameter IdcodeValue bound to: 1 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:186]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:207]
+INFO: [Synth 8-6157] synthesizing module 'cluster_clock_inverter' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'tc_clk_inverter' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'tc_clk_inverter' (22#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'cluster_clock_inverter' (23#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'pulp_clock_mux2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'tc_clk_mux2' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv:74]
+INFO: [Synth 8-6155] done synthesizing module 'tc_clk_mux2' (24#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv:74]
+INFO: [Synth 8-6155] done synthesizing module 'pulp_clock_mux2' (25#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv:66]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:260]
+INFO: [Synth 8-226] default block is never used [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:260]
+INFO: [Synth 8-6155] done synthesizing module 'dmi_jtag_tap' (26#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'dmi_cdc' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_cdc.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:19]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:36]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:37]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase_src' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:68]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:82]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:84]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase_src' (27#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase_dst' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:118]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:133]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:133]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase_dst' (28#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:118]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase' (29#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase_src__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase_src__parameterized0' (29#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'cdc_2phase_dst__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:118]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase_dst__parameterized0' (29#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:118]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_2phase__parameterized0' (29#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dmi_cdc' (30#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_cdc.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dmi_jtag' (31#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'dm_top' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_top.sv:20]
+	Parameter NrHarts bound to: 32'b00000000000000000000000000000001 
+	Parameter BusWidth bound to: 32'b00000000000000000000000001000000 
+	Parameter DmBaseAddress bound to: 32'b00000000000000000001000000000000 
+	Parameter SelectableHarts bound to: 1'b1 
+	Parameter ReadByteEnable bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'dm_csrs' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv:18]
+	Parameter NrHarts bound to: 32'b00000000000000000000000000000001 
+	Parameter BusWidth bound to: 32'b00000000000000000000000001000000 
+	Parameter SelectableHarts bound to: 1'b1 
+	Parameter HartSelLen bound to: 32'b00000000000000000000000000000001 
+	Parameter NrHartsAligned bound to: 32'b00000000000000000000000000000010 
+	Parameter DataEnd bound to: 8'b00000101 
+	Parameter ProgBufEnd bound to: 8'b00100111 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv:294]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv:360]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v2__parameterized0' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000010 
+	Parameter ALM_EMPTY_TH bound to: 32'b00000000000000000000000000000001 
+	Parameter ALM_FULL_TH bound to: 32'b00000000000000000000000000000001 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized5' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000010 
+	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001 
+	Parameter FifoDepth bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized5' (31#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v2__parameterized0' (31#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13]
+WARNING: [Synth 8-5858] RAM hartinfo_aligned_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3936] Found unconnected internal register 'havereset_d_aligned_reg' and it is trimmed from '2' to '1' bits. [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv:204]
+INFO: [Synth 8-6155] done synthesizing module 'dm_csrs' (32#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'dm_sba' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv:18]
+	Parameter BusWidth bound to: 32'b00000000000000000000000001000000 
+	Parameter ReadByteEnable bound to: 1'b1 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv:72]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv:101]
+INFO: [Synth 8-6155] done synthesizing module 'dm_sba' (33#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'dm_mem' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:19]
+	Parameter NrHarts bound to: 32'b00000000000000000000000000000001 
+	Parameter BusWidth bound to: 32'b00000000000000000000000001000000 
+	Parameter SelectableHarts bound to: 1'b1 
+	Parameter DmBaseAddress bound to: 32'b00000000000000000001000000000000 
+	Parameter DbgAddressBits bound to: 32'b00000000000000000000000000001100 
+	Parameter HartSelLen bound to: 32'b00000000000000000000000000000001 
+	Parameter NrHartsAligned bound to: 32'b00000000000000000000000000000010 
+	Parameter MaxAar bound to: 32'b00000000000000000000000000000100 
+	Parameter HasSndScratch bound to: 1'b1 
+	Parameter LoadBaseAddr bound to: 5'b01010 
+	Parameter DataBaseAddr bound to: 12'b001110000000 
+	Parameter DataEndAddr bound to: 12'b001110000111 
+	Parameter ProgBufBaseAddr bound to: 12'b001101100000 
+	Parameter ProgBufEndAddr bound to: 12'b001101111111 
+	Parameter AbstractCmdBaseAddr bound to: 12'b001100111000 
+	Parameter AbstractCmdEndAddr bound to: 12'b001101011111 
+	Parameter WhereToAddr bound to: 12'b001100000000 
+	Parameter FlagsBaseAddr bound to: 12'b010000000000 
+	Parameter FlagsEndAddr bound to: 12'b011111111111 
+	Parameter HaltedAddr bound to: 12'b000100000000 
+	Parameter GoingAddr bound to: 12'b000100000100 
+	Parameter ResumingAddr bound to: 12'b000100001000 
+	Parameter ExceptionAddr bound to: 12'b000100001100 
+INFO: [Synth 8-6157] synthesizing module 'debug_rom' [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/debug_rom/debug_rom.sv:17]
+	Parameter RomSize bound to: 32'b00000000000000000000000000010011 
+INFO: [Synth 8-6155] done synthesizing module 'debug_rom' (34#1) [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/debug_rom/debug_rom.sv:17]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:144]
+INFO: [Synth 8-226] default block is never used [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:144]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:242]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:272]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/asus/pulp-ara/ara/hardware/deps/cva6/corev_apu/fpga/ariane.srcs/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv:351]

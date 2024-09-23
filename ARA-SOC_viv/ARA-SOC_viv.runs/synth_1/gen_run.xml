@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1726479951">
-  <File Type="PA-TCL" Name="ara_top_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="ara_top_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ara_top_wrapper.vds"/>
-  <File Type="RDS-DCP" Name="ara_top_wrapper.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="ara_top_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="ara_top_wrapper_utilization_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727078871">
+  <File Type="PA-TCL" Name="xilinx_ara_soc.tcl"/>
+  <File Type="REPORTS-TCL" Name="xilinx_ara_soc_reports.tcl"/>
+  <File Type="RDS-RDS" Name="xilinx_ara_soc.vds"/>
+  <File Type="RDS-DCP" Name="xilinx_ara_soc.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="xilinx_ara_soc_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="xilinx_ara_soc_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/asus/pulp-ara/ara-v2/ara/hardware/deps/axi/include/axi/typedef.svh">
@@ -68,6 +68,13 @@
         <Attr Name="ImportPath" Val="$PPRDIR/../deps/apb/include/apb/apb_assign.svh"/>
         <Attr Name="ImportTime" Val="1724504309"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_debug_uart/ila_debug_uart.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -2454,13 +2461,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ara_top_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/asus/Downloads/apb_uart-master/src/vhdl_orig/slib_clock_div.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -3713,19 +3713,11 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ara_top_wrapper"/>
-      <Option Name="TopLib" Val="xil_defaultlib"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/ara_top_wrapper.v"/>
+      <Option Name="TopModule" Val="xilinx_ara_soc"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/ara.xdc">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
@@ -3744,8 +3736,14 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/imports/asus/Downloads/Genesys-2-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../Downloads/Genesys-2-Master.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/asus/Downloads/Genesys-2-Master.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

@@ -23,325 +23,325 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/asus/Downloads/cva6-stalone/cva6-stalone.cache/wt [current_project]
-set_property parent.project_path /home/asus/Downloads/cva6-stalone/cva6-stalone.xpr [current_project]
+set_property webtalk.parent_dir /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.cache/wt [current_project]
+set_property parent.project_path /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:genesys2:part0:1.1 [current_project]
-set_property ip_output_repo /home/asus/Downloads/cva6-stalone/cva6-stalone.cache/ip [current_project]
+set_property ip_output_repo /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {
-  /home/asus/Documents/Vivado/src/axi_sd_bridge/include
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/includes/common_cells/include
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/includes/axi/include
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/includes/hpdcache/rtl/include
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/includes/register_interface/include
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/includes/core/include
+  /home/asus/Documents/Documents/Vivado/src/axi_sd_bridge/include
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/includes/common_cells/include
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/includes/axi/include
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/includes/hpdcache/rtl/include
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/includes/register_interface/include
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/includes/core/include
 } [current_fileset]
 read_verilog {
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh
 }
-set_property file_type "Verilog Header" [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
-set_property is_global_include true [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
-set_property file_type "Verilog Header" [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh]
-set_property is_global_include true [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh]
+set_property file_type "Verilog Header" [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
+set_property is_global_include true [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
+set_property file_type "Verilog Header" [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh]
+set_property is_global_include true [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh]
 read_verilog -library xil_defaultlib -sv {
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/config_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/riscv_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/ariane_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/acc_dispatcher.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/addr_decode.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/alu.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/amo_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_timer/apb_timer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/register_interface/src/apb_to_reg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_axi_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cvxif_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/ariane.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_soc_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_axi_soc_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ariane_regfile_ff.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ariane_regfile_fpga.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/build_config_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi2apb/src/axi2apb_64_32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/axi_mem_if/src/axi2mem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/axi_adapter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_ar_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_aw_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_b_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/clint/axi_lite_interface.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_mux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_r_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_res_tbl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/axi_shim.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_single_slice.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_w_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/axis_gmii_rx.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/axis_gmii_tx.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/bht.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_64.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/branch_unit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/btb.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/std_cache_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cache_ctrl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/clint/clint.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/commit_stage.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/compressed_decoder.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/controller.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/counter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/csr_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/csr_regfile.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/wt_cache_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6_accel_first_pass_decoder_stub.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cva6_hpdcache_default_config_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_icache.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_mmu_sv32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_ptw_sv32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6_rvfi_probes.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_tlb_sv32.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/cvxif_example_coprocessor.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_fu.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/debug_rom/debug_rom.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/decoder.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_top.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_cdc.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/dualmem_widen.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/dualmem_widen8.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g_rgmii.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g_rgmii_fifo.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ex_stage.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/fan_ctrl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v1.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_classifier.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_divsqrt_multi.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_fma.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_block.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_fmt_slice.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_rounding.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_top.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/fpu_wrap.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/framing_top.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/frontend.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/id_stage.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/iddr.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/instr_decoder.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/instr_queue.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/instr_realign.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/instr_scan.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/issue_read_operands.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/issue_stage.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/load_store_unit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/load_unit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/lsu_bypass.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/macro_decoder.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/miss_handler.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/mmu.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mult.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/multiplier.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/oddr.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/perf_counters.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/plic_regmap.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/plic_top.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/pmp/src/pmp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/pmp/src/pmp_entry.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/popcount.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/ptw.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/ras.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/register_interface/src/reg_intf.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_core.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_lfsr.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_phy_if.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_soc.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/rv_plic_gateway.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/rv_plic_target.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/scoreboard.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/serdiv.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/common/local/util/sram.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/ssio_ddr_in.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/std_cache_subsystem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/std_nbdcache.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/store_buffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/store_unit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_demux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_register.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/tag_cmp.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/common/local/util/tc_sram_fpga_wrapper.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_timer/timer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/tlb.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/unread.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_axi_adapter.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_cache_subsystem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_ctrl.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_mem.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_missunit.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane_xilinx.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/config_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/riscv_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/ariane_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/acc_dispatcher.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/addr_decode.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/alu.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/amo_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_timer/apb_timer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/register_interface/src/apb_to_reg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_axi_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cvxif_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/ariane.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_soc_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/ariane_axi_soc_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane_peripherals_xilinx.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ariane_regfile_ff.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ariane_regfile_fpga.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/build_config_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi2apb/src/axi2apb_64_32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/axi_mem_if/src/axi2mem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/axi_adapter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_ar_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_aw_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_b_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_demux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/tb/axi_intf.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/clint/axi_lite_interface.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_mux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_r_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_res_tbl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/axi_shim.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_single_slice.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/axi_slice/src/axi_w_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/axis_gmii_rx.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/axis_gmii_tx.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/bht.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/bootrom/bootrom_64.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/branch_unit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/btb.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/std_cache_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cache_ctrl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/cdc_2phase.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/clint/clint.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/commit_stage.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/compressed_decoder.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/controller.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/counter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/csr_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/csr_regfile.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/wt_cache_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6_accel_first_pass_decoder_stub.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/include/cva6_hpdcache_default_config_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_icache.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_mmu_sv32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_ptw_sv32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cva6_rvfi_probes.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_shared_tlb_sv32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv32/cva6_tlb_sv32.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/cvxif_example_coprocessor.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_fu.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/debug_rom/debug_rom.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/decoder.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_csrs.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_mem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_sba.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dm_top.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_cdc.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/dualmem_widen.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/dualmem_widen8.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g_rgmii.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/eth_mac_1g_rgmii_fifo.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/ex_stage.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/fan_ctrl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v1.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_classifier.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_divsqrt_multi.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_fma.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_block.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_fmt_slice.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_rounding.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpnew_top.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/fpu_wrap.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/framing_top.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/frontend.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/id_stage.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/iddr.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cvxif_example/instr_decoder.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/instr_queue.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/instr_realign.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/instr_scan.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/issue_read_operands.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/issue_stage.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/load_store_unit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/load_unit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/lsu_bypass.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/lzc.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/macro_decoder.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/miss_handler.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/mmu.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mult.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/multiplier.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/oddr.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/perf_counters.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/plic_regmap.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/plic_top.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/pmp/src/pmp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/pmp/src/pmp_entry.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/popcount.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/ptw.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/frontend/ras.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/register_interface/src/reg_intf.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_core.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_lfsr.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_phy_if.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/rgmii_soc.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/rv_plic_gateway.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/rv_plic/rtl/rv_plic_target.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/scoreboard.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/serdiv.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/common/local/util/sram.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane-ethernet/ssio_ddr_in.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/std_cache_subsystem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/std_nbdcache.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/store_buffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/store_unit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_demux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/stream_register.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/tag_cmp.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/common/local/util/tc_sram_fpga_wrapper.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_timer/timer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/mmu_sv39/tlb.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/src/unread.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_axi_adapter.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_cache_subsystem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_ctrl.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_mem.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_missunit.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/ariane_xilinx.sv
 }
 read_vhdl -library xil_defaultlib {
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/apb_uart.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_clock_div.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_counter.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_edge_detect.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_fifo.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_input_filter.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_input_sync.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_mv_filter.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_baudgen.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_interrupt.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_receiver.vhd
-  /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_transmitter.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/apb_uart.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_clock_div.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_counter.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_edge_detect.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_fifo.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_input_filter.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_input_sync.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/slib_mv_filter.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_baudgen.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_interrupt.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_receiver.vhd
+  /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/apb_uart/src/vhdl_orig/uart_transmitter.vhd
 }
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci
-set_property used_in_synthesis false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_ooc.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci
+set_property used_in_synthesis false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_ooc.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci
-set_property used_in_synthesis false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_ooc.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci
+set_property used_in_synthesis false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_ooc.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/constraints/xlnx_mig_7_ddr3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/constraints/xlnx_mig_7_ddr3.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/constraints/xlnx_mig_7_ddr3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3/user_design/constraints/xlnx_mig_7_ddr3.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_ooc.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_ooc.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci
-set_property used_in_synthesis false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_ooc.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci
+set_property used_in_synthesis false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter_ooc.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio_board.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio_board.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci
-set_property used_in_synthesis false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_ooc.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci
+set_property used_in_synthesis false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter_ooc.xdc]
 
-read_ip -quiet /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_board.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_clocks.xdc]
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_board.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_clocks.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -351,11 +351,11 @@ set_property used_in_implementation false [get_files -all /home/asus/Downloads/c
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc
-set_property used_in_implementation false [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc]
+read_xdc /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc
+set_property used_in_implementation false [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc]
 
-read_xdc /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc
-set_property used_in_implementation false [get_files /home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc]
+read_xdc /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc
+set_property used_in_implementation false [get_files /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

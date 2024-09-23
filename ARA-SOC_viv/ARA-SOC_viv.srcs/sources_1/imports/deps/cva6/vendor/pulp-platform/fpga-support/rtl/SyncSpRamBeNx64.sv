@@ -21,9 +21,8 @@
  * - Michael Schaffner  <schaffer@iis.ee.ethz.ch>
  */
 
-`ifndef FPGA_TARGET_ALTERA
-  `define FPGA_TARGET_XILINX
-`endif
+`define FPGA_TARGET_XILINX
+
 
 module SyncSpRamBeNx64
 #(
@@ -91,42 +90,42 @@ module SyncSpRamBeNx64
     end
   `endif
 
-  ////////////////////////////
-  // ALTERA implementation
-  ////////////////////////////
+//  ////////////////////////////
+//  // ALTERA implementation
+//  ////////////////////////////
 
-  `ifdef FPGA_TARGET_ALTERA
-    logic [DATA_BYTES-1:0][7:0] Mem_DP[0:DATA_DEPTH-1];
+//  `ifdef FPGA_TARGET_ALTERA
+//    logic [DATA_BYTES-1:0][7:0] Mem_DP[0:DATA_DEPTH-1];
 
-    always_ff @(posedge Clk_CI) begin
-      //pragma translate_off
-      automatic logic [63:0] val;
-      if(Rst_RBI == 1'b0 && SIM_INIT>0) begin
-        for(int k=0; k<DATA_DEPTH;k++) begin
-          if(SIM_INIT==1) val = '0;
-      `ifndef VERILATOR
-          else if(SIM_INIT==2) void'(randomize(val));
-      `endif
-          else val = 64'hdeadbeefdeadbeef;
-          Mem_DP[k] = val;
-        end
-      end else
-      //pragma translate_on
-      if(CSel_SI) begin
-        if(WrEn_SI) begin // needs to be static, otherwise Altera wont infer it
-          if(BEn_SI[0]) Mem_DP[Addr_DI][0] <= WrData_DI[7:0];
-          if(BEn_SI[1]) Mem_DP[Addr_DI][1] <= WrData_DI[15:8];
-          if(BEn_SI[2]) Mem_DP[Addr_DI][2] <= WrData_DI[23:16];
-          if(BEn_SI[3]) Mem_DP[Addr_DI][3] <= WrData_DI[31:24];
-          if(BEn_SI[4]) Mem_DP[Addr_DI][4] <= WrData_DI[39:32];
-          if(BEn_SI[5]) Mem_DP[Addr_DI][5] <= WrData_DI[47:40];
-          if(BEn_SI[6]) Mem_DP[Addr_DI][6] <= WrData_DI[55:48];
-          if(BEn_SI[7]) Mem_DP[Addr_DI][7] <= WrData_DI[63:56];
-        end
-        RdData_DN <= Mem_DP[Addr_DI];
-      end
-    end
-  `endif
+//    always_ff @(posedge Clk_CI) begin
+//      //pragma translate_off
+//      automatic logic [63:0] val;
+//      if(Rst_RBI == 1'b0 && SIM_INIT>0) begin
+//        for(int k=0; k<DATA_DEPTH;k++) begin
+//          if(SIM_INIT==1) val = '0;
+//      `ifndef VERILATOR
+//          else if(SIM_INIT==2) void'(randomize(val));
+//      `endif
+//          else val = 64'hdeadbeefdeadbeef;
+//          Mem_DP[k] = val;
+//        end
+//      end else
+//      //pragma translate_on
+//      if(CSel_SI) begin
+//        if(WrEn_SI) begin // needs to be static, otherwise Altera wont infer it
+//          if(BEn_SI[0]) Mem_DP[Addr_DI][0] <= WrData_DI[7:0];
+//          if(BEn_SI[1]) Mem_DP[Addr_DI][1] <= WrData_DI[15:8];
+//          if(BEn_SI[2]) Mem_DP[Addr_DI][2] <= WrData_DI[23:16];
+//          if(BEn_SI[3]) Mem_DP[Addr_DI][3] <= WrData_DI[31:24];
+//          if(BEn_SI[4]) Mem_DP[Addr_DI][4] <= WrData_DI[39:32];
+//          if(BEn_SI[5]) Mem_DP[Addr_DI][5] <= WrData_DI[47:40];
+//          if(BEn_SI[6]) Mem_DP[Addr_DI][6] <= WrData_DI[55:48];
+//          if(BEn_SI[7]) Mem_DP[Addr_DI][7] <= WrData_DI[63:56];
+//        end
+//        RdData_DN <= Mem_DP[Addr_DI];
+//      end
+//    end
+//  `endif
 
   ////////////////////////////
   // optional output regs
