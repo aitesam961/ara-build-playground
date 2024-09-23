@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/asus/Downloads/cva6-stalone/cva6-stalone.runs/synth_1'
+HD_PWD='/home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

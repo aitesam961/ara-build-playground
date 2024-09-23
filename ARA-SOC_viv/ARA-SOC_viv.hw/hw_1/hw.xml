@@ -12,7 +12,7 @@
       <Properties Property="PROGRAM.CFG_PROGRAM" value="1"/>
       <Properties Property="PROGRAM.CHECKSUM" value="0"/>
       <Properties Property="PROGRAM.ERASE" value="1"/>
-      <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/ara_top_wrapper.bin"/>
+      <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/xilinx_ara_soc.bin"/>
       <Properties Property="PROGRAM.PRM_FILE" value=""/>
       <Properties Property="PROGRAM.UNUSED_PIN_TERMINATION" value="pull-none"/>
       <Properties Property="PROGRAM.VERIFY" value="1"/>
@@ -20,10 +20,117 @@
   </ObjectList>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7k325t_0" gui_info="">
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="/opt/Xilinx/Vivado/2019.1/data/xicom/cfgmem/bitfile/spi_xc7k325t_pullnone.bit"/>
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/xilinx_ara_soc.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/xilinx_ara_soc.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/xilinx_ara_soc.bin"/>
       <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256sxxxxxx0-spi-x1_x2_x4"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>
-  <probeset name="hw project" active="false"/>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="ILAUART"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="uart_prdata[31]"/>
+        <net name="uart_prdata[30]"/>
+        <net name="uart_prdata[29]"/>
+        <net name="uart_prdata[28]"/>
+        <net name="uart_prdata[27]"/>
+        <net name="uart_prdata[26]"/>
+        <net name="uart_prdata[25]"/>
+        <net name="uart_prdata[24]"/>
+        <net name="uart_prdata[23]"/>
+        <net name="uart_prdata[22]"/>
+        <net name="uart_prdata[21]"/>
+        <net name="uart_prdata[20]"/>
+        <net name="uart_prdata[19]"/>
+        <net name="uart_prdata[18]"/>
+        <net name="uart_prdata[17]"/>
+        <net name="uart_prdata[16]"/>
+        <net name="uart_prdata[15]"/>
+        <net name="uart_prdata[14]"/>
+        <net name="uart_prdata[13]"/>
+        <net name="uart_prdata[12]"/>
+        <net name="uart_prdata[11]"/>
+        <net name="uart_prdata[10]"/>
+        <net name="uart_prdata[9]"/>
+        <net name="uart_prdata[8]"/>
+        <net name="uart_prdata[7]"/>
+        <net name="uart_prdata[6]"/>
+        <net name="uart_prdata[5]"/>
+        <net name="uart_prdata[4]"/>
+        <net name="uart_prdata[3]"/>
+        <net name="uart_prdata[2]"/>
+        <net name="uart_prdata[1]"/>
+        <net name="uart_prdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="ILAUART"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="uart_pwdata[31]"/>
+        <net name="uart_pwdata[30]"/>
+        <net name="uart_pwdata[29]"/>
+        <net name="uart_pwdata[28]"/>
+        <net name="uart_pwdata[27]"/>
+        <net name="uart_pwdata[26]"/>
+        <net name="uart_pwdata[25]"/>
+        <net name="uart_pwdata[24]"/>
+        <net name="uart_pwdata[23]"/>
+        <net name="uart_pwdata[22]"/>
+        <net name="uart_pwdata[21]"/>
+        <net name="uart_pwdata[20]"/>
+        <net name="uart_pwdata[19]"/>
+        <net name="uart_pwdata[18]"/>
+        <net name="uart_pwdata[17]"/>
+        <net name="uart_pwdata[16]"/>
+        <net name="uart_pwdata[15]"/>
+        <net name="uart_pwdata[14]"/>
+        <net name="uart_pwdata[13]"/>
+        <net name="uart_pwdata[12]"/>
+        <net name="uart_pwdata[11]"/>
+        <net name="uart_pwdata[10]"/>
+        <net name="uart_pwdata[9]"/>
+        <net name="uart_pwdata[8]"/>
+        <net name="uart_pwdata[7]"/>
+        <net name="uart_pwdata[6]"/>
+        <net name="uart_pwdata[5]"/>
+        <net name="uart_pwdata[4]"/>
+        <net name="uart_pwdata[3]"/>
+        <net name="uart_pwdata[2]"/>
+        <net name="uart_pwdata[1]"/>
+        <net name="uart_pwdata[0]"/>
+      </nets>
+    </probe>
+  </probeset>
 </hwsession>

@@ -34,7 +34,7 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
   ) (
     input  logic        clk_i,
     input  logic        rst_ni,
-    output logic [63:0] exit_o,
+//    output logic [63:0] exit_o,
     output logic [63:0] hw_cnt_en_o,
     // Scan chain
     input  logic        scan_enable_i,

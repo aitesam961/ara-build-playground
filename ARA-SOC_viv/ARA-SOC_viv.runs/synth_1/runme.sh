@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ara_top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ara_top_wrapper.tcl
+EAStep vivado -log xilinx_ara_soc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_ara_soc.tcl
