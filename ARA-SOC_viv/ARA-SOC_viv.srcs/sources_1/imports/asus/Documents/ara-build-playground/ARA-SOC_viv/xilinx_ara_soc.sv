@@ -59,12 +59,7 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   logic        uart_pslverr;
   
   
-    
-  /////////////////////////////
-  //    ILA for AXI          //
-  /////////////////////////////
-  
-  
+
 
   /////////////////////////////
   //    CLK Conversion       //
@@ -108,6 +103,14 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   //////////////////////
   //  Peripherals     //
   //////////////////////
+  
+  //////////////////////
+  //  UART ILA        //
+  //////////////////////
+  
+  
+  
+  
   //////////////////////
   //       UART       //
   //////////////////////

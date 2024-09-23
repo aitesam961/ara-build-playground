@@ -405,7 +405,7 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
     .hw_cnt_en_o          (hw_cnt_en_o                 ),
     .dram_base_addr_o     (/* Unused */                ),
     .dram_end_addr_o      (/* Unused */                ),
-    .exit_o               (exit_o                      ),
+//    .exit_o               (exit_o                      ),
     .event_trigger_o      (event_trigger)
   );
 
