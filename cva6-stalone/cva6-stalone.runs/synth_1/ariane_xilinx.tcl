@@ -343,6 +343,12 @@ set_property used_in_implementation false [get_files -all /home/asus/Documents/a
 set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi_clocks.xdc]
 
+read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_bootrom.xci
+set_property used_in_synthesis false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_bootrom_ooc.xdc]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727068347">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727242377">
   <File Type="VDS-TIMING-PB" Name="ariane_xilinx_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ariane_xilinx_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ariane_xilinx.dcp"/>
@@ -2598,4 +2598,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_bootrom"/>
 </GenRun>
