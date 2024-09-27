@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Sep 25 14:36:24 2024">
+<application name="pa" timeStamp="Thu Sep 26 13:53:24 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f2d6d65379dd43f78fea3f6f5d058f93" type="ProjectID"/>
 <property name="ProjectIteration" value="24" type="ProjectIteration"/>
@@ -20,7 +20,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddCfgMem" value="1" type="JavaHandler"/>
 <property name="AddSources" value="94" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="10" type="JavaHandler"/>
-<property name="CloseProject" value="15" type="JavaHandler"/>
+<property name="CloseProject" value="16" type="JavaHandler"/>
 <property name="CoreView" value="10" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="2" type="JavaHandler"/>
 <property name="CustomizeCore" value="13" type="JavaHandler"/>
@@ -73,7 +73,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_APPLY" value="9" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="79" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="295" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="296" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="24" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="4" type="GuiHandlerData"/>
 <property name="BoardChooser_VENDOR" value="2" type="GuiHandlerData"/>
@@ -82,7 +82,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CfgMemPartChooser_TABLE" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_COPY_MESSAGE" value="2" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="5" type="GuiHandlerData"/>
-<property name="CmdMsgDialog_OK" value="55" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="57" type="GuiHandlerData"/>
 <property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="3" type="GuiHandlerData"/>
 <property name="ConfirmSaveTextEditsDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="7" type="GuiHandlerData"/>
@@ -98,12 +98,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="1" type="GuiHandlerData"/>
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="2" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="15" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="665" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="669" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
 <property name="FileSetView_COLLAPSE_ALL" value="17" type="GuiHandlerData"/>
 <property name="FileSetView_EXPAND_ALL" value="27" type="GuiHandlerData"/>
 <property name="FindAndPickNetsDialog_NETS_TREE_TABLE_PANEL" value="10" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="257" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="260" type="GuiHandlerData"/>
 <property name="GettingStartedView_CLEAR_LIST" value="2" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiHandlerData"/>
@@ -157,7 +157,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_TCL_STORE" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_WRITE_CONFIG_MEMORY_FILE" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_ZOOM_IN" value="3" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="114" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="116" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="4" type="GuiHandlerData"/>
 <property name="PAViews_IP_CATALOG" value="5" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="13" type="GuiHandlerData"/>
@@ -208,11 +208,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_SET_LIBRARY" value="1" type="GuiHandlerData"/>
 <property name="StaleRunDialog_NO" value="1" type="GuiHandlerData"/>
 <property name="StaleRunDialog_OPEN_DESIGN" value="2" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="56" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="58" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="2" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_ADD_MODULE" value="1" type="GuiHandlerData"/>
 <property name="SystemBuilderView_ADD_IP" value="2" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="38" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="39" type="GuiHandlerData"/>
 <property name="TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE" value="4" type="GuiHandlerData"/>
 <property name="TclConsoleView_COPY" value="1" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="11" type="GuiHandlerData"/>
@@ -224,9 +224,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPG_TabbedPane_TABBED_PANE" value="3" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="112" type="GuiMode"/>
+<property name="GuiMode" value="114" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="87" type="TclMode"/>
+<property name="TclMode" value="89" type="TclMode"/>
 </item>
 </section>
 </application>
