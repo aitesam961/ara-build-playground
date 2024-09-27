@@ -233,6 +233,23 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
     .mem_atop_o  (/* Unused */                  ),
     .busy_o      (/* Unused */                  )
   );
+  
+  
+  
+  ///////////////////////
+  // SRAM ILA          //
+  ///////////////////////
+  
+  
+  ila_sram ILASRAM (
+	.clk(clk_i), // input wire clk
+
+
+	.probe0(l2_wdata),
+	.probe1(l2_rdata)
+);
+
+
 
 `ifndef SPYGLASS
   tc_sram #(

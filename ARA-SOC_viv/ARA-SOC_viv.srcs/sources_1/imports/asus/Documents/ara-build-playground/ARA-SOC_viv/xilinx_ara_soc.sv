@@ -109,7 +109,13 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
   //////////////////////
   
   
-  
+//  ila_apb_uart your_instance_name (
+//	.clk(clk_i), // input wire clk
+
+
+//	.probe0(uart_pwdata), // input wire [31:0]  probe0  
+//	.probe1(uart_prdata) // input wire [31:0]  probe1
+//)
   
   //////////////////////
   //       UART       //
