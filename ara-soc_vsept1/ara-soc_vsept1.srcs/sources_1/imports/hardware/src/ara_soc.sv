@@ -5,6 +5,36 @@
 // Author: Matheus Cavalcante <matheusd@iis.ee.ethz.ch>
 // Description:
 // Ara's SoC, containing CVA6, Ara, and a L2 cache.
+  `include "axi/assign.svh"
+  `include "axi/typedef.svh"
+  `include "common_cells/registers.svh"
+  `include "apb/typedef.svh"
+  
+    localparam type                   axi_data_t   = logic [64-1:0];
+    localparam type                   axi_strb_t   = logic [64/8-1:0];
+    localparam type                   axi_addr_t   = logic [64-1:0];
+    localparam type                   axi_user_t   = logic [1-1:0];
+    localparam type                   axi_id_t     = logic [5-1:0];
+    
+    
+  // Ariane's AXI port data width
+  localparam AxiNarrowDataWidth = 64;
+  localparam AxiNarrowStrbWidth = AxiNarrowDataWidth / 8;
+  // Ara's AXI port data width
+  localparam AxiWideDataWidth   = 64;
+  localparam AXiWideStrbWidth   = AxiWideDataWidth / 8;
+
+  localparam AxiSocIdWidth  = 5 - $clog2(1);
+  localparam AxiCoreIdWidth = AxiSocIdWidth - 1;
+
+  // Internal types
+  typedef logic [AxiNarrowDataWidth-1:0] axi_narrow_data_t;
+  typedef logic [AxiNarrowStrbWidth-1:0] axi_narrow_strb_t;
+  typedef logic [AxiSocIdWidth-1:0] axi_soc_id_t;
+  typedef logic [AxiCoreIdWidth-1:0] axi_core_id_t;
+  
+  
+  `AXI_TYPEDEF_ALL(ara_axi, axi_addr_t, axi_core_id_t, axi_data_t, axi_strb_t, axi_user_t) 
 
 module ara_soc import axi_pkg::*; import ara_pkg::*; #(
     // RVV Parameters
@@ -40,6 +70,18 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
     input  logic        scan_enable_i,
     input  logic        scan_data_i,
     output logic        scan_data_o,
+    
+    // Experimental
+//    input  ara_axi_ar_chan_t    ara_axi_ar_i,
+//    output ara_axi_aw_chan_t    ara_axi_aw_o,
+//    input  ara_axi_b_chan_t     ara_axi_b_i,
+//    output ara_axi_r_chan_t     ara_axi_r_o,
+//    input  ara_axi_w_chan_t     ara_axi_w_i,
+    output ara_axi_req_t        system_axi_req  ,         
+    input  ara_axi_resp_t       system_axi_resp,          
+    
+    
+    
     // UART APB interface
     output logic        uart_penable_o,
     output logic        uart_pwrite_o,
@@ -51,10 +93,7 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
     input  logic        uart_pslverr_i
   );
 
-  `include "axi/assign.svh"
-  `include "axi/typedef.svh"
-  `include "common_cells/registers.svh"
-  `include "apb/typedef.svh"
+
 
   //////////////////////
   //  Memory Regions  //
@@ -85,25 +124,11 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
   //  AXI  //
   ///////////
 
-  // Ariane's AXI port data width
-  localparam AxiNarrowDataWidth = 64;
-  localparam AxiNarrowStrbWidth = AxiNarrowDataWidth / 8;
-  // Ara's AXI port data width
-  localparam AxiWideDataWidth   = AxiDataWidth;
-  localparam AXiWideStrbWidth   = AxiWideDataWidth / 8;
 
-  localparam AxiSocIdWidth  = AxiIdWidth - $clog2(NrAXIMasters);
-  localparam AxiCoreIdWidth = AxiSocIdWidth - 1;
-
-  // Internal types
-  typedef logic [AxiNarrowDataWidth-1:0] axi_narrow_data_t;
-  typedef logic [AxiNarrowStrbWidth-1:0] axi_narrow_strb_t;
-  typedef logic [AxiSocIdWidth-1:0] axi_soc_id_t;
-  typedef logic [AxiCoreIdWidth-1:0] axi_core_id_t;
 
   // AXI Typedefs
   `AXI_TYPEDEF_ALL(system, axi_addr_t, axi_id_t, axi_data_t, axi_strb_t, axi_user_t)
-  `AXI_TYPEDEF_ALL(ara_axi, axi_addr_t, axi_core_id_t, axi_data_t, axi_strb_t, axi_user_t)
+
   `AXI_TYPEDEF_ALL(ariane_axi, axi_addr_t, axi_core_id_t, axi_narrow_data_t, axi_narrow_strb_t,axi_user_t)
   `AXI_TYPEDEF_ALL(soc_narrow, axi_addr_t, axi_soc_id_t, axi_narrow_data_t, axi_narrow_strb_t,axi_user_t)
   `AXI_TYPEDEF_ALL(soc_wide, axi_addr_t, axi_soc_id_t, axi_data_t, axi_strb_t, axi_user_t)
