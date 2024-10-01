@@ -6,3 +6,6 @@ All the relevant files are under sources.
 If INVAL_Filter has to be used, 
 
 `define INVAL_ENABLE
+
+To add includes in the correct path, use
+add-includes.tcl 
