@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct  1 11:34:31 2024
+# Process ID: 80946
+# Current directory: /home/asus/Downloads/something/ara-only/ara-soc_vsept1
+# Command line: vivado
+# Log file: /home/asus/Downloads/something/ara-only/ara-soc_vsept1/vivado.log
+# Journal file: /home/asus/Downloads/something/ara-only/ara-soc_vsept1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+synth_design -rtl -name rtl_1
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design

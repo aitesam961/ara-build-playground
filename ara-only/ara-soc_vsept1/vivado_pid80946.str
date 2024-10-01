@@ -1,0 +1,718 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 80946
+License: Customer
+
+Current time: 	Tue Oct 01 11:34:39 PKT 2024
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Ubuntu
+OS Version: 6.8.0-45-generic
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 388 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	asus
+User home directory: /home/asus
+User working directory: /home/asus/Downloads/something/ara-only/ara-soc_vsept1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/asus/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/asus/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/asus/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/asus/Downloads/something/ara-only/ara-soc_vsept1/vivado.log
+Vivado journal file location: 	/home/asus/Downloads/something/ara-only/ara-soc_vsept1/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-80946-b670
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: /home/asus/Documents/Vivado/vivado2018+IPs.lic:
+XILINX_DSP: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.1
+XILINX_SDK: /opt/Xilinx/SDK/2019.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 960 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 919 MB. GUI used memory: 45 MB. Current time: 10/1/24, 11:34:41 AM PKT
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.xpr");
+// Opening Vivado Project: /home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 76 MB (+76971kb) [00:00:14]
+// [Engine Memory]: 984 MB (+880478kb) [00:00:14]
+// [Engine Memory]: 1,062 MB (+29706kb) [00:00:14]
+// [GUI Memory]: 103 MB (+25076kb) [00:00:14]
+// Tcl Message: open_project /home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/asus/Downloads/ara-soc_vsept1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'. 
+// [GUI Memory]: 111 MB (+2062kb) [00:00:15]
+// Project name: ara-soc_vsept1; location: /home/asus/Downloads/something/ara-only/ara-soc_vsept1; part: xc7k325tffg900-2
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,123 MB (+8575kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("ara_top.sv", 142, 451); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 86, 397); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 16, 439); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 36, 407); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:35:16 AM PKT
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 32, 138); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 144); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 82, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 12, 48); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 11, 23, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+// HMemoryUtils.trashcanNow. Engine heap size: 1,174 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:35:41 AM PKT
+selectCodeEditor("ara_top.sv", 17, 440); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 13, 187, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,191 MB (+12079kb) [00:01:10]
+selectCodeEditor("ara_top.sv", 139, 113); // cl (w, cl)
+// [GUI Memory]: 118 MB (+1919kb) [00:01:12]
+selectCodeEditor("ara_top.sv", 4, 211); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("ara_top.sv", 194, 102); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 194, 102, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 168, 459); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 168, 459, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 175, 477); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 175, 477, false, false, false, false, true); // cl (w, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,210 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:36:16 AM PKT
+selectCodeEditor("ara_top.sv", 187, 395); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 187, 395, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 169, 397); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 169, 397, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 178, 460); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 178, 460, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 197, 382); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 197, 382, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 197, 356); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 197, 356, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 197, 344); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 197, 344, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 84, 291); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 291, 306, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 31, 269); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 385, 386); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 62, 349); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 234, 350); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 225, 370); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 224, 365); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 195, 354); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 206, 368); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,259 MB (+9341kb) [00:02:30]
+selectCodeEditor("ara_top.sv", 157, 351); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 157, 351, false, false, false, false, true); // cl (w, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,259 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:37:06 AM PKT
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 232, 355); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 116, 353); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 115, 353); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 238, 371, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 153, 382); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 253, 400, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 291, 359); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 298, 366); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,294 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:37:36 AM PKT
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv), i_ara : ara (ara.sv)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ara_top (ara_top.sv), i_ara : ara (ara.sv), i_dispatcher : ara_dispatcher (ara_dispatcher.sv)]", 5, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 190 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ara_top.sv", 1); // k (j, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("ara_top.sv", 28, 381); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 106, 387); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("ara_top.sv", 295, 370); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,317 MB. GUI used memory: 63 MB. Current time: 10/1/24, 11:41:16 AM PKT
+// [Engine Memory]: 1,333 MB (+11109kb) [00:06:42]
+// D (cl): Invalid Top Module: addNotify
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP, "Ignore and continue with invalid top module"); // a (Q, D)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SRC_MGMT_MODE_CHANGE
+// Tcl Message: set_property source_mgmt_mode DisplayOnly [current_project] 
+dismissDialog("Invalid Top Module"); // D (cl)
+selectCodeEditor("ara_top.sv", 308, 367); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 385); // cl (w, cl)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 28, 333); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ara_top.sv", 33, 382); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 382); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 382); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 38, 380); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 1,403 MB (+3586kb) [00:07:14]
+selectCodeEditor("ara_top.sv", 30, 349); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 64 MB. Current time: 10/1/24, 11:41:51 AM PKT
+selectCodeEditor("ara_top.sv", 66, 395); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 239, 395); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 245, 411); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 286, 410); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 285, 410); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 21, 289); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 0, 104); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 144, 112); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 32, 292); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("ara_top.sv", 67, 434); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("ara_top.sv", 2, 350); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 65 MB. Current time: 10/1/24, 11:42:56 AM PKT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,485 MB (+12818kb) [00:08:22]
+selectCodeEditor("ara_top.sv", 67, 365); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 55, 249); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 40, 232); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 53, 244); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 50, 217); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 124 MB (+278kb) [00:08:38]
+// Elapsed time: 10 seconds
+selectCodeEditor("ara_top.sv", 17, 212); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,501 MB. GUI used memory: 105 MB. Current time: 10/1/24, 11:43:16 AM PKT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 1, 220); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 229, 126); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 229, 126, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 155, 129); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 281, 144, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 136, 338); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 256, 351, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 171, 366); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 171, 366, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 185, 397); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 185, 397, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 192, 410); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 192, 410, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 195, 434); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 195, 434, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 175, 451); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 182, 441); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 182, 441, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 193, 343); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 299, 333); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("ara_top.sv", 371, 367); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 413, 234); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 258, 283); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 200, 312); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 200, 312, false, false, false, false, true); // cl (w, cl) - Double Click
+// [Engine Memory]: 1,567 MB (+7765kb) [00:09:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,567 MB. GUI used memory: 66 MB. Current time: 10/1/24, 11:44:36 AM PKT
+selectCodeEditor("ara_top.sv", 286, 337); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("ara_top.sv", 218, 382); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 218, 382, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 134, 381); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 262, 397, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 240, 229); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 237, 251, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 394, 326); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 277, 339); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("ara_top.sv", 16, 374); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 65 MB. Current time: 10/1/24, 11:45:21 AM PKT
+selectCodeEditor("ara_top.sv", 309, 367); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 26, 353); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 104, 400); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,633 MB. GUI used memory: 66 MB. Current time: 10/1/24, 11:45:41 AM PKT
+// Elapsed time: 11 seconds
+selectCodeEditor("ara_top.sv", 130, 242); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 257, 259, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'c'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 197, 245); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 294, 262, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 313, 242); // cl (w, cl)
+// [Engine Memory]: 1,650 MB (+4678kb) [00:11:17]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("ara_top.sv", 326, 273); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,666 MB. GUI used memory: 65 MB. Current time: 10/1/24, 11:45:56 AM PKT
+// Elapsed time: 32 seconds
+selectCodeEditor("ara_top.sv", 163, 278); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 163, 278, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 150, 303); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 307, 339); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 388, 398); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 241, 386); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 377, 395, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("ara_top.sv", 315, 175); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 315, 175, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 304, 236); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 304, 236, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 320, 218); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 320, 218, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 312, 200); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 312, 200, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 315, 219); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 315, 378); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 315, 378, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 313, 202); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 313, 202, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ara_top.sv", 313, 202); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 313, 205); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 313, 205, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 53 seconds
+selectCodeEditor("ara_top.sv", 397, 281); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 608, 239); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 201, 239); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("ara_top.sv", 249, 133); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 249, 133, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("ara_top.sv", 197, 290); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 318, 308, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 322, 308, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 195, 246); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 195, 270, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 196, 264, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 421, 262, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 321, 243); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 423, 265, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+selectCodeEditor("ara_top.sv", 222, 292); // cl (w, cl)
+typeControlKey((HResource) null, "ara_top.sv", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 199, 285); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 202, 293); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,700 MB. GUI used memory: 66 MB. Current time: 10/1/24, 11:49:01 AM PKT
+selectCodeEditor("ara_top.sv", 202, 306, true, false, true, false, false); // cl (w, cl) - Shift Key - Alt Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ara_top.sv", 72, 435); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cl)
+// [Engine Memory]: 1,732 MB (+106kb) [00:14:38]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cl)
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k325tffg900-2 Top: ara_top 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k325tffg900-2 
+// Tcl Message: INFO: [Synth 8-2350] module rvv_pkg ignored due to previous errors [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/include/rvv_pkg.sv:164] 
+// Tcl Message: Failed to read verilog '/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/include/rvv_pkg.sv' 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 12 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// [Engine Memory]: 2,059 MB (+251762kb) [00:14:42]
+// S (cl): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,059 MB. GUI used memory: 66 MB. Current time: 10/1/24, 11:49:21 AM PKT
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_cut_intf (axi_cut.sv)]", 5, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(PAResourceOtoP.Project_AUTOMATIC_UPDATE_AND_COMPILE_ORDER, "Automatic Update and Compile Order"); // V (cl)
+// TclEventType: SRC_MGMT_MODE_CHANGE
+// Tcl Message: set_property source_mgmt_mode All [current_project] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cl)
+// by (cl):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k325tffg900-2 Top: ara_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,623 MB. GUI used memory: 67 MB. Current time: 10/1/24, 11:49:41 AM PKT
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,315 MB. GUI used memory: 66 MB. Current time: 10/1/24, 11:49:55 AM PKT
+// [Engine Memory]: 3,315 MB (+1209447kb) [00:15:20]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 139 MB (+8632kb) [00:15:21]
+// [GUI Memory]: 154 MB (+8766kb) [00:15:21]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 7579.758 ; gain = 22.594 ; free physical = 23792 ; free virtual = 29854 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ara_top' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/ara_top.sv:34] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter FPExtSupport bound to: 1'b1  	Parameter FixPtSupport bound to: 1'b1  	Parameter AxiDataWidth bound to: 32'b00000000000000000000000001000000  	Parameter AxiAddrWidth bound to: 32'b00000000000000000000000001000000  	Parameter AxiUserWidth bound to: 32'b00000000000000000000000000000001  	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000101  	Parameter AxiRespDelay bound to: 32'b00000000000000000000000011001000  	Parameter L2NumWords bound to: 32'b00000000001000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ara' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/ara.sv:9] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lane' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/lane.sv:12] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable' (1#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register' (2#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'lane_sequencer' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/lane_sequencer.sv:11] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fall_through_register' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fall_through_register.sv:15] INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b1  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lane_sequencer' (5#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/lane_sequencer.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_requester' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_requester.sv:11] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter NrBanks bound to: 32'b00000000000000000000000000001000  	Parameter NrMasters bound to: 14 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000111  	Parameter DataWidth bound to: 32'b00000000000000000000000001010101  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b0  	Parameter LockIn bound to: 1'b0  	Parameter FairArb bound to: 1'b1  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000111  	Parameter MODE bound to: 1'b0  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc' (6#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (7#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000010  	Parameter DataWidth bound to: 32'b00000000000000000000000001010101  	Parameter ExtPrio bound to: 1'b1  	Parameter AxiVldRdy bound to: 1'b0  	Parameter LockIn bound to: 1'b0  	Parameter FairArb bound to: 1'b1  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (7#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'stream_register' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/stream_register.sv:16] INFO: [Synth 8-6155] done synthesizing module 'stream_register' (8#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/stream_register.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_requester' (9#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_requester.sv:11] INFO: [Synth 8-6157] synthesizing module 'vector_regfile' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/vector_regfile.sv:9] 
+// Tcl Message: 	Parameter NrBanks bound to: 32'b00000000000000000000000000001000  	Parameter VRFSize bound to: 32'b00000000000000000000100000000000  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  	Parameter NumWords bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'tc_clk_gating' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/asus/pulp-ara/ara/hardware/deps/tech_cells_generic/src/fpga/tc_clk_xilinx.sv:33] 
+// Tcl Message: 	Parameter IS_FUNCTIONAL bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'tc_clk_gating' (10#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/asus/pulp-ara/ara/hardware/deps/tech_cells_generic/src/fpga/tc_clk_xilinx.sv:33] INFO: [Synth 8-6157] synthesizing module 'tc_sram' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/tech_cells_generic/src/fpga/tc_sram_xilinx.sv:19] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xpm_memory_spram' [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8483] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57] 
+// Tcl Message: 	Parameter NumInp bound to: 32'b00000000000000000000000000001000  	Parameter NumOut bound to: 32'b00000000000000000000000000001001  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter OutSpillReg bound to: 1'b0  	Parameter ExtPrio bound to: 0 - type: integer  	Parameter AxiVldRdy bound to: -1 - type: integer  	Parameter LockIn bound to: 1 - type: integer  	Parameter SelWidth bound to: 32'b00000000000000000000000000000100  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'stream_demux' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/stream_demux.sv:15] 
+// Tcl Message: 	Parameter N_OUP bound to: 32'b00000000000000000000000000001001  	Parameter LOG_N_OUP bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'stream_demux' (14#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/stream_demux.sv:15] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000001000  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  	Parameter FairArb bound to: 1'b1  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter MODE bound to: 1'b0  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (14#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (14#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'operand_queue' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000100  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000101  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b1  	Parameter SupportIntExt4 bound to: 1'b1  	Parameter SupportIntExt8 bound to: 1'b1  	Parameter SupportReduct bound to: 1'b1  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001010  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized1' (16#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000010111  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized2' (16#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized0' (16#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000101  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000011  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000100  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000101  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b1  	Parameter SupportIntExt4 bound to: 1'b1  	Parameter SupportIntExt8 bound to: 1'b1  	Parameter SupportReduct bound to: 1'b1  	Parameter SupportNtrVal bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized0' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000100  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000101  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b1  	Parameter SupportIntExt4 bound to: 1'b0  	Parameter SupportIntExt8 bound to: 1'b0  	Parameter SupportReduct bound to: 1'b1  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized1' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000100  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000101  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b1  	Parameter SupportIntExt4 bound to: 1'b0  	Parameter SupportIntExt8 bound to: 1'b0  	Parameter SupportReduct bound to: 1'b1  	Parameter SupportNtrVal bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized2' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000101  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000010  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b0  	Parameter SupportIntExt4 bound to: 1'b0  	Parameter SupportIntExt8 bound to: 1'b0  	Parameter SupportReduct bound to: 1'b0  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000101  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000011  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized3' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized4' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000100  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000010  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b0  	Parameter SupportIntExt4 bound to: 1'b0  	Parameter SupportIntExt8 bound to: 1'b0  	Parameter SupportReduct bound to: 1'b0  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized4' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized5' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000001  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000001  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b1  	Parameter SupportIntExt4 bound to: 1'b1  	Parameter SupportIntExt8 bound to: 1'b1  	Parameter SupportReduct bound to: 1'b0  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized4' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized4' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized5' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FifoDepth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized5' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized5' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6157] synthesizing module 'operand_queue__parameterized6' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] 
+// Tcl Message: 	Parameter CmdBufDepth bound to: 32'b00000000000000000000000000000001  	Parameter DataBufDepth bound to: 32'b00000000000000000000000000000001  	Parameter NrSlaves bound to: 32'b00000000000000000000000000000001  	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter SupportIntExt2 bound to: 1'b0  	Parameter SupportIntExt4 bound to: 1'b0  	Parameter SupportIntExt8 bound to: 1'b0  	Parameter SupportReduct bound to: 1'b0  	Parameter SupportNtrVal bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'operand_queue__parameterized6' (17#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queue.sv:11] INFO: [Synth 8-6155] done synthesizing module 'operand_queues_stage' (18#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/operand_queues_stage.sv:9] INFO: [Synth 8-6157] synthesizing module 'vector_fus_stage' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/vector_fus_stage.sv:10] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter FPExtSupport bound to: 1'b1  	Parameter FixPtSupport bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'valu' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/valu.sv:10] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FixPtSupport bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  	Parameter VInsnQueueDepth bound to: 4 - type: integer  	Parameter ResultQueueDepth bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fixed_p_rounding' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/fixed_p_rounding.sv:9] 
+// Tcl Message: 	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized1' (19#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (19#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'simd_alu' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/simd_alu.sv:9] 
+// Tcl Message: 	Parameter FixPtSupport bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'simd_alu' (20#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/simd_alu.sv:9] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'valu' (21#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/valu.sv:10] INFO: [Synth 8-6157] synthesizing module 'vmfpu' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/vmfpu.sv:10] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter FPExtSupport bound to: 1'b1  	Parameter FixPtSupport bound to: 1'b1  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  	Parameter VInsnQueueDepth bound to: 4 - type: integer  	Parameter ResultQueueDepth bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'power_gating_generic' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/power_gating_generic.sv:9] 
+// Tcl Message: 	Parameter NO_GLITCH bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'power_gating_generic' (22#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/power_gating_generic.sv:9] INFO: [Synth 8-6157] synthesizing module 'power_gating_generic__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/power_gating_generic.sv:9] 
+// Tcl Message: 	Parameter NO_GLITCH bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'power_gating_generic__parameterized0' (22#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/power_gating_generic.sv:9] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000110100  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000110  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized3' (22#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'fpnew_top' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_top.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_block' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_block.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_fma' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b000  	Parameter NumOperands bound to: 32'b00000000000000000000000000000011  	Parameter WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter EXP_BITS bound to: 8 - type: integer  	Parameter MAN_BITS bound to: 23 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier' (23#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized4' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000110011  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000110  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized4' (23#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'fpnew_rounding' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: 	Parameter AbsWidth bound to: 32'b00000000000000000000000000011111  	Parameter EnableRSR bound to: 1'b0  	Parameter RsrPrecision bound to: 32'b00000000000000000000000000001100  	Parameter LfsrWidth bound to: 32'b00000000000000000000000000100000  	Parameter RstVal bound to: -1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:83] INFO: [Synth 8-6155] done synthesizing module 'fpnew_rounding' (24#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_fma' (25#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_fmt_slice' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_fma__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b001  	Parameter NumOperands bound to: 32'b00000000000000000000000000000011  	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter EXP_BITS bound to: 11 - type: integer  	Parameter MAN_BITS bound to: 52 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized0' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized5' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000001101101  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000111  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized5' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'fpnew_rounding__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: 	Parameter AbsWidth bound to: 32'b00000000000000000000000000111111  	Parameter EnableRSR bound to: 1'b0  	Parameter RsrPrecision bound to: 32'b00000000000000000000000000001100  	Parameter LfsrWidth bound to: 32'b00000000000000000000000000100000  	Parameter RstVal bound to: -1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:83] INFO: [Synth 8-6155] done synthesizing module 'fpnew_rounding__parameterized0' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_fma__parameterized0' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_fmt_slice__parameterized0' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_fma__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b010  	Parameter NumOperands bound to: 32'b00000000000000000000000000000011  	Parameter WIDTH bound to: 32'b00000000000000000000000000010000  	Parameter EXP_BITS bound to: 5 - type: integer  	Parameter MAN_BITS bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized1' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized6' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000011001  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized6' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Synth 8-6157] synthesizing module 'fpnew_rounding__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: 	Parameter AbsWidth bound to: 32'b00000000000000000000000000001111  	Parameter EnableRSR bound to: 1'b0  	Parameter RsrPrecision bound to: 32'b00000000000000000000000000001100  	Parameter LfsrWidth bound to: 32'b00000000000000000000000000100000  	Parameter RstVal bound to: -1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:83] INFO: [Synth 8-6155] done synthesizing module 'fpnew_rounding__parameterized1' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_fma__parameterized1' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_fma.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_fmt_slice__parameterized1' (26#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000110  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b0  	Parameter FairArb bound to: 1'b1  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized7' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000110  	Parameter MODE bound to: 1'b0  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_multifmt_slice' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_multifmt_slice.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_divsqrt_multi' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_divsqrt_multi.sv:18] 
+// Tcl Message: 	Parameter FpFmtConfig bound to: 6'b111000  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000011  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter NUM_FORMATS bound to: 32'b00000000000000000000000000000110  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'div_sqrt_top_mvp' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv:37] INFO: [Synth 8-6157] synthesizing module 'preprocess_mvp' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv:37] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized8' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000110101  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000110  
+// Tcl Message: 	Parameter WIDTH bound to: 58 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'iteration_div_sqrt_mvp' (29#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv:32] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_divsqrt_multi' (34#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_divsqrt_multi.sv:18] INFO: [Synth 8-6157] synthesizing module 'fpnew_divsqrt_multi__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_divsqrt_multi.sv:18] 
+// Tcl Message: 	Parameter FpFmtConfig bound to: 6'b101000  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000011  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter NUM_FORMATS bound to: 32'b00000000000000000000000000000110  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_divsqrt_multi__parameterized0' (34#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_divsqrt_multi.sv:18] INFO: [Synth 8-6157] synthesizing module 'fpnew_divsqrt_multi__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_divsqrt_multi.sv:18] 
+// Tcl Message: 	Parameter FpFmtConfig bound to: 6'b001000  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000011  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000000010000  	Parameter NUM_FORMATS bound to: 32'b00000000000000000000000000000110  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_noncomp' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_noncomp.sv:18] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b000  	Parameter NumPipeRegs bound to: 1 - type: integer  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter EXP_BITS bound to: 8 - type: integer  	Parameter MAN_BITS bound to: 23 - type: integer  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized2' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b000  	Parameter NumOperands bound to: 32'b00000000000000000000000000000010  	Parameter WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter EXP_BITS bound to: 8 - type: integer  	Parameter MAN_BITS bound to: 23 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized2' (35#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_noncomp' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_noncomp.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_fmt_slice__parameterized2' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice__parameterized3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_noncomp__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_noncomp.sv:18] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b001  	Parameter NumPipeRegs bound to: 1 - type: integer  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter EXP_BITS bound to: 11 - type: integer  	Parameter MAN_BITS bound to: 52 - type: integer  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized3' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b001  	Parameter NumOperands bound to: 32'b00000000000000000000000000000010  	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter EXP_BITS bound to: 11 - type: integer  	Parameter MAN_BITS bound to: 52 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized3' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_noncomp__parameterized0' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_noncomp.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_fmt_slice__parameterized3' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_fmt_slice__parameterized4' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_fmt_slice.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_noncomp__parameterized1' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_noncomp.sv:18] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b010  	Parameter NumPipeRegs bound to: 1 - type: integer  	Parameter PipeConfig bound to: 2'b11  	Parameter WIDTH bound to: 32'b00000000000000000000000000010000  	Parameter EXP_BITS bound to: 5 - type: integer  	Parameter MAN_BITS bound to: 10 - type: integer  	Parameter NUM_INP_REGS bound to: 1 - type: integer  	Parameter NUM_OUT_REGS bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized4' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b010  	Parameter NumOperands bound to: 32'b00000000000000000000000000000010  	Parameter WIDTH bound to: 32'b00000000000000000000000000010000  	Parameter EXP_BITS bound to: 5 - type: integer  	Parameter MAN_BITS bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized4' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_opgroup_multifmt_slice__parameterized0' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_multifmt_slice.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_cast_multi' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_cast_multi.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized5' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b000  	Parameter NumOperands bound to: 32'b00000000000000000000000000000001  	Parameter WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter EXP_BITS bound to: 8 - type: integer  	Parameter MAN_BITS bound to: 23 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized5' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized6' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b001  	Parameter NumOperands bound to: 32'b00000000000000000000000000000001  	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter EXP_BITS bound to: 11 - type: integer  	Parameter MAN_BITS bound to: 52 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized6' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'fpnew_classifier__parameterized7' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] 
+// Tcl Message: 	Parameter FpFormat bound to: 3'b010  	Parameter NumOperands bound to: 32'b00000000000000000000000000000001  	Parameter WIDTH bound to: 32'b00000000000000000000000000010000  	Parameter EXP_BITS bound to: 5 - type: integer  	Parameter MAN_BITS bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_classifier__parameterized7' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_classifier.sv:16] INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized9' [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/common_cells/src/lzc.sv:15] INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter MODE bound to: 1'b1  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000110  
+// Tcl Message: 	Parameter AbsWidth bound to: 32'b00000000000000000000000001000000  	Parameter EnableRSR bound to: 1'b0  	Parameter RsrPrecision bound to: 32'b00000000000000000000000000001100  	Parameter LfsrWidth bound to: 32'b00000000000000000000000000100000  	Parameter RstVal bound to: -1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:83] INFO: [Synth 8-6155] done synthesizing module 'fpnew_rounding__parameterized2' (36#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_cast_multi' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_cast_multi.sv:18] INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_pkg.sv:95] INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_pkg.sv:95] 
+// Tcl Message: 	Parameter AbsWidth bound to: 32'b00000000000000000000000000010000  	Parameter EnableRSR bound to: 1'b0  	Parameter RsrPrecision bound to: 32'b00000000000000000000000000001100  	Parameter LfsrWidth bound to: 32'b00000000000000000000000000100000  	Parameter RstVal bound to: -1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:83] INFO: [Synth 8-6155] done synthesizing module 'fpnew_rounding__parameterized3' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_rounding.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_cast_multi__parameterized0' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_cast_multi.sv:18] INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_pkg.sv:95] INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_pkg.sv:95] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_multifmt_slice__parameterized0' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_multifmt_slice.sv:18] INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_block__parameterized2' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_block.sv:16] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fpnew_opgroup_block__parameterized3' (37#1) [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/deps/fpnew/src/fpnew_opgroup_block.sv:16] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000101  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b0  	Parameter FairArb bound to: 1'b1  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000011  	Parameter WIDTH bound to: 32'b00000000000000000000000000000101  	Parameter MODE bound to: 1'b0  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: 	Parameter FixPtSupport bound to: 1'b1  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000001  	Parameter ElementWidth bound to: 3'b011  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: 	Parameter FixPtSupport bound to: 1'b1  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000001  	Parameter ElementWidth bound to: 3'b010  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: 	Parameter FixPtSupport bound to: 1'b1  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000001  	Parameter ElementWidth bound to: 3'b001  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: 	Parameter FixPtSupport bound to: 1'b1  	Parameter NumPipeRegs bound to: 32'b00000000000000000000000000000000  	Parameter ElementWidth bound to: 3'b000  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter StrbWidth bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/simd_div.sv:170] INFO: [Synth 8-155] case statement is not full and has no default [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/simd_div.sv:222] 
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/lane/vmfpu.sv:1428] 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter FPUSupport bound to: 3'b111  	Parameter FPExtSupport bound to: 1'b1  	Parameter FixPtSupport bound to: 1'b1  	Parameter VLENB bound to: 32'b00000000000000000000000000010000  	Parameter INPUT_WIDTH bound to: 32'b00000000000000000000000000000111  	Parameter PopcountWidth bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter NrPEs bound to: 32'b00000000000000000000000000000110  	Parameter InsnQueueDepth bound to: 224'b00000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000001000000000000000000000000000000001000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000001  	Parameter WIDTH bound to: 32'b00000000000000000000000000000011  	Parameter STICKY_OVERFLOW bound to: 1'b0  	Parameter WIDTH bound to: 32'b00000000000000000000000000000011  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/vlsu/addrgen.sv:249] 
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  	Parameter MODE bound to: 1'b0  	Parameter CNT_WIDTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/sources_1/imports/hardware/src/vlsu/addrgen.sv:639] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter NrLanes bound to: 32'b00000000000000000000000000000010  	Parameter VLEN bound to: 32'b00000000000000000000000010000000  	Parameter AxiDataWidth bound to: 32'b00000000000000000000000001000000  	Parameter AxiAddrWidth bound to: 32'b00000000000000000000000001000000  	Parameter DataWidth bound to: 32'sb00000000000000000000000001000000  	Parameter VInsnQueueDepth bound to: 4 - type: integer  	Parameter ResultQueueDepth bound to: 32'b00000000000000000000000000000010  	Parameter DataWidthB bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 8120.562 ; gain = 563.398 ; free physical = 23313 ; free virtual = 29392 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 8130.469 ; gain = 573.305 ; free physical = 23371 ; free virtual = 29450 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 8130.469 ; gain = 573.305 ; free physical = 23371 ; free virtual = 29450 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 69 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/constrs_1/imports/Downloads/Genesys-2-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/asus/Downloads/something/ara-only/ara-soc_vsept1/ara-soc_vsept1.srcs/constrs_1/imports/Downloads/Genesys-2-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8780.125 ; gain = 0.000 ; free physical = 22749 ; free virtual = 28850 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 8794.750 ; gain = 1237.586 ; free physical = 22772 ; free virtual = 28873 
+// Tcl Message: 462 Infos, 332 Warnings, 4 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 8794.750 ; gain = 1237.586 ; free physical = 22772 ; free virtual = 28873 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 25 seconds
+dismissDialog("Open Elaborated Design"); // by (cl)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.3s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+// Elapsed time: 145 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectCodeEditor("ara_top.sv", 572, 171); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 619, 191); // cl (w, cl)
+selectCodeEditor("ara_top.sv", 21, 123); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: DESIGN_CLOSE
+// [GUI Memory]: 163 MB (+854kb) [00:18:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,407 MB. GUI used memory: 96 MB. Current time: 10/1/24, 11:52:59 AM PKT
+// Engine heap size: 3,407 MB. GUI used memory: 96 MB. Current time: 10/1/24, 11:52:59 AM PKT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // by (cl)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectCodeEditor("ara_top.sv", 219, 317); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 237 seconds
+selectCodeEditor("ara_top.sv", 677, 329); // cl (w, cl)
