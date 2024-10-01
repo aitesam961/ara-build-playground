@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct  1 10:49:02 2024
+# Process ID: 55673
+# Current directory: /home/asus/Downloads/ara-soc_vsept1/ara-soc_vsept1.runs/synth_1
+# Command line: vivado -log ara_soc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ara_soc.tcl
+# Log file: /home/asus/Downloads/ara-soc_vsept1/ara-soc_vsept1.runs/synth_1/ara_soc.vds
+# Journal file: /home/asus/Downloads/ara-soc_vsept1/ara-soc_vsept1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ara_soc.tcl -notrace
