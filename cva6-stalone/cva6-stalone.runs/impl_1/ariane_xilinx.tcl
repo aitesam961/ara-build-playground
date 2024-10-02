@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 6
   create_project -in_memory -part xc7k325tffg900-2
   set_property board_part digilentinc.com:genesys2:part0:1.1 [current_project]

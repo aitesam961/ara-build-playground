@@ -811,7 +811,7 @@ end else begin
     );
 end
 
-ila_bootrom your_instance_name (
+ila_bootrom ILA_BROM (
 	.clk(clk), // input wire clk
 
 
