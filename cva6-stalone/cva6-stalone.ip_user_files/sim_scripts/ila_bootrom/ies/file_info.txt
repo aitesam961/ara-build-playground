@@ -1,6 +1,0 @@
-xpm_cdc.sv,systemverilog,xil_defaultlib,../../../../../../../opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/hdl/verilog"
-xpm_fifo.sv,systemverilog,xil_defaultlib,../../../../../../../opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,incdir="../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/hdl/verilog"
-xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/hdl/verilog"
-xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/hdl/verilog"
-ila_bootrom.v,verilog,xil_defaultlib,../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/sim/ila_bootrom.v,incdir="../../../../cva6-stalone.srcs/sources_1/ip/ila_bootrom/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v

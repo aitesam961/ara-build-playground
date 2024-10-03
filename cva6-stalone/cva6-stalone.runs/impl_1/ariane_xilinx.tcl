@@ -61,112 +61,14 @@ proc step_failed { step } {
 }
 
 
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
-  set_param chipscope.maxJobs 6
-  create_project -in_memory -part xc7k325tffg900-2
-  set_property board_part digilentinc.com:genesys2:part0:1.1 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.cache/wt [current_project]
-  set_property parent.project_path /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.xpr [current_project]
-  set_property ip_output_repo /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.runs/synth_1/ariane_xilinx.dcp
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci
-  read_ip -quiet /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/sources_1/ip/ila_bootrom/ila_bootrom.xci
-  read_xdc /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc
-  read_xdc /home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc
-  link_design -top ariane_xilinx -part xc7k325tffg900-2
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force ariane_xilinx_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file ariane_xilinx_drc_opted.rpt -pb ariane_xilinx_drc_opted.pb -rpx ariane_xilinx_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-    implement_debug_core 
-  } 
-  place_design 
-  write_checkpoint -force ariane_xilinx_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file ariane_xilinx_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file ariane_xilinx_utilization_placed.rpt -pb ariane_xilinx_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file ariane_xilinx_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force ariane_xilinx_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file ariane_xilinx_drc_routed.rpt -pb ariane_xilinx_drc_routed.pb -rpx ariane_xilinx_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file ariane_xilinx_methodology_drc_routed.rpt -pb ariane_xilinx_methodology_drc_routed.pb -rpx ariane_xilinx_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file ariane_xilinx_power_routed.rpt -pb ariane_xilinx_power_summary_routed.pb -rpx ariane_xilinx_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file ariane_xilinx_route_status.rpt -pb ariane_xilinx_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file ariane_xilinx_timing_summary_routed.rpt -pb ariane_xilinx_timing_summary_routed.pb -rpx ariane_xilinx_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file ariane_xilinx_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file ariane_xilinx_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file ariane_xilinx_bus_skew_routed.rpt -pb ariane_xilinx_bus_skew_routed.pb -rpx ariane_xilinx_bus_skew_routed.rpx"
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force ariane_xilinx_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
+  set_param chipscope.maxJobs 6
+  open_checkpoint ariane_xilinx_routed.dcp
+  set_property webtalk.parent_dir /home/asus/Downloads/cva6-stalone/cva6-stalone.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force ariane_xilinx.mmi }
   write_bitstream -force ariane_xilinx.bit -bin_file

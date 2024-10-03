@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727775533">
-  <File Type="VDS-TIMING-PB" Name="ariane_xilinx_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ariane_xilinx_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1726203350">
+  <File Type="PA-TCL" Name="ariane_xilinx.tcl"/>
+  <File Type="REPORTS-TCL" Name="ariane_xilinx_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ariane_xilinx.vds"/>
   <File Type="RDS-DCP" Name="ariane_xilinx.dcp"/>
   <File Type="RDS-UTIL-PB" Name="ariane_xilinx_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="ariane_xilinx_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="ariane_xilinx_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="ariane_xilinx.vds"/>
-  <File Type="REPORTS-TCL" Name="ariane_xilinx_reports.tcl"/>
-  <File Type="PA-TCL" Name="ariane_xilinx.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh">
@@ -2598,5 +2595,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_bootrom"/>
 </GenRun>

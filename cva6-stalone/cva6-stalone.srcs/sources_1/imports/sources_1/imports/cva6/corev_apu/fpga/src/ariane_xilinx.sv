@@ -811,14 +811,6 @@ end else begin
     );
 end
 
-ila_bootrom ILA_BROM (
-	.clk(clk), // input wire clk
-
-
-	.probe0(rom_addr), // input wire [63:0]  probe0  
-	.probe1(rom_rdata) // input wire [63:0]  probe1
-);
-
 // ---------------
 // Peripherals
 // ---------------
