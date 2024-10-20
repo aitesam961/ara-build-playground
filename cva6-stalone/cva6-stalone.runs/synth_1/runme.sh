@@ -3,13 +3,14 @@
 # 
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
-# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/SDK/2019.1/bin:/opt/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2019.1/bin
+  PATH=/opt/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2023.2/bin
 else
-  PATH=/opt/Xilinx/SDK/2019.1/bin:/opt/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=/opt/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/asus/Downloads/cva6-stalone/cva6-stalone.runs/synth_1'
+HD_PWD='/home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

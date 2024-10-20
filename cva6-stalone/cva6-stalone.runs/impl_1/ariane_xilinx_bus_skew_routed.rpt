@@ -1,12 +1,13 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Sep 13 10:07:09 2024
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Oct 19 14:33:26 2024
 | Host         : b670 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_bus_skew -warn_on_violation -file ariane_xilinx_bus_skew_routed.rpt -pb ariane_xilinx_bus_skew_routed.pb -rpx ariane_xilinx_bus_skew_routed.rpx
 | Design       : ariane_xilinx
 | Device       : 7k325t-ffg900
 | Speed File   : -2  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Bus Skew Report
@@ -23,34 +24,34 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   53        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.652      4.348
+                                                                              Slow              5.000       0.314      4.686
 2   55        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.650      4.350
+                                                                              Slow              5.000       0.568      4.432
 3   57        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.593      4.407
+                                                                              Slow              5.000       0.455      4.545
 4   59        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.607      4.393
+                                                                              Slow              5.000       0.418      4.582
 5   61        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.759      4.241
+                                                                              Slow              5.000       0.464      4.536
 6   63        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.543      4.457
+                                                                              Slow              5.000       0.546      4.454
 7   65        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.560      4.440
+                                                                              Slow              5.000       0.370      4.630
 8   67        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.604      4.396
+                                                                              Slow              5.000       0.352      4.648
 9   69        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.619      4.381
+                                                                              Slow              5.000       0.450      4.550
 10  71        [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow              5.000       0.633      4.367
+                                                                              Slow              5.000       0.454      4.546
 
 
 2. Bus Skew Report Per Constraint
@@ -64,27 +65,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_xlnx_clk_gen
-                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.652      4.348
+                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.314      4.686
 
 
-Slack (MET) :             4.348ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             4.686ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -1.196ns
-  Reference Relative Delay:  -2.171ns
-  Relative CRPR:              0.530ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.652ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:   -1.355ns
+  Reference Relative Delay:  -2.144ns
+  Relative CRPR:              0.475ns
+  Actual Bus Skew:            0.314ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -97,12 +97,12 @@ Endpoint path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.588     1.588    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X105Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=37266, routed)       1.417     1.417    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X109Y106       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X105Y95        FDRE (Prop_fdre_C_Q)         0.204     1.792 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.442     2.234    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
-    SLICE_X106Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X109Y106       FDRE (Prop_fdre_C_Q)         0.204     1.621 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.279     1.900    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
+    SLICE_X106Y106       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -120,15 +120,15 @@ Endpoint path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.452     3.486    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X106Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     3.486    
-    SLICE_X106Y95        FDRE (Setup_fdre_C_D)       -0.057     3.429    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=11403, routed)       1.281     3.315    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X106Y106       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     3.315    
+    SLICE_X106Y106       FDRE (Setup_fdre_C_D)       -0.061     3.254    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           2.234    
-                         clock arrival                          3.429    
+                         data arrival                           1.900    
+                         clock arrival                          3.254    
   -------------------------------------------------------------------
-                         relative delay                        -1.196    
+                         relative delay                        -1.355    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -141,12 +141,12 @@ Reference path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.451     1.451    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X105Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=37266, routed)       1.282     1.282    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X109Y108       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X105Y95        FDRE (Prop_fdre_C_Q)         0.178     1.629 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.232     1.861    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
-    SLICE_X106Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X109Y108       FDRE (Prop_fdre_C_Q)         0.162     1.444 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.169     1.613    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X107Y108       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -164,15 +164,15 @@ Reference path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.589     3.880    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X106Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     3.880    
-    SLICE_X106Y95        FDRE (Hold_fdre_C_D)         0.153     4.033    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=11403, routed)       1.415     3.706    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X107Y108       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     3.706    
+    SLICE_X107Y108       FDRE (Hold_fdre_C_D)         0.051     3.757    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           1.861    
-                         clock arrival                          4.033    
+                         data arrival                           1.613    
+                         clock arrival                          3.757    
   -------------------------------------------------------------------
-                         relative delay                        -2.171    
+                         relative delay                        -2.144    
 
 
 
@@ -184,15 +184,15 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_xlnx_clk_gen
-                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                                                                             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.650      4.350
+                                                                                                            Slow         0.568      4.432
 
 
-Slack (MET) :             4.350ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             4.432ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
@@ -200,11 +200,10 @@ Slack (MET) :             4.350ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -1.194ns
-  Reference Relative Delay:  -2.117ns
-  Relative CRPR:              0.480ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.650ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:   -1.138ns
+  Reference Relative Delay:  -2.187ns
+  Relative CRPR:              0.481ns
+  Actual Bus Skew:            0.568ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -217,12 +216,12 @@ Endpoint path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.624     1.624    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X123Y72        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=37266, routed)       1.631     1.631    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X127Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X123Y72        FDRE (Prop_fdre_C_Q)         0.204     1.828 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.412     2.240    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
-    SLICE_X124Y75        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X127Y82        FDRE (Prop_fdre_C_Q)         0.204     1.835 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.469     2.304    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
+    SLICE_X124Y84        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -240,15 +239,15 @@ Endpoint path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.489     3.523    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X124Y75        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     3.523    
-    SLICE_X124Y75        FDRE (Setup_fdre_C_D)       -0.090     3.433    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=11403, routed)       1.498     3.532    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X124Y84        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     3.532    
+    SLICE_X124Y84        FDRE (Setup_fdre_C_D)       -0.091     3.441    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           2.240    
-                         clock arrival                          3.433    
+                         data arrival                           2.304    
+                         clock arrival                          3.441    
   -------------------------------------------------------------------
-                         relative delay                        -1.194    
+                         relative delay                        -1.138    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -261,12 +260,12 @@ Reference path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.490     1.490    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X123Y72        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=37266, routed)       1.496     1.496    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X127Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X123Y72        FDRE (Prop_fdre_C_Q)         0.178     1.668 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.245     1.913    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
-    SLICE_X123Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X127Y82        FDRE (Prop_fdre_C_Q)         0.178     1.674 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.170     1.844    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X128Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -284,15 +283,15 @@ Reference path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.622     3.913    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X123Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     3.913    
-    SLICE_X123Y73        FDRE (Hold_fdre_C_D)         0.117     4.030    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=11403, routed)       1.632     3.923    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X128Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.923    
+    SLICE_X128Y82        FDRE (Hold_fdre_C_D)         0.108     4.031    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           1.913    
-                         clock arrival                          4.030    
+                         data arrival                           1.844    
+                         clock arrival                          4.031    
   -------------------------------------------------------------------
-                         relative delay                        -2.117    
+                         relative delay                        -2.187    
 
 
 
@@ -304,15 +303,15 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_pll_i             clk_out1_xlnx_clk_gen
-                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                                                                             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.593      4.407
+                                                                                                            Slow         0.455      4.545
 
 
-Slack (MET) :             4.407ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             4.545ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
@@ -320,11 +319,10 @@ Slack (MET) :             4.407ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    2.991ns
-  Reference Relative Delay:   2.123ns
-  Relative CRPR:              0.481ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.593ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:    3.051ns
+  Reference Relative Delay:   2.136ns
+  Relative CRPR:              0.460ns
+  Actual Bus Skew:            0.455ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -344,12 +342,12 @@ Endpoint path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.633     3.924    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X125Y65        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=11403, routed)       1.635     3.926    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X142Y69        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X125Y65        FDRE (Prop_fdre_C_Q)         0.204     4.128 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.272     4.399    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
-    SLICE_X124Y64        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X142Y69        FDRE (Prop_fdre_C_Q)         0.259     4.185 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.410     4.595    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[0]
+    SLICE_X146Y67        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -360,15 +358,15 @@ Endpoint path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.499     1.499    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X124Y64        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     1.499    
-    SLICE_X124Y64        FDRE (Setup_fdre_C_D)       -0.090     1.409    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=37266, routed)       1.553     1.553    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X146Y67        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     1.553    
+    SLICE_X146Y67        FDRE (Setup_fdre_C_D)       -0.009     1.544    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           4.400    
-                         clock arrival                          1.409    
+                         data arrival                           4.595    
+                         clock arrival                          1.544    
   -------------------------------------------------------------------
-                         relative delay                         2.991    
+                         relative delay                         3.051    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -388,12 +386,12 @@ Reference path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.498     3.532    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X125Y65        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=11403, routed)       1.549     3.583    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X146Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X125Y65        FDRE (Prop_fdre_C_Q)         0.178     3.710 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.163     3.873    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
-    SLICE_X123Y65        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X146Y71        FDRE (Prop_fdre_C_Q)         0.178     3.761 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.179     3.941    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X147Y70        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -404,15 +402,15 @@ Reference path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.632     1.632    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X123Y65        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     1.632    
-    SLICE_X123Y65        FDRE (Hold_fdre_C_D)         0.118     1.750    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=37266, routed)       1.687     1.687    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X147Y70        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.687    
+    SLICE_X147Y70        FDRE (Hold_fdre_C_D)         0.118     1.805    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           3.873    
-                         clock arrival                          1.750    
+                         data arrival                           3.941    
+                         clock arrival                          1.805    
   -------------------------------------------------------------------
-                         relative delay                         2.123    
+                         relative delay                         2.136    
 
 
 
@@ -424,27 +422,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_xlnx_clk_gen
-                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.607      4.393
+                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.418      4.582
 
 
-Slack (MET) :             4.393ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+Slack (MET) :             4.582ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -1.197ns
-  Reference Relative Delay:  -2.034ns
-  Relative CRPR:              0.436ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.607ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:   -1.314ns
+  Reference Relative Delay:  -2.214ns
+  Relative CRPR:              0.482ns
+  Actual Bus Skew:            0.418ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -457,12 +454,12 @@ Endpoint path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.586     1.586    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X108Y87        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=37266, routed)       1.590     1.590    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X111Y94        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X108Y87        FDRE (Prop_fdre_C_Q)         0.259     1.845 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.443     2.288    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
-    SLICE_X108Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X111Y94        FDRE (Prop_fdre_C_Q)         0.204     1.794 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.288     2.082    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
+    SLICE_X107Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -480,15 +477,15 @@ Endpoint path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.453     3.487    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X108Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     3.487    
-    SLICE_X108Y93        FDRE (Setup_fdre_C_D)       -0.002     3.485    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=11403, routed)       1.452     3.486    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X107Y95        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     3.486    
+    SLICE_X107Y95        FDRE (Setup_fdre_C_D)       -0.090     3.396    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           2.288    
-                         clock arrival                          3.485    
+                         data arrival                           2.082    
+                         clock arrival                          3.396    
   -------------------------------------------------------------------
-                         relative delay                        -1.197    
+                         relative delay                        -1.314    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -501,12 +498,12 @@ Reference path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.450     1.450    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X106Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=37266, routed)       1.454     1.454    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X111Y94        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X106Y90        FDRE (Prop_fdre_C_Q)         0.206     1.656 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.305     1.961    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
-    SLICE_X107Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X111Y94        FDRE (Prop_fdre_C_Q)         0.178     1.632 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.153     1.785    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X109Y94        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -524,15 +521,15 @@ Reference path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.587     3.878    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X107Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     3.878    
-    SLICE_X107Y90        FDRE (Hold_fdre_C_D)         0.117     3.995    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=11403, routed)       1.590     3.881    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X109Y94        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.881    
+    SLICE_X109Y94        FDRE (Hold_fdre_C_D)         0.118     3.999    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           1.961    
-                         clock arrival                          3.995    
+                         data arrival                           1.785    
+                         clock arrival                          3.999    
   -------------------------------------------------------------------
-                         relative delay                        -2.034    
+                         relative delay                        -2.214    
 
 
 
@@ -544,27 +541,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_pll_i             clk_out1_xlnx_clk_gen
-                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.759      4.241
+                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.464      4.536
 
 
-Slack (MET) :             4.241ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             4.536ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    3.181ns
-  Reference Relative Delay:   2.193ns
-  Relative CRPR:              0.436ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.759ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:    3.079ns
+  Reference Relative Delay:   2.112ns
+  Relative CRPR:              0.503ns
+  Actual Bus Skew:            0.464ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -584,12 +580,12 @@ Endpoint path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.580     3.871    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X107Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=11403, routed)       1.589     3.880    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X108Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X107Y83        FDRE (Prop_fdre_C_Q)         0.204     4.075 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.453     4.527    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
-    SLICE_X96Y83         FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X108Y93        FDRE (Prop_fdre_C_Q)         0.259     4.139 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.384     4.523    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X109Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -600,15 +596,15 @@ Endpoint path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.438     1.438    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X96Y83         FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     1.438    
-    SLICE_X96Y83         FDRE (Setup_fdre_C_D)       -0.092     1.346    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=37266, routed)       1.453     1.453    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X109Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.453    
+    SLICE_X109Y93        FDRE (Setup_fdre_C_D)       -0.009     1.444    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           4.527    
-                         clock arrival                          1.346    
+                         data arrival                           4.523    
+                         clock arrival                          1.444    
   -------------------------------------------------------------------
-                         relative delay                         3.181    
+                         relative delay                         3.079    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -628,12 +624,12 @@ Reference path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.436     3.470    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X96Y81         FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=11403, routed)       1.453     3.487    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X108Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X96Y81         FDRE (Prop_fdre_C_Q)         0.178     3.648 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.231     3.879    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
-    SLICE_X95Y81         FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X108Y93        FDRE (Prop_fdre_C_Q)         0.206     3.693 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.160     3.853    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[0]
+    SLICE_X108Y92        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -644,15 +640,15 @@ Reference path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.568     1.568    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X95Y81         FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     1.568    
-    SLICE_X95Y81         FDRE (Hold_fdre_C_D)         0.118     1.686    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=37266, routed)       1.589     1.589    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X108Y92        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     1.589    
+    SLICE_X108Y92        FDRE (Hold_fdre_C_D)         0.152     1.741    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           3.879    
-                         clock arrival                          1.686    
+                         data arrival                           3.853    
+                         clock arrival                          1.741    
   -------------------------------------------------------------------
-                         relative delay                         2.193    
+                         relative delay                         2.112    
 
 
 
@@ -664,15 +660,15 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_pll_i             clk_out1_xlnx_clk_gen
-                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                                                                             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.543      4.457
+                                                                                                            Slow         0.546      4.454
 
 
-Slack (MET) :             4.457ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             4.454ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
@@ -680,11 +676,10 @@ Slack (MET) :             4.457ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    2.987ns
-  Reference Relative Delay:   2.194ns
-  Relative CRPR:              0.458ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.543ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:    3.125ns
+  Reference Relative Delay:   2.119ns
+  Relative CRPR:              0.460ns
+  Actual Bus Skew:            0.546ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -704,12 +699,12 @@ Endpoint path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.633     3.924    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X125Y65        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=11403, routed)       1.682     3.973    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X147Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X125Y65        FDRE (Prop_fdre_C_Q)         0.204     4.128 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.267     4.394    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
-    SLICE_X125Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X147Y73        FDRE (Prop_fdre_C_Q)         0.223     4.196 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.467     4.662    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
+    SLICE_X146Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -720,15 +715,15 @@ Endpoint path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.497     1.497    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X125Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     1.497    
-    SLICE_X125Y66        FDRE (Setup_fdre_C_D)       -0.090     1.407    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=37266, routed)       1.547     1.547    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X146Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     1.547    
+    SLICE_X146Y73        FDRE (Setup_fdre_C_D)       -0.010     1.537    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           4.394    
-                         clock arrival                          1.407    
+                         data arrival                           4.662    
+                         clock arrival                          1.537    
   -------------------------------------------------------------------
-                         relative delay                         2.987    
+                         relative delay                         3.125    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -748,12 +743,12 @@ Reference path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.498     3.532    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X128Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=11403, routed)       1.550     3.584    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X150Y72        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X128Y66        FDRE (Prop_fdre_C_Q)         0.178     3.710 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.233     3.944    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
-    SLICE_X127Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X150Y72        FDRE (Prop_fdre_C_Q)         0.178     3.762 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.158     3.921    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X149Y72        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -764,15 +759,15 @@ Reference path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.632     1.632    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X127Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     1.632    
-    SLICE_X127Y66        FDRE (Hold_fdre_C_D)         0.118     1.750    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=37266, routed)       1.684     1.684    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X149Y72        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.684    
+    SLICE_X149Y72        FDRE (Hold_fdre_C_D)         0.118     1.802    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           3.944    
-                         clock arrival                          1.750    
+                         data arrival                           3.921    
+                         clock arrival                          1.802    
   -------------------------------------------------------------------
-                         relative delay                         2.194    
+                         relative delay                         2.119    
 
 
 
@@ -785,26 +780,25 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_xlnx_clk_gen
                       clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         0.560      4.440
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.370      4.630
 
 
-Slack (MET) :             4.440ns  (requirement - actual skew)
+Slack (MET) :             4.630ns  (requirement - actual skew)
   Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -1.320ns
-  Reference Relative Delay:  -2.200ns
-  Relative CRPR:              0.526ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.560ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:   -1.310ns
+  Reference Relative Delay:  -2.161ns
+  Relative CRPR:              0.481ns
+  Actual Bus Skew:            0.370ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -817,12 +811,12 @@ Endpoint path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.632     1.632    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X127Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=37266, routed)       1.682     1.682    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X149Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X127Y66        FDRE (Prop_fdre_C_Q)         0.204     1.836 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.283     2.119    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
-    SLICE_X128Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X149Y73        FDRE (Prop_fdre_C_Q)         0.204     1.886 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.293     2.179    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X147Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -840,15 +834,15 @@ Endpoint path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.498     3.532    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X128Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     3.532    
-    SLICE_X128Y66        FDRE (Setup_fdre_C_D)       -0.093     3.439    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=11403, routed)       1.547     3.581    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X147Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     3.581    
+    SLICE_X147Y73        FDRE (Setup_fdre_C_D)       -0.092     3.489    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           2.119    
-                         clock arrival                          3.439    
+                         data arrival                           2.179    
+                         clock arrival                          3.489    
   -------------------------------------------------------------------
-                         relative delay                        -1.320    
+                         relative delay                        -1.310    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -861,12 +855,12 @@ Reference path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.497     1.497    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X127Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=37266, routed)       1.547     1.547    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X149Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X127Y66        FDRE (Prop_fdre_C_Q)         0.178     1.675 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.167     1.842    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[0]
-    SLICE_X128Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X149Y73        FDRE (Prop_fdre_C_Q)         0.162     1.709 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.157     1.866    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
+    SLICE_X151Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -884,15 +878,15 @@ Reference path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.633     3.924    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X128Y66        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     3.924    
-    SLICE_X128Y66        FDRE (Hold_fdre_C_D)         0.118     4.042    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=11403, routed)       1.683     3.974    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X151Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     3.974    
+    SLICE_X151Y73        FDRE (Hold_fdre_C_D)         0.053     4.027    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           1.842    
-                         clock arrival                          4.042    
+                         data arrival                           1.866    
+                         clock arrival                          4.027    
   -------------------------------------------------------------------
-                         relative delay                        -2.200    
+                         relative delay                        -2.161    
 
 
 
@@ -904,27 +898,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_xlnx_clk_gen
-                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.604      4.396
+                      clk_pll_i             i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.352      4.648
 
 
-Slack (MET) :             4.396ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             4.648ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -1.311ns
-  Reference Relative Delay:  -2.212ns
-  Relative CRPR:              0.503ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.604ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:   -1.287ns
+  Reference Relative Delay:  -2.120ns
+  Relative CRPR:              0.481ns
+  Actual Bus Skew:            0.352ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -937,12 +930,12 @@ Endpoint path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.582     1.582    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X115Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=37266, routed)       1.631     1.631    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X127Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X115Y83        FDRE (Prop_fdre_C_Q)         0.204     1.786 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.295     2.081    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
-    SLICE_X112Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X127Y82        FDRE (Prop_fdre_C_Q)         0.223     1.854 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.367     2.221    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X123Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -960,15 +953,15 @@ Endpoint path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.448     3.482    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X112Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     3.482    
-    SLICE_X112Y83        FDRE (Setup_fdre_C_D)       -0.090     3.392    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=11403, routed)       1.495     3.529    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X123Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.529    
+    SLICE_X123Y82        FDRE (Setup_fdre_C_D)       -0.022     3.507    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           2.081    
-                         clock arrival                          3.392    
+                         data arrival                           2.221    
+                         clock arrival                          3.507    
   -------------------------------------------------------------------
-                         relative delay                        -1.311    
+                         relative delay                        -1.287    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -981,12 +974,12 @@ Reference path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.448     1.448    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X115Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=37266, routed)       1.496     1.496    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X127Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X115Y83        FDRE (Prop_fdre_C_Q)         0.178     1.626 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.152     1.778    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
-    SLICE_X113Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X127Y82        FDRE (Prop_fdre_C_Q)         0.178     1.674 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.246     1.920    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X125Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -1004,15 +997,15 @@ Reference path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.582     3.873    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X113Y83        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     3.873    
-    SLICE_X113Y83        FDRE (Hold_fdre_C_D)         0.117     3.990    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=11403, routed)       1.631     3.922    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X125Y82        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     3.922    
+    SLICE_X125Y82        FDRE (Hold_fdre_C_D)         0.118     4.040    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           1.778    
-                         clock arrival                          3.990    
+                         data arrival                           1.920    
+                         clock arrival                          4.040    
   -------------------------------------------------------------------
-                         relative delay                        -2.212    
+                         relative delay                        -2.120    
 
 
 
@@ -1024,27 +1017,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_pll_i             clk_out1_xlnx_clk_gen
-                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         0.619      4.381
+                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.450      4.550
 
 
-Slack (MET) :             4.381ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             4.550ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    3.034ns
-  Reference Relative Delay:   2.141ns
-  Relative CRPR:              0.480ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.619ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:    3.112ns
+  Reference Relative Delay:   2.203ns
+  Relative CRPR:              0.458ns
+  Actual Bus Skew:            0.450ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1064,12 +1056,12 @@ Endpoint path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.625     3.916    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X122Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=11403, routed)       1.629     3.920    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X142Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X122Y71        FDRE (Prop_fdre_C_Q)         0.236     4.152 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.285     4.437    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
-    SLICE_X124Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X142Y73        FDRE (Prop_fdre_C_Q)         0.236     4.156 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.363     4.519    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
+    SLICE_X143Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -1080,15 +1072,15 @@ Endpoint path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.492     1.492    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X124Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     1.492    
-    SLICE_X124Y71        FDRE (Setup_fdre_C_D)       -0.089     1.403    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=37266, routed)       1.496     1.496    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X143Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     1.496    
+    SLICE_X143Y73        FDRE (Setup_fdre_C_D)       -0.089     1.407    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           4.437    
-                         clock arrival                          1.403    
+                         data arrival                           4.519    
+                         clock arrival                          1.407    
   -------------------------------------------------------------------
-                         relative delay                         3.034    
+                         relative delay                         3.112    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1108,12 +1100,12 @@ Reference path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.491     3.525    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X122Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=11403, routed)       1.495     3.529    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X136Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X122Y71        FDRE (Prop_fdre_C_Q)         0.206     3.731 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.153     3.884    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[0]
-    SLICE_X123Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X136Y73        FDRE (Prop_fdre_C_Q)         0.189     3.718 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.167     3.885    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X140Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -1124,15 +1116,15 @@ Reference path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.625     1.625    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X123Y71        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     1.625    
-    SLICE_X123Y71        FDRE (Hold_fdre_C_D)         0.118     1.743    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=37266, routed)       1.629     1.629    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X140Y73        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     1.629    
+    SLICE_X140Y73        FDRE (Hold_fdre_C_D)         0.053     1.682    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           3.884    
-                         clock arrival                          1.743    
+                         data arrival                           3.885    
+                         clock arrival                          1.682    
   -------------------------------------------------------------------
-                         relative delay                         2.141    
+                         relative delay                         2.203    
 
 
 
@@ -1144,27 +1136,26 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_pll_i             clk_out1_xlnx_clk_gen
-                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.633      4.367
+                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.454      4.546
 
 
-Slack (MET) :             4.367ns  (requirement - actual skew)
-  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+Slack (MET) :             4.546ns  (requirement - actual skew)
+  Endpoint Source:        i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Endpoint Destination:   i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
-  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_xlnx_clk_gen)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    3.059ns
-  Reference Relative Delay:   2.197ns
-  Relative CRPR:              0.436ns
-  Uncertainty:                0.207ns
-  Actual Bus Skew:            0.633ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Endpoint Relative Delay:    3.021ns
+  Reference Relative Delay:   2.114ns
+  Relative CRPR:              0.453ns
+  Actual Bus Skew:            0.454ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1184,12 +1175,12 @@ Endpoint path:
                                                      -3.987     0.068 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.130     2.198    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     2.291 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.589     3.880    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X108Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=11403, routed)       1.419     3.710    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X112Y103       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X108Y93        FDRE (Prop_fdre_C_Q)         0.259     4.139 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.364     4.503    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
-    SLICE_X109Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X112Y103       FDRE (Prop_fdre_C_Q)         0.204     3.914 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.330     4.244    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
+    SLICE_X110Y103       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -1200,15 +1191,15 @@ Endpoint path:
                                                      -4.195    -2.419 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.336    -0.083    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.453     1.453    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X109Y93        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     1.453    
-    SLICE_X109Y93        FDRE (Setup_fdre_C_D)       -0.009     1.444    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=37266, routed)       1.284     1.284    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X110Y103       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     1.284    
+    SLICE_X110Y103       FDRE (Setup_fdre_C_D)       -0.061     1.223    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           4.503    
-                         clock arrival                          1.444    
+                         data arrival                           4.244    
+                         clock arrival                          1.223    
   -------------------------------------------------------------------
-                         relative delay                         3.059    
+                         relative delay                         3.021    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1228,12 +1219,12 @@ Reference path:
                                                      -3.694    -0.054 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           2.005     1.951    i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     2.034 r  i_ddr/u_xlnx_mig_7_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=11403, routed)       1.450     3.484    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X107Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=11403, routed)       1.284     3.318    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X108Y104       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X107Y90        FDRE (Prop_fdre_C_Q)         0.178     3.662 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.273     3.936    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
-    SLICE_X106Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X108Y104       FDRE (Prop_fdre_C_Q)         0.206     3.524 r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.160     3.684    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X108Y103       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_xlnx_clk_gen rise edge)
@@ -1244,15 +1235,15 @@ Reference path:
                                                      -4.498    -2.562 r  i_xlnx_clk_gen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.469    -0.093    i_xlnx_clk_gen/inst/clk_out1_xlnx_clk_gen
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -0.000 r  i_xlnx_clk_gen/inst/clkout1_buf/O
-                         net (fo=37208, routed)       1.587     1.587    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X106Y90        FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     1.587    
-    SLICE_X106Y90        FDRE (Hold_fdre_C_D)         0.152     1.739    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=37266, routed)       1.418     1.418    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X108Y103       FDRE                                         r  i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     1.418    
+    SLICE_X108Y103       FDRE (Hold_fdre_C_D)         0.152     1.570    i_xlnx_axi_clock_converter_ddr/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           3.936    
-                         clock arrival                          1.739    
+                         data arrival                           3.684    
+                         clock arrival                          1.570    
   -------------------------------------------------------------------
-                         relative delay                         2.197    
+                         relative delay                         2.114    
 
 
 

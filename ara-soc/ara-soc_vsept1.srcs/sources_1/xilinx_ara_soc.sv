@@ -28,6 +28,7 @@ module xilinx_ara_soc import axi_pkg::*; import ara_pkg::*; #(
     output logic       tx_o
     );
     
+    
 
 
   /////////////////////////////

@@ -1,7 +1,7 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date                      : Fri Sep 13 10:05:06 2024
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date                      : Sat Oct 19 14:31:23 2024
 | Host                      : b670 running 64-bit Ubuntu 22.04.5 LTS
 | Command                   : report_io -file ariane_xilinx_io_placed.rpt
 | Design                    : ariane_xilinx
@@ -10,7 +10,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 | Package                   : ffg900
 | Package Version           : FINAL 2012-06-12
 | Package Pin Delay Version : FINAL VER. 2.0 2012-06-12
--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 IO Information
 

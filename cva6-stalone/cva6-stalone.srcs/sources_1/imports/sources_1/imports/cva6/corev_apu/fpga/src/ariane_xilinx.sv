@@ -183,6 +183,7 @@ localparam AxiIdWidthMaster = 4;
 localparam AxiIdWidthSlaves = AxiIdWidthMaster + $clog2(NBSlave); // 5
 localparam AxiUserWidth = CVA6Cfg.AxiUserWidth;
 
+
 `AXI_TYPEDEF_ALL(axi_slave,
                  logic [    AxiAddrWidth-1:0],
                  logic [AxiIdWidthSlaves-1:0],

@@ -1,14 +1,14 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Sep 13 10:03:35 2024
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Oct 19 14:29:47 2024
 | Host         : b670 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_drc -file ariane_xilinx_drc_opted.rpt -pb ariane_xilinx_drc_opted.pb -rpx ariane_xilinx_drc_opted.rpx
 | Design       : ariane_xilinx
 | Device       : xc7k325tffg900-2
 | Speed File   : -2
 | Design State : Synthesized
-------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Report DRC
 

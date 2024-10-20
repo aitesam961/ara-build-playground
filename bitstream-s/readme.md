@@ -1,0 +1,17 @@
+Bit-1:	<cheshire_top_xilinx_v1_genesys2.bit>
+BOARD:	GENESYS2
+PROJECT: CHESHIRE-ARA
+FORK: MP-17
+BRANCH: mp/chs-ara
+CONFIG: unsupported 1-Lane (128 VLEN)
+MODS: bug fixes, vga BW, dispatcheer-illegal-cast-4 lines and 1-Lane fixes
+NOTES:  Try with mp-17 or MaistoV fork images. Prints no UART-but CHECK
+
+Bit-2:	<filename.bit>
+BOARD:
+PROJECT:
+FORK:
+BRANCH:
+CONFIG:
+MODS:
+NOTES:

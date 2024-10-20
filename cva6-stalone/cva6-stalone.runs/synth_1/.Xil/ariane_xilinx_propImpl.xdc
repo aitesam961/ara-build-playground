@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc rfile:../../../cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/asus/Downloads/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc rfile:../../../cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc rfile:../../../cva6-stalone.srcs/constrs_1/imports/constraints/ariane.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/asus/Documents/ara-build-playground/cva6-stalone/cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc rfile:../../../cva6-stalone.srcs/constrs_1/imports/constraints/genesys-2.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter tck 1.000
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
