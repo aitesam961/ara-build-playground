@@ -183,6 +183,7 @@ localparam AxiIdWidthMaster = 4;
 localparam AxiIdWidthSlaves = AxiIdWidthMaster + $clog2(NBSlave); // 5
 localparam AxiUserWidth = CVA6Cfg.AxiUserWidth;
 
+
 `AXI_TYPEDEF_ALL(axi_slave,
                  logic [    AxiAddrWidth-1:0],
                  logic [AxiIdWidthSlaves-1:0],
@@ -810,14 +811,6 @@ end else begin
         .rdata_o ( rom_rdata )
     );
 end
-
-ila_bootrom your_instance_name (
-	.clk(clk), // input wire clk
-
-
-	.probe0(rom_addr), // input wire [63:0]  probe0  
-	.probe1(rom_rdata) // input wire [63:0]  probe1
-);
 
 // ---------------
 // Peripherals

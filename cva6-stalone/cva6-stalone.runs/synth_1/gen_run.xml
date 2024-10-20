@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727242377">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1729329673">
   <File Type="VDS-TIMING-PB" Name="ariane_xilinx_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ariane_xilinx_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ariane_xilinx.dcp"/>
@@ -9,7 +9,7 @@
   <File Type="RDS-RDS" Name="ariane_xilinx.vds"/>
   <File Type="REPORTS-TCL" Name="ariane_xilinx_reports.tcl"/>
   <File Type="PA-TCL" Name="ariane_xilinx.tcl"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh">
       <FileInfo>
@@ -18,6 +18,7 @@
         <Attr Name="ImportTime" Val="1726124467"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh">
@@ -27,12 +28,11 @@
         <Attr Name="ImportTime" Val="1726124467"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci"/>
-        <Attr Name="ImportTime" Val="1726136645"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -40,8 +40,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci"/>
-        <Attr Name="ImportTime" Val="1726136693"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -49,8 +47,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci"/>
-        <Attr Name="ImportTime" Val="1726136818"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -58,8 +54,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci"/>
-        <Attr Name="ImportTime" Val="1726136796"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -67,8 +61,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci"/>
-        <Attr Name="ImportTime" Val="1726136199"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -76,8 +68,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci"/>
-        <Attr Name="ImportTime" Val="1726136776"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -85,8 +75,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci"/>
-        <Attr Name="ImportTime" Val="1726136229"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -94,8 +82,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci"/>
-        <Attr Name="ImportTime" Val="1726136743"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -2557,6 +2543,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/mig_a.prj">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1726136815"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="ScopedToCell" Val="xlnx_mig_7_ddr3"/>
       </FileInfo>
@@ -2566,7 +2554,7 @@
       <Option Name="TopModule" Val="ariane_xilinx"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/ariane.xdc">
       <FileInfo>
@@ -2588,7 +2576,7 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
@@ -2598,5 +2586,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_bootrom"/>
 </GenRun>

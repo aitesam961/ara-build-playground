@@ -1,75 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1727242377">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="ariane_xilinx.drc"/>
-  <File Type="BG-BGN" Name="ariane_xilinx.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="ariane_xilinx.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ariane_xilinx.ltx"/>
-  <File Type="BITSTR-MMI" Name="ariane_xilinx.mmi"/>
-  <File Type="BITSTR-BMM" Name="ariane_xilinx_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="ariane_xilinx.nky"/>
-  <File Type="BITSTR-RBT" Name="ariane_xilinx.rbt"/>
-  <File Type="BITSTR-MSK" Name="ariane_xilinx.msk"/>
-  <File Type="BG-BIN" Name="ariane_xilinx.bin"/>
-  <File Type="BG-BIT" Name="ariane_xilinx.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ariane_xilinx_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ariane_xilinx_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ariane_xilinx_bus_skew_postroute_physopted.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1729329673">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ariane_xilinx_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="ariane_xilinx_routed.rqs"/>
+  <File Type="PA-TCL" Name="ariane_xilinx.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ariane_xilinx_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ariane_xilinx_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ariane_xilinx_bus_skew_routed.rpx"/>
+  <File Type="INIT-TIMING" Name="ariane_xilinx_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="ariane_xilinx_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ariane_xilinx_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ariane_xilinx_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ariane_xilinx.hwdef"/>
+  <File Type="OPT-TIMING" Name="ariane_xilinx_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="ariane_xilinx_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="ariane_xilinx_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ariane_xilinx_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ariane_xilinx_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ariane_xilinx_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ariane_xilinx_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ariane_xilinx_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ariane_xilinx_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ariane_xilinx_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ariane_xilinx_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ariane_xilinx_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="ariane_xilinx_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ariane_xilinx_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ariane_xilinx_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ariane_xilinx_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ariane_xilinx_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ariane_xilinx_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ariane_xilinx_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ariane_xilinx_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ariane_xilinx_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ariane_xilinx_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ariane_xilinx_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ariane_xilinx_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ariane_xilinx_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ariane_xilinx_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ariane_xilinx_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ariane_xilinx_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ariane_xilinx_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ariane_xilinx_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ariane_xilinx_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ariane_xilinx_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ariane_xilinx_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ariane_xilinx_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ariane_xilinx_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ariane_xilinx_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ariane_xilinx_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-RQS-PB" Name="ariane_xilinx_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ariane_xilinx_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ariane_xilinx_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ariane_xilinx_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ariane_xilinx_timing_summary_postroute_physopted.pb"/>
   <File Type="RDI-RDI" Name="ariane_xilinx.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ariane_xilinx_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ariane_xilinx_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ariane_xilinx_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ariane_xilinx_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ariane_xilinx_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="ariane_xilinx_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ariane_xilinx_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ariane_xilinx_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="ariane_xilinx_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="ariane_xilinx_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="ariane_xilinx_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="ariane_xilinx_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="ariane_xilinx_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="ariane_xilinx_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="ariane_xilinx_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ariane_xilinx_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ariane_xilinx_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ariane_xilinx_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="ariane_xilinx_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="ariane_xilinx_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="ariane_xilinx_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ariane_xilinx_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="ariane_xilinx_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ariane_xilinx_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="ariane_xilinx_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="ariane_xilinx_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="ariane_xilinx_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ariane_xilinx_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ariane_xilinx_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="ariane_xilinx_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="ariane_xilinx_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="ariane_xilinx_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ariane_xilinx_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="ariane_xilinx_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ariane_xilinx_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="ariane_xilinx_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="ariane_xilinx_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="ariane_xilinx_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="ariane_xilinx_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="ariane_xilinx_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="ariane_xilinx_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ariane_xilinx.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="ariane_xilinx_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="ariane_xilinx_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="ariane_xilinx_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="ariane_xilinx_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="ariane_xilinx_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="ariane_xilinx_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="ariane_xilinx_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="ariane_xilinx.tcl"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ariane_xilinx_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ariane_xilinx_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ariane_xilinx_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ariane_xilinx.bit"/>
+  <File Type="PDI-FILE" Name="ariane_xilinx.pdi"/>
+  <File Type="BG-BIN" Name="ariane_xilinx.bin"/>
+  <File Type="CFI_FILE" Name="ariane_xilinx.cfi"/>
+  <File Type="BITSTR-MSK" Name="ariane_xilinx.msk"/>
+  <File Type="RNPI_FILE" Name="ariane_xilinx.rnpi"/>
+  <File Type="BITSTR-RBT" Name="ariane_xilinx.rbt"/>
+  <File Type="NPI_FILE" Name="ariane_xilinx.npi"/>
+  <File Type="BITSTR-NKY" Name="ariane_xilinx.nky"/>
+  <File Type="RBD_FILE" Name="ariane_xilinx.rbd"/>
+  <File Type="BITSTR-BMM" Name="ariane_xilinx_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ariane_xilinx.mmi"/>
+  <File Type="BOOT-PDI-FILE" Name="ariane_xilinx_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ariane_xilinx_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ariane_xilinx.rcfi"/>
+  <File Type="BG-BGN" Name="ariane_xilinx.bgn"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ariane_xilinx.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ariane_xilinx.sysdef"/>
+  <File Type="BG-DRC" Name="ariane_xilinx.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/cva6/vendor/pulp-platform/common_cells/include/common_cells/registers.svh">
       <FileInfo>
@@ -78,6 +93,7 @@
         <Attr Name="ImportTime" Val="1726124467"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/cva6/corev_apu/fpga/src/genesysii.svh">
@@ -87,12 +103,11 @@
         <Attr Name="ImportTime" Val="1726124467"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci"/>
-        <Attr Name="ImportTime" Val="1726136645"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -100,8 +115,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci"/>
-        <Attr Name="ImportTime" Val="1726136693"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -109,8 +122,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_mig_7_ddr3/xlnx_mig_7_ddr3.xci"/>
-        <Attr Name="ImportTime" Val="1726136818"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -118,8 +129,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci"/>
-        <Attr Name="ImportTime" Val="1726136796"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -127,8 +136,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_clock_converter/xlnx_axi_clock_converter.xci"/>
-        <Attr Name="ImportTime" Val="1726136199"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -136,8 +143,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_gpio/xlnx_axi_gpio.xci"/>
-        <Attr Name="ImportTime" Val="1726136776"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -145,8 +150,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_dwidth_converter/xlnx_axi_dwidth_converter.xci"/>
-        <Attr Name="ImportTime" Val="1726136229"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -154,8 +157,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ariane.srcs/sources_1/ip/xlnx_axi_quad_spi/xlnx_axi_quad_spi.xci"/>
-        <Attr Name="ImportTime" Val="1726136743"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -2617,6 +2618,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/mig_a.prj">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xlnx_mig_7_ddr3/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1726136815"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="ScopedToCell" Val="xlnx_mig_7_ddr3"/>
       </FileInfo>
@@ -2626,7 +2629,7 @@
       <Option Name="TopModule" Val="ariane_xilinx"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/ariane.xdc">
       <FileInfo>
@@ -2648,7 +2651,7 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
@@ -2668,5 +2671,4 @@
       <Option Id="BinFile">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_bootrom"/>
 </GenRun>
