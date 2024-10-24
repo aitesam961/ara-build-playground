@@ -1,0 +1,6 @@
+ [REPORT] prj         cheshire_ara_2                                 
+    [REPORT] strategy    Flow_RuntimeOptimized {Vivado Implementation Defaults}          
+    [REPORT] status      {synth_design Complete!} {write_bitstream Complete!}          
+    [REPORT] elapsed     00:10:18 00:34:45          
+    [REPORT] wns         0.026238
+| 357742(27.44%) | 338763(25.99%) | 1324(0.22%) | 17655(2.94%) | 210062(8.06%) | 1100(54.56%) | 2(0.05%) | 8(0.83%) | 135(1.50%) |
