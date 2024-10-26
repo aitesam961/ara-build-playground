@@ -31,8 +31,18 @@ CONFIG: all default and clean
 MODS: ara-dispatcher illegast cast fix
 NOTES: should work just fine.
 
-## VCU118 default, all clean bit, PR160, m.rb-pull
+## VCU118 default, all clean bit, PR160, m.rb-pull manually patched
 Bit-2:	<cheshire_ara_vcu118_default_mrb>
+BOARD:	vcu118
+PROJECT:mrb pull ARA_cheshire
+FORK: mrb patched into chesihre/rebase
+BRANCH: mp/pulpv1-os-rebase
+CONFIG: default with tweaks 
+MODS: fixes only
+NOTES: should work 
+
+## VCU118 default, all clean bit, PR160, mrb default
+Bit-2:	<cheshire_ara_vcu118_default_mrb_default>
 BOARD:	vcu118
 PROJECT:mrb pull ARA_cheshire
 FORK: mrb
